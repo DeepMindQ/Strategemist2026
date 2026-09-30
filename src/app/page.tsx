@@ -1,5 +1,5 @@
 import { Hero } from '@/components/site/hero'
-import { Empower } from '@/components/site/empower'
+import { TrustStrip, Empower } from '@/components/site/empower'
 import { Domains, Patents } from '@/components/site/domains-patents'
 import { Solve, Transform } from '@/components/site/solve-transform'
 import { Security, Lead, Edge } from '@/components/site/security-lead-edge'
@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <TrustStrip />
       <Empower />
       <Domains />
       <Patents />

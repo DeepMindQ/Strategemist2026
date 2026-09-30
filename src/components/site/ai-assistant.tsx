@@ -4,7 +4,6 @@ import * as React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, Send, Sparkles, RotateCcw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
 interface Msg {
@@ -108,12 +107,12 @@ export function AIAssistant() {
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             transition={{ duration: 0.25 }}
             onClick={() => setOpen(true)}
-            className="group fixed bottom-5 right-5 z-50 flex items-center gap-2.5 rounded-full border border-white/10 bg-primary px-4 py-3 shadow-2xl shadow-primary/30 transition-all hover:shadow-primary/50 sm:bottom-6 sm:right-6"
+            className="group fixed bottom-5 right-5 z-50 flex items-center gap-2.5 rounded-full border border-white/10 bg-primary px-5 py-3 shadow-2xl shadow-primary/30 transition-all hover:shadow-primary/50 sm:bottom-6 sm:right-6"
             aria-label="Open Strategemist Advisor"
           >
-            <span className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-full ring-2 ring-white/20">
-              <Image src="/logo.jpeg" alt="Strategemist" width={40} height={40} className="h-full w-full object-cover" />
-              <span className="pointer-events-none absolute inset-0 rounded-full animate-pulse-ring ring-2 ring-primary" />
+            <span className="relative grid h-8 w-8 place-items-center rounded-full bg-white/15">
+              <span className="font-bold lowercase leading-none text-white" style={{ fontFamily: 'var(--font-comfortaa), sans-serif' }}>s</span>
+              <span className="pointer-events-none absolute inset-0 rounded-full animate-pulse-ring ring-2 ring-white/40" />
             </span>
             <span className="text-sm font-semibold text-white">
               Ask Strategemist
@@ -135,8 +134,8 @@ export function AIAssistant() {
             {/* Header */}
             <div className="flex items-center justify-between border-b border-white/10 px-4 py-3" style={{ background: 'linear-gradient(to right, color-mix(in oklch, var(--primary) 15%, var(--card)), var(--card))' }}>
               <div className="flex items-center gap-2.5">
-                <span className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-lg ring-1 ring-white/20">
-                  <Image src="/logo.jpeg" alt="Strategemist" width={36} height={36} className="h-full w-full object-cover" />
+                <span className="grid h-9 w-9 place-items-center rounded-lg bg-primary">
+                  <span className="font-bold lowercase leading-none text-white" style={{ fontFamily: 'var(--font-comfortaa), sans-serif' }}>s</span>
                 </span>
                 <div>
                   <div className="text-sm font-semibold leading-none">Strategemist Advisor</div>
@@ -241,7 +240,7 @@ function MessageBubble({ msg }: { msg: Msg }) {
           isUser ? 'bg-accent/15 text-accent' : 'bg-primary/15 text-primary'
         )}
       >
-        {isUser ? <span className="text-[10px] font-bold">YOU</span> : <Image src="/logo.jpeg" alt="Strategemist" width={20} height={20} className="rounded-[3px]" />}
+        {isUser ? <span className="text-[10px] font-bold">YOU</span> : <span className="font-bold lowercase leading-none text-primary" style={{ fontFamily: "var(--font-comfortaa), sans-serif" }}>s</span>}
       </span>
       <div
         className={cn(
@@ -261,7 +260,7 @@ function TypingBubble() {
   return (
     <div className="flex gap-2.5">
       <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-primary/15 text-primary">
-        <Image src="/logo.jpeg" alt="Strategemist" width={20} height={20} className="rounded-[3px]" />
+        <span className="font-bold lowercase leading-none text-primary" style={{ fontFamily: "var(--font-comfortaa), sans-serif" }}>s</span>
       </span>
       <div className="flex items-center gap-1 rounded-2xl rounded-tl-sm bg-muted/60 px-4 py-3">
         {[0, 1, 2].map((i) => (

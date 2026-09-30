@@ -15,11 +15,16 @@ export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false)
   const [open, setOpen] = React.useState(false)
   const [hovered, setHovered] = React.useState<string | null>(null)
+  const [progress, setProgress] = React.useState(0)
   const closeTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null)
   const pathname = usePathname()
 
   React.useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8)
+    const onScroll = () => {
+      setScrolled(window.scrollY > 8)
+      const h = document.documentElement.scrollHeight - window.innerHeight
+      setProgress(h > 0 ? (window.scrollY / h) * 100 : 0)
+    }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
@@ -42,50 +47,42 @@ export function Navbar() {
         scrolled ? 'glass border-b border-white/10' : 'border-b border-white/5'
       )}
     >
-      {/* scroll gradient underline */}
+      {/* scroll progress bar */}
+      <div className="absolute inset-x-0 top-0 h-px bg-white/5">
+        <div className="h-full bg-primary transition-[width] duration-150" style={{ width: `${progress}%` }} />
+      </div>
+      {/* scrolled gradient underline */}
       <div
-        className={cn(
-          'pointer-events-none absolute inset-x-0 bottom-0 h-px transition-opacity duration-300',
-          scrolled ? 'opacity-100' : 'opacity-0'
-        )}
+        className={cn('pointer-events-none absolute inset-x-0 bottom-0 h-px transition-opacity duration-300', scrolled ? 'opacity-100' : 'opacity-0')}
         style={{ background: 'linear-gradient(to right, transparent, var(--primary), transparent)' }}
       />
-      <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-6 lg:px-8">
+      <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:text-white">Skip to content</a>
+
+      <div className="mx-auto flex h-20 max-w-[1200px] items-center justify-between px-6 lg:px-8">
         <div className="flex items-center gap-8">
-          <Logo size={40} />
-          {/* divider */}
-          <span className="hidden h-7 w-px bg-white/15 lg:block" />
+          <Logo size="md" />
+          <span className="hidden h-6 w-px bg-white/15 lg:block" />
           <nav className="hidden items-center lg:flex" aria-label="Primary" onMouseLeave={onLeave}>
             {NAV_GROUPS.map((g) => (
               <div key={g.id} className="relative" onMouseEnter={() => onEnter(g.id)}>
                 <button
                   className={cn(
-                    'flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors',
-                    hovered === g.id || isActive(g.id)
-                      ? 'text-primary'
-                      : 'text-foreground/75 hover:text-foreground'
+                    'relative flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors',
+                    hovered === g.id || isActive(g.id) ? 'text-primary' : 'text-foreground/70 hover:text-foreground'
                   )}
                 >
                   {g.label}
                   <ChevronDown className={cn('h-3.5 w-3.5 transition-transform duration-200', hovered === g.id && 'rotate-180')} />
-                  {isActive(g.id) && (
-                    <span className="absolute -bottom-0.5 left-3 right-3 h-0.5 rounded-full bg-primary" />
-                  )}
+                  {isActive(g.id) && <span className="absolute -bottom-0.5 left-3 right-3 h-0.5 rounded-full bg-primary" />}
                 </button>
                 {hovered === g.id && (
                   <div className="absolute left-0 top-full pt-3">
-                    <div className="relative w-[680px] overflow-hidden rounded-xl border border-white/10 glass shadow-2xl">
-                      {/* top accent bar */}
-                      <div className="h-0.5 w-full" style={{ background: 'linear-gradient(to right, var(--primary), var(--accent))' }} />
+                    <div className="relative w-[720px] overflow-hidden rounded-xl border border-white/10 glass shadow-2xl">
+                      <div className="h-0.5 w-full" style={{ background: 'var(--grad-primary)' }} />
                       <div className="p-5">
                         <div className={cn('grid gap-0.5', g.items.length > 8 ? 'grid-cols-3' : g.items.length > 4 ? 'grid-cols-2' : 'grid-cols-1')}>
                           {g.items.map((item) => (
-                            <Link
-                              key={item.label}
-                              href={item.href}
-                              onClick={() => setHovered(null)}
-                              className="group flex flex-col rounded-lg px-3 py-2.5 transition-colors hover:bg-primary/10"
-                            >
+                            <Link key={item.label} href={item.href} onClick={() => setHovered(null)} className="group flex flex-col rounded-lg px-3 py-2.5 transition-colors hover:bg-primary/10">
                               <span className="flex items-center gap-1.5 text-sm font-medium">
                                 {item.label}
                                 <ArrowRight className="h-3 w-3 -translate-x-1 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
@@ -105,21 +102,13 @@ export function Navbar() {
 
         <div className="hidden items-center gap-1 lg:flex">
           {NAV_SIMPLE.map((l) => (
-            <Link
-              key={l.label}
-              href={l.href}
-              className={cn(
-                'rounded-full px-3 py-2 text-sm font-medium transition-colors',
-                pathname === l.href ? 'text-primary' : 'text-foreground/75 hover:text-foreground'
-              )}
-            >
+            <Link key={l.label} href={l.href} className={cn('rounded-full px-3 py-2 text-sm font-medium transition-colors', pathname === l.href ? 'text-primary' : 'text-foreground/70 hover:text-foreground')}>
               {l.label}
             </Link>
           ))}
-          <Button asChild variant="outline" size="sm" className="ml-2 gap-1.5 rounded-full border-primary/40 text-primary hover:bg-primary/10 hover:text-primary">
+          <Button asChild variant="outline" size="sm" className="ml-2 gap-1.5 rounded-full border-primary/40 text-primary transition-colors hover:bg-primary hover:text-white">
             <a href={BRAND.ctaPrimaryHref} target="_blank" rel="noopener noreferrer">
-              {BRAND.ctaPrimary}
-              <ArrowRight className="h-3.5 w-3.5" />
+              {BRAND.ctaPrimary}<ArrowRight className="h-3.5 w-3.5" />
             </a>
           </Button>
         </div>
@@ -133,13 +122,11 @@ export function Navbar() {
           </Button>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" aria-label="Open menu">
-                <Menu className="h-5 w-5" />
-              </Button>
+              <Button variant="ghost" size="icon" aria-label="Open menu"><Menu className="h-5 w-5" /></Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[320px] border-white/10 p-0 custom-scroll overflow-y-auto bg-card">
               <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
-                <Logo size={32} />
+                <Logo size="sm" />
                 <SheetClose asChild>
                   <Button variant="ghost" size="icon" aria-label="Close menu"><X className="h-5 w-5" /></Button>
                 </SheetClose>

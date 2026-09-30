@@ -1,32 +1,24 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 
-export function Logo({ className, size = 40, withWordmark = true }: { className?: string; size?: number; withWordmark?: boolean }) {
+export function Logo({ className, size = 'md' }: { className?: string; size?: 'sm' | 'md' | 'lg' }) {
+  const sizes = {
+    sm: 'text-[1.125rem]',
+    md: 'text-[1.375rem]',
+    lg: 'text-[1.625rem]',
+  }
   return (
     <Link
       href="/"
-      className={cn('group inline-flex items-center gap-2.5', className)}
-      aria-label="Strategemist — home"
+      className={cn('group inline-flex items-baseline transition-transform duration-200 hover:-translate-y-px', className)}
+      aria-label="strategemist — home"
     >
       <span
-        className="relative inline-block shrink-0 overflow-hidden rounded-[6px] ring-1 ring-white/20 transition-transform duration-200 group-hover:-translate-y-0.5"
-        style={{ width: size, height: size }}
+        className={cn('wordmark-glow font-bold lowercase leading-none tracking-tight text-white transition-all duration-200 group-hover:text-white', sizes[size])}
+        style={{ fontFamily: 'var(--font-wordmark), var(--font-comfortaa), sans-serif' }}
       >
-        <Image
-          src="/logo.jpeg"
-          alt="Strategemist"
-          width={size * 2}
-          height={size * 2}
-          priority
-          className="h-full w-full object-cover"
-        />
+        strategemist
       </span>
-      {withWordmark && (
-        <span className="font-display text-[1.15rem] font-bold leading-none tracking-tight text-white">
-          Strate<span className="text-primary">gemist</span>
-        </span>
-      )}
     </Link>
   )
 }
