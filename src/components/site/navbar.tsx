@@ -63,7 +63,8 @@ export function Navbar() {
           <Logo size="md" />
           <span className="hidden h-6 w-px bg-white/15 lg:block" />
           <nav className="hidden items-center lg:flex" aria-label="Primary" onMouseLeave={onLeave}>
-            {NAV_GROUPS.map((g) => (
+            {/* Show first 4 groups; overflow the rest under "More" */}
+            {NAV_GROUPS.slice(0, 4).map((g) => (
               <div key={g.id} className="relative" onMouseEnter={() => onEnter(g.id)}>
                 <button
                   className={cn(
@@ -97,6 +98,33 @@ export function Navbar() {
                 )}
               </div>
             ))}
+            {/* More overflow — groups 5-6 */}
+            <div className="relative" onMouseEnter={() => onEnter('more')} onMouseLeave={onLeave}>
+              <button className={cn('flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors', hovered === 'more' ? 'text-primary' : 'text-foreground/70 hover:text-foreground')}>
+                More
+                <ChevronDown className={cn('h-3.5 w-3.5 transition-transform duration-200', hovered === 'more' && 'rotate-180')} />
+              </button>
+              {hovered === 'more' && (
+                <div className="absolute right-0 top-full pt-3">
+                  <div className="relative w-[480px] overflow-hidden rounded-xl border border-white/10 glass shadow-2xl">
+                    <div className="h-0.5 w-full" style={{ background: 'var(--grad-primary)' }} />
+                    <div className="grid grid-cols-2 gap-0.5 p-5">
+                      {NAV_GROUPS.slice(4).map((g) => (
+                        <div key={g.id} className="space-y-1">
+                          <div className="px-3 pb-1 font-mono text-[10px] uppercase tracking-wider text-primary">{g.label}</div>
+                          {g.items.map((item) => (
+                            <Link key={item.label} href={item.href} onClick={() => setHovered(null)} className="group flex flex-col rounded-lg px-3 py-2 transition-colors hover:bg-primary/10">
+                              <span className="flex items-center gap-1.5 text-sm font-medium">{item.label}<ArrowRight className="h-3 w-3 -translate-x-1 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" /></span>
+                              {item.desc && <span className="mt-0.5 line-clamp-1 text-xs text-muted-foreground">{item.desc}</span>}
+                            </Link>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           </nav>
         </div>
 

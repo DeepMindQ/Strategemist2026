@@ -280,6 +280,8 @@ export interface EmpowerProduct {
   description: string
   icon: LucideIcon
   symbol: string
+  patentRef?: string  // maps to a real patent id
+  patentName?: string // the real patent short name
 }
 
 export const EMPOWER_PRODUCTS: EmpowerProduct[] = [
@@ -287,64 +289,78 @@ export const EMPOWER_PRODUCTS: EmpowerProduct[] = [
     id: 'qprux',
     name: 'QµPrix™',
     symbol: 'Qµ',
-    tagline: 'Unleash Limitless Computational Power',
+    tagline: 'Quantum-inspired tensor compute',
     description:
-      'Think faster. Compute smarter. Transform any system with unparalleled speed and intelligence.',
+      'Hyper-dimensional tensor encoding with logarithmic-scale traversal — reducing state-space complexity from O(2ⁿ) to O(log n) for enterprise data processing.',
     icon: Cpu,
+    patentRef: 'quantum-computing',
+    patentName: 'Quantum Computing',
   },
   {
     id: 'graphion',
     name: 'Σ-Graphion™',
     symbol: 'Σ',
-    tagline: 'Where Intelligence Sees Beyond Data',
+    tagline: 'Quantum-enhanced graph intelligence',
     description:
-      'Go beyond numbers—decode hidden relationships, predict outcomes, and gain deep, data-driven insights.',
+      'A self-adaptive dynamic graph G=(V,E) embedded in a Hilbert space via quantum-enhanced variational embeddings (QE-VE) for fraud detection, precision medicine, and supply-chain optimization.',
     icon: Network,
+    patentRef: 'contextual-intelligence',
+    patentName: 'Contextual Intelligence',
   },
   {
     id: 'reinqlynix',
     name: 'ReinQlynix™',
     symbol: 'Q',
-    tagline: 'Continuous Learning, Infinite Adaptability',
+    tagline: 'Self-evolving reinforcement',
     description:
-      'Smarter decisions. Zero stagnation. AI that evolves seamlessly with an ever-changing world.',
+      'A self-evolving RL system with temporal-spatial learning and federated adaptation — dynamically adjusting to non-deterministic enterprise conditions without human intervention.',
     icon: InfinityIcon,
+    patentRef: 'self-learning-frameworks',
+    patentName: 'Self-Learning Frameworks',
   },
   {
     id: 'neuroquanus',
     name: 'Neuro-Quantus™',
     symbol: 'Ψ',
-    tagline: 'Compact Brilliance, Infinite Potential',
+    tagline: 'Quantum-enhanced pattern recognition',
     description:
-      'Precision-engineered intelligence in ultra-efficient models—powerful, scalable, and optimized.',
+      'Quantum-enhanced neural networks with RL-driven refinement for adaptive pattern recognition — predicting complex, evolving patterns in high-dimensional data.',
     icon: Brain,
+    patentRef: 'cognitive-pattern-engines',
+    patentName: 'Cognitive Pattern Engines',
   },
   {
     id: 'federis',
     name: 'Φ-Federis™',
     symbol: 'Φ',
-    tagline: 'Uncompromising Security, Unparalleled Collaboration',
+    tagline: 'Zero-exposure federated learning',
     description:
-      'Train across networks without exposing data—intelligence without boundaries, privacy without compromise.',
+      'Zero-Knowledge Homomorphic Neural Encryption (ZKHNE) with zero-exposure secure enclaves — train across networks on encrypted data, never decrypted.',
     icon: ShieldCheck,
+    patentRef: 'federated-intelligence-grid',
+    patentName: 'Federated Intelligence Grid',
   },
   {
     id: 'ethicsense',
     name: 'EthicSense™',
     symbol: 'Ξ',
-    tagline: 'AI with Integrity, Transparency, and Trust',
+    tagline: 'Neuro-symbolic ethical validation',
     description:
-      'No bias. No hidden processes. Just ethical, explainable, and responsible decision-making.',
+      'Neuro-symbolic reasoning with multi-layer validation (rule-based + probabilistic + predictive simulation) — explainable, ethical, accountable decisions for regulated industries.',
     icon: Scale,
+    patentRef: 'algorithmic-ethics-trust',
+    patentName: 'Algorithmic Ethics & Trust',
   },
   {
     id: 'gforma',
     name: 'G(π)-Forma™',
     symbol: 'π',
-    tagline: 'Intelligence that Creates, Adapts and Evolves',
+    tagline: 'Generative workflow orchestration',
     description:
-      'AI-driven synthesis, continuous refinement—shaping the future of generative intelligence.',
+      'The Generative AI Core (101) that synthesizes orchestration blueprints with temporal reasoning and self-healing workflows — automating knowledge work end-to-end.',
     icon: Sparkles,
+    patentRef: 'autonomous-knowledge-core',
+    patentName: 'Autonomous Knowledge Core',
   },
   {
     id: 'holosense',
