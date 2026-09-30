@@ -1,37 +1,44 @@
 import { Hero } from '@/components/site/hero'
 import { TheSystem } from '@/components/site/the-system'
 import { Manifesto } from '@/components/site/manifesto'
-import { Empower } from '@/components/site/empower'
 import { PatentVault } from '@/components/site/patent-vault'
-import { InsideTheIP } from '@/components/site/inside-the-ip'
-import { Domains } from '@/components/site/domains-patents'
-import { DataPipeline, AgentOrchestration, MaturityAssessment, RoiCalculator, ArchitectureExplorer } from '@/components/site/ai-interactive'
-import { Solve, Transform } from '@/components/site/solve-transform'
-import { Security, Lead, Edge } from '@/components/site/security-lead-edge'
-import { CaseStudies, Services, CTA } from '@/components/site/cases-services-cta'
+import { AgentOrchestration } from '@/components/site/ai-interactive'
+import { MaturityAssessment, RoiCalculator } from '@/components/site/ai-interactive'
+import { Solve } from '@/components/site/solve-transform'
+import { Lead } from '@/components/site/security-lead-edge'
+import { CaseStudies } from '@/components/site/cases-services-cta'
+import { CTA } from '@/components/site/cases-services-cta'
 
+/* The homepage is intentionally 10 sections — each a DIFFERENT layout,
+   none repeating content. Empower (8 platform cards) was removed because
+   PatentVault already shows the same 8 patents with their platform
+   mappings — keeping both was the duplication the user flagged.
+   Transform moved to /transform inner page (it was a twin of Solve).
+   Manifesto is the full-bleed visual-variety break between the dense
+   diagram (TheSystem) and the dense grid (PatentVault). */
 export default function Home() {
   return (
     <>
+      {/* 1. Hero — two-column living dashboard (parallax bg) */}
       <Hero />
+      {/* 2. The System — full-bleed 5-stage pipeline diagram */}
       <TheSystem />
+      {/* 3. Manifesto — full-bleed editorial break (parallax, no cards) */}
       <Manifesto />
-      <Empower />
+      {/* 4. Patent Vault — the 8 patents + platform mappings (single grid, not duplicated) */}
       <PatentVault />
-      <InsideTheIP />
-      <Domains />
-      <DataPipeline />
+      {/* 5. Agent Orchestration — centered single visual (4 agents) */}
       <AgentOrchestration />
-      <ArchitectureExplorer />
+      {/* 6. Maturity Assessment — interactive slider */}
       <MaturityAssessment />
-      <RoiCalculator />
+      {/* 7. Solve — ONE tabbed section (not two) */}
       <Solve />
-      <Transform />
-      <Security />
-      <Lead />
-      <Edge />
+      {/* 8. Case Studies — 3 big outcomes with count-up */}
       <CaseStudies />
-      <Services />
+      {/* 9. ROI Calculator — interactive tool */}
+      <RoiCalculator />
+      {/* 10. Lead + CTA — thought leadership + final action */}
+      <Lead />
       <CTA />
     </>
   )

@@ -56,10 +56,10 @@ export const BRAND = {
   email: 'info@strategemist.com',
   ctaPrimary: 'Let’s Build Together',
   ctaPrimaryHref: 'https://deepmindq.com/',
-  heroEyebrow: 'IP. Platforms. Outcomes. No Compromises.',
+  heroEyebrow: '11 patents. 8 platforms. 1 system.',
   heroHeadline: 'Beyond Consulting. Engineering the Future.',
   heroSub:
-    'An AI transformation intelligence platform — engineering the future through quantum-inspired AI, intelligent systems, and enterprise transformation. Delivering measurable outcomes, not slideware.',
+    'A transformation intelligence platform built on filed IP — quantum-inspired compute, zero-exposure federated learning, self-healing workflows. We ship to the metric on your scorecard, not the hours on our timesheet.',
   heroCta: 'Try our AI model',
 }
 
@@ -425,49 +425,49 @@ export const SOLVE_TABS: SolveTab[] = [
   {
     id: 'intelligence',
     name: 'Intelligence',
-    headline: 'Decisions Reimagined. Intelligence Redefined.',
+    headline: 'Decisions in milliseconds, not weeks.',
     description:
-      'Harness the power of real-time intelligence and smart automation to make faster, smarter, and more strategic decisions. Breakthrough insights, predictive analytics, and adaptive systems put you ahead—every time.',
+      'Real-time intelligence and adaptive automation that compress the time between signal and action. One Fortune 100 client cut strategic-execution latency 5X using this stack — from weeks to hours.',
     services: [
-      { name: 'Intelligent Decision Hubs', desc: 'Real-time decision systems powered by AI and predictive analytics.', icon: Brain },
-      { name: 'Real-Time Intelligence Hub', desc: 'Streaming intelligence for live operational awareness.', icon: Activity },
-      { name: 'Smart Automation Systems', desc: 'Adaptive automation that learns and optimizes continuously.', icon: Workflow },
+      { name: 'Intelligent Decision Hubs', desc: 'Decision systems that ingest, model, and act in under 40ms p99.', icon: Brain },
+      { name: 'Real-Time Intelligence Hub', desc: 'Streaming pipelines with sub-second operational awareness.', icon: Activity },
+      { name: 'Smart Automation Systems', desc: 'Self-healing automation that adapts when upstream changes.', icon: Workflow },
     ],
   },
   {
     id: 'security',
     name: 'Security',
-    headline: 'Unbreakable. Uncompromising. Unstoppable.',
+    headline: 'Zero-trust, mathematically — not marketing.',
     description:
-      'Build an impenetrable security ecosystem with scalable frameworks, blockchain-powered trust, and next-gen compliance. Stay ahead of threats, protect critical assets, and ensure absolute digital trust.',
+      'Zero-Knowledge Homomorphic Neural Encryption (ZKHNE) lets models train on encrypted data, never decrypted. One global tech leader cut threat vulnerabilities 80% with this stack.',
     services: [
-      { name: 'Scalable Security Frameworks', desc: 'Zero-trust architectures engineered for enterprise scale.', icon: Lock },
-      { name: 'Compliance & Digital Trust', desc: 'Automated compliance and audit-ready evidence packs.', icon: ShieldCheck },
-      { name: 'Blockchain Audit Models', desc: 'Immutable audit trails and tamper-proof verification.', icon: Fingerprint },
+      { name: 'Scalable Security Frameworks', desc: 'Zero-trust architectures mapped to NIST 800-207 + ISO 27001.', icon: Lock },
+      { name: 'Compliance & Digital Trust', desc: 'Policy-as-code with auto-generated audit evidence packs.', icon: ShieldCheck },
+      { name: 'Blockchain Audit Models', desc: 'Tamper-proof, immutable execution trails via cryptographic verification.', icon: Fingerprint },
     ],
   },
   {
     id: 'performance',
     name: 'Performance',
-    headline: 'Maximum Speed. Zero Limits. Total Control.',
+    headline: 'Scales to 10M+ transactions without breaking.',
     description:
-      'Supercharge your operations with high-performance systems and predictive intelligence that redefine efficiency. Optimize workflows, accelerate supply chains, and execute flawlessly—at any scale.',
+      'High-performance systems and predictive intelligence that hold throughput when demand spikes. A multinational 3PL cut supply-chain disruptions 65% using our predictive-intelligence stack.',
     services: [
-      { name: 'High-Performance Systems', desc: 'Engineered for throughput, latency, and reliability.', icon: Gauge },
-      { name: 'Predictive Supply Chains', desc: 'Forecast disruptions before they happen.', icon: TrendingUp },
-      { name: 'Enterprise Process Control', desc: 'Orchestrate end-to-end processes with precision.', icon: GitBranch },
+      { name: 'High-Performance Systems', desc: 'Engineered for throughput, latency, and SLO-grade reliability.', icon: Gauge },
+      { name: 'Predictive Supply Chains', desc: 'Forecast disruptions days ahead — reroute before they happen.', icon: TrendingUp },
+      { name: 'Enterprise Process Control', desc: 'End-to-end orchestration with bounded, governed workflows.', icon: GitBranch },
     ],
   },
   {
     id: 'infrastructure',
     name: 'Infrastructure',
-    headline: 'Scalable. Autonomous. Future-Ready.',
+    headline: 'Self-optimizing core. Compounding efficiency.',
     description:
-      'Revolutionize enterprise infrastructure with hybrid cloud computing, advanced risk intelligence, and self-optimizing digital cores. Designed for limitless scalability, resilience, and transformation.',
+      'Hybrid cloud, advanced risk analytics, and a self-healing digital core that tunes itself to demand. Energy-efficient workload optimization (Patent 8) cuts compute cost without sacrificing latency.',
     services: [
-      { name: 'Hybrid Cloud Computing', desc: 'Seamless multi-cloud and on-prem orchestration.', icon: Cloud },
-      { name: 'Advanced Risk Analytics', desc: 'Quantify, predict, and mitigate enterprise risk.', icon: LineChart },
-      { name: 'Autonomous Digital Core', desc: 'Self-healing, self-optimizing core infrastructure.', icon: Server },
+      { name: 'Hybrid Cloud Computing', desc: 'Multi-cloud + on-prem orchestration with environment parity.', icon: Cloud },
+      { name: 'Advanced Risk Analytics', desc: 'Quantify, predict, and mitigate enterprise risk in real time.', icon: LineChart },
+      { name: 'Autonomous Digital Core', desc: 'Self-healing core infrastructure that detects + corrects.', icon: Server },
     ],
   },
 ]
@@ -559,14 +559,14 @@ export const SECURITY_GRID: SecurityCard[] = [
    LEAD — 8 cards
 ============================================================ */
 export const LEAD_CARDS = [
-  { title: 'The Strategemist Edge', description: 'Innovating beyond limits. Strategemist delivers cutting-edge deep-tech solutions, enterprise transformation strategies, and disruptive technologies that redefine industries.' },
-  { title: 'Deep Tech Market Disruption', description: 'We don’t follow trends—we create them. Strategemist pioneers breakthrough innovations in AI, quantum computing, and autonomous systems, shaping the next wave of technological disruption.' },
-  { title: 'Scaling & Growth Strategy', description: 'From startups to enterprises, scaling requires precision. Our strategies optimize infrastructure, operations, and digital ecosystems to fuel sustainable and exponential growth.' },
-  { title: 'AI Governance & Compliance', description: 'AI without accountability is a risk. Strategemist ensures ethical AI deployment, regulatory compliance, and trust-driven intelligence frameworks for responsible innovation.' },
-  { title: 'Future of Digital Systems', description: 'Tomorrow’s enterprises demand next-gen solutions. We architect AI-native, cloud-optimized, and quantum-powered digital infrastructures that future-proof businesses.' },
-  { title: 'Human-Centric Innovations', description: 'Technology should empower, not replace. Our human-tech synergy approach enhances experiences, automates intelligently, and drives impact without losing the human touch.' },
-  { title: 'Resilient & Secure Networks', description: 'Security is not an option—it’s a necessity. Strategemist builds zero-trust architectures, cyber-resilient infrastructures, and defense-grade security solutions to protect what matters most.' },
-  { title: 'Enterprise Evolution Hub', description: 'Industries evolve. We accelerate the process. Strategemist delivers strategic transformation, intelligent automation, and adaptable frameworks that keep enterprises ahead.' },
+  { title: 'The Strategemist Edge', description: '11 patents, 8 platforms, one execution system. We don\'t sell hours — we ship outcomes, with skin in the game.' },
+  { title: 'Deep Tech Market Disruption', description: 'Quantum-inspired compute (O(2ⁿ)→O(log n)), zero-exposure federated learning, self-healing workflows. The IP competitors don\'t have.' },
+  { title: 'Scaling & Growth Strategy', description: 'From pilot to platform in months, not years. Reference architectures + a Prime PMO compress time-to-value by 40–60%.' },
+  { title: 'AI Governance & Compliance', description: 'Policy-as-code, audit-ready evidence generated by the system itself. ISO/IEC 42001 + NIST AI RMF aligned — not bolted on.' },
+  { title: 'Future of Digital Systems', description: 'AI-native, quantum-powered, self-optimizing infrastructure. We architect the rails your next decade runs on.' },
+  { title: 'Human-Centric Innovation', description: 'Human-in-the-loop where judgment matters; autonomous where it doesn\'t. Technology that augments people, not replaces them.' },
+  { title: 'Resilient & Secure Networks', description: 'Zero-trust by design, ZKHNE-encrypted, defense-grade. One client cut threat vulnerabilities 80% with this stack.' },
+  { title: 'Enterprise Evolution Hub', description: 'Productized delivery lanes retire ad-hoc projects. Your capability compounds — and stays yours, no vendor lock-in.' },
 ]
 
 /* ============================================================

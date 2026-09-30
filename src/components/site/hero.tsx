@@ -157,8 +157,15 @@ function Console({ reduce }: { reduce: boolean | null }) {
 export function Hero() {
   const reduce = useReducedMotion()
   const { scrollY } = useScroll()
-  const orbX = useTransform(scrollY, [0, 400], [0, reduce ? 0 : 15])
-  const orbY = useTransform(scrollY, [0, 400], [0, reduce ? 0 : -10])
+  // Real parallax: different layers move at different scroll speeds
+  const orbX = useTransform(scrollY, [0, 600], [0, reduce ? 0 : 40])
+  const orbY = useTransform(scrollY, [0, 600], [0, reduce ? 0 : -30])
+  const orb2X = useTransform(scrollY, [0, 600], [0, reduce ? 0 : -50])
+  const orb2Y = useTransform(scrollY, [0, 600], [0, reduce ? 0 : 40])
+  const gridY = useTransform(scrollY, [0, 800], [0, reduce ? 0 : 80])
+  const meshRotate = useTransform(scrollY, [0, 2000], [0, reduce ? 0 : 60])
+  const contentY = useTransform(scrollY, [0, 600], [0, reduce ? 0 : 60])
+  const contentOpacity = useTransform(scrollY, [0, 500], [1, reduce ? 1 : 0.4])
 
   const headlineLines = [
     { words: ['Beyond', 'Consulting.'], gradient: false },
@@ -172,18 +179,20 @@ export function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden">
-      {/* background layers */}
+      {/* background layers — real parallax depth */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-0 bg-grid opacity-40" />
-        <div className="absolute left-1/2 top-1/2 h-[120vh] w-[120vh] -translate-x-1/2 -translate-y-1/2 opacity-[0.04] animate-mesh" style={{ background: 'conic-gradient(from 0deg, #2E2ED9, #4D4DE0, #2323A8, #2E2ED9)' }} />
+        <motion.div style={{ y: gridY }} className="absolute inset-0 bg-grid opacity-40" />
+        <motion.div style={{ rotate: meshRotate }} className="absolute left-1/2 top-1/2 h-[120vh] w-[120vh] -translate-x-1/2 -translate-y-1/2 opacity-[0.04]" >
+          <div className="h-full w-full animate-mesh" style={{ background: 'conic-gradient(from 0deg, #2E2ED9, #4D4DE0, #2323A8, #2E2ED9)' }} />
+        </motion.div>
         <motion.div style={{ x: orbX, y: orbY }} className="absolute left-[10%] top-[15%] h-72 w-72 rounded-full bg-primary/20 blur-3xl animate-orb-1" />
-        <motion.div style={{ x: orbX, y: orbY }} className="absolute right-[5%] bottom-[10%] h-64 w-64 rounded-full bg-primary/12 blur-3xl animate-orb-2" />
+        <motion.div style={{ x: orb2X, y: orb2Y }} className="absolute right-[5%] bottom-[10%] h-64 w-64 rounded-full bg-primary/12 blur-3xl animate-orb-2" />
         <div className="absolute inset-0 noise" />
         <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, transparent 35%, rgba(8,9,15,0.7) 100%)' }} />
         <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background to-transparent" />
       </div>
 
-      <div className="relative mx-auto max-w-[1200px] px-6 py-32 lg:px-8 lg:py-40">
+      <motion.div style={{ y: contentY, opacity: contentOpacity }} className="relative mx-auto max-w-[1200px] px-6 py-32 lg:px-8 lg:py-40">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-10">
           {/* LEFT: copy (55%) */}
           <div className="lg:col-span-7">
@@ -198,20 +207,19 @@ export function Hero() {
             <h1 className="mt-7 text-balance text-6xl font-bold leading-[0.95] tracking-[-0.045em] sm:text-7xl lg:text-[5.25rem]">
               {headlineLines.map((line, li) => (
                 <span key={li} className="block">
-                  <span className="inline-block overflow-hidden align-bottom">
-                    {line.words.map((w, wi) => (
+                  {line.words.map((w, wi) => (
+                    <span key={w} className="inline-block overflow-hidden align-bottom">
                       <motion.span
-                        key={w}
                         custom={li * 10 + wi}
                         variants={wordVariants}
                         initial="hidden"
                         animate="show"
-                        className={`inline-block ${line.gradient ? 'gradient-text text-glow' : 'text-white'} ${line.gradient ? '' : ' '}`}
+                        className={`inline-block ${line.gradient ? 'gradient-text text-glow' : 'text-white'}`}
                       >
-                        {w}{' '}
+                        {w}
                       </motion.span>
-                    ))}
-                  </span>
+                    </span>
+                  )).reduce<React.ReactNode[]>((acc, el, i) => i === 0 ? [el] : [...acc, ' ', el], [])}
                 </span>
               ))}
             </h1>
@@ -276,7 +284,7 @@ export function Hero() {
             <ChevronDown className="h-4 w-4 animate-bounce-down" />
           </a>
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   )
 }
