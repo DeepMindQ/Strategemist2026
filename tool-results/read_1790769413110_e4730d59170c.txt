@@ -1,0 +1,753 @@
+     1→<!doctype html>
+     2→<html lang="en">
+     3→<head>
+     4→  <meta charset="utf-8">
+     5→  <meta name="viewport" content="width=device-width, initial-scale=1">
+     6→  <title>About-us</title>
+     7→  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     8→  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     9→  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    10→  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+    11→  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    12→  <link rel="stylesheet" href="css/style.css">
+    13→</head>
+    14→
+    15→<body>
+    16→
+    17→   <!-- header start -->
+    18→  <header>
+    19→  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    20→    <div class="container">
+    21→      <!-- Logo with dropdown -->
+    22→      <a class="navbar-brand d-flex align-items-center" href="index.html">
+    23→        <img src="images/logo.svg" alt="logo"  class="logo">
+    24→      </a>
+    25→      <div class="arrow-drop">
+    26→        <button class="option-drop" type="button" data-bs-toggle="dropdown"
+    27→          aria-expanded="false">
+    28→          <img src="images/logo-arrow.svg">
+    29→        </button>
+    30→        <ul class="dropdown-menu option-bg">
+    31→          <li><a class="dropdown-item" href="about-us.html">About Us <span>Want to know more about us?</span></a>
+    32→          </li>
+    33→          <li><a class="dropdown-item" href="team.html">Team <span>Become a part of our team</span></a></li>
+    34→        </ul>
+    35→      </div>
+    36→      <!-- Toggler -->
+    37→      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    38→        <span class="navbar-toggler-icon"></span>
+    39→      </button>
+    40→
+    41→      <!-- Menu -->
+    42→      <div class="collapse navbar-collapse" id="navbarNav">
+    43→        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+    44→
+    45→        <!-- Dropdown -->
+    46→        <li class="nav-item dropdown">
+    47→          <a class="nav-link dropdown-toggle active" href="innovate.html" id="innovateDropdown" 
+    48→             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    49→            Innovate
+    50→          </a>
+    51→          <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+    52→            <div class="drop-s-megamenu">
+    53→            <ul>
+    54→                <li><a class="dropdown-item" href="the-patent-value.html"><img src="images/color-star.svg">The Patent Vault</a></li>
+    55→                <li><a class="dropdown-item" href="quantum-computing.html"><img src="images/color-star.svg"> Quantum Computing </a></li>
+    56→                <li><a class="dropdown-item" href="contextual-intelligence.html"> <img src="images/color-star.svg">Contextual Intelligence</a></li>
+    57→                <li><a class="dropdown-item" href="self-learning-frameworks.html"> <img src="images/color-star.svg">Self-Learning Frameworks</a></li>
+    58→                <li><a class="dropdown-item" href="cognitive-pattern-engines.html"><img src="images/color-star.svg">Cognitive Pattern Engines</a></li>
+    59→                <li><a class="dropdown-item" href="federated-intelligence-grid.html"><img src="images/color-star.svg">Federated Intelligence Grid</a></li>
+    60→               <li> <a class="dropdown-item" href="algorithmic-ethics-trust.html"> <img src="images/color-star.svg">Algorithmic Ethics & Trust </a></li>
+    61→               <li> <a class="dropdown-item" href="autonomous-knowledge-core.html"><img src="images/color-star.svg">Autonomous Knowledge Core</a></li>
+    62→                <li><a class="dropdown-item" href="sustainable-compute-models.html"><img src="images/color-star.svg">Sustainable Compute Models  </a></li>
+    63→                <li><a class="dropdown-item" href="Real-Time-optimization-hub.html"><img src="images/color-star.svg">Real-Time Optimization Hub</a></li>
+    64→                <li><a class="dropdown-item" href="genomic-data-intelligence.html"><img src="images/color-star.svg">Genomic Data Intelligence</a></li>
+    65→                <li><a class="dropdown-item" href="blockchain-trust-systems.html"><img src="images/color-star.svg">Blockchain Trust Systems  </a></li>
+    66→              </ul>
+    67→            </div>
+    68→          </div>
+    69→        </li>
+    70→         <li class="nav-item dropdown">
+    71→          <a class="nav-link dropdown-toggle" href="#" id="SolveDropdown" 
+    72→             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    73→            Solve
+    74→          </a>
+    75→          <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+    76→            <div class="drop-s-megamenu">
+    77→            <ul>
+    78→                 <li><a class="dropdown-item" href="intelligent-decision-hubs.html"><img src="images/solve.svg">Intelligent Decision Hubs</a></li>
+    79→                <li><a class="dropdown-item" href="enterprise-process-control.html"><img src="images/solve.svg">Enterprise Process Control</a></li>
+    80→                <li><a class="dropdown-item" href="smart-automation-systems.html"><img src="images/solve.svg">Smart Automation Systems</a></li>
+    81→                <li><a class="dropdown-item" href="scalable-security-frameworks.html"><img src="images/solve.svg">Scalable Security Frameworks</a></li>
+    82→                <li><a class="dropdown-item" href="advanced-risk-analytics.html"><img src="images/solve.svg">Advanced Risk Analytics</a></li>
+    83→                <li><a class="dropdown-item" href="high-performance-systems.html"><img src="images/solve.svg">High-Performance Systems</a></li>
+    84→               <li> <a class="dropdown-item" href="predictive-supply-chains.html"><img src="images/solve.svg">Predictive Supply Chains</a></li>
+    85→               <li> <a class="dropdown-item" href="compliance-digital-trust.html"><img src="images/solve.svg">Compliance & Digital Trust</a></li>
+    86→                <li><a class="dropdown-item" href="real-time-intelligence-hub.html"><img src="images/solve.svg">Real-Time Intelligence Hub</a></li>
+    87→                <li><a class="dropdown-item" href="blockchain-audit-models.html"><img src="images/solve.svg">Blockchain Audit Models</a></li>
+    88→                <li><a class="dropdown-item" href="hybrid-cloud-computing.html"><img src="images/solve.svg">Hybrid Cloud Computing</a></li>
+    89→                <li><a class="dropdown-item" href="autonomous-digital-core.html"><img src="images/solve.svg">Autonomous Digital Core</a></li>
+    90→              </ul>
+    91→            </div>
+    92→          </div>
+    93→        </li>
+    94→        <li class="nav-item dropdown">
+    95→          <a class="nav-link dropdown-toggle" href="#" id="TransformDropdown" 
+    96→             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    97→            Transform
+    98→          </a>
+    99→          <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+   100→            <div class="drop-s-megamenu">
+   101→              <ul>
+   102→                <li><a class="dropdown-item" href="digital-business-models.html"><img src="images/trans.svg">Digital Business Models </a></li>
+   103→                <li><a class="dropdown-item" href="autonomous-enterprise-grid.html"><img src="images/trans.svg">Autonomous Enterprise Grid</a></li>
+   104→                <li><a class="dropdown-item" href="human-tech-synergy-hub.html"><img src="images/trans.svg">Human-Tech Synergy Hub</a></li>
+   105→                <li><a class="dropdown-item" href="quantum-driven-acceleration.html"><img src="images/trans.svg">Quantum-Driven Acceleration</a></li>
+   106→                <li><a class="dropdown-item" href="zero-trust-digital-security.html"><img src="images/trans.svg">Zero-Trust Digital Security</a></li>
+   107→                <li><a class="dropdown-item" href="predictive-enterprise-strategy.html"><img src="images/trans.svg">Predictive Enterprise Strategy</a></li>
+   108→               <li> <a class="dropdown-item" href="esg-sustainable-systems.html"><img src="images/trans.svg"> ESG & Sustainable Systems</a></li>
+   109→               <li> <a class="dropdown-item" href="cloud-edge-convergence.html"><img src="images/trans.svg"> Cloud-Edge Convergence</a></li>
+   110→                <li><a class="dropdown-item" href="cyber-resilient-networks.html"><img src="images/trans.svg"> Cyber-Resilient Networks</a></li>
+   111→                <li><a class="dropdown-item" href="self-optimizing-ecosystems.html"><img src="images/trans.svg">Self-Optimizing Ecosystems  </a></li>
+   112→                <li><a class="dropdown-item" href="future-innovation-lab.html"><img src="images/trans.svg">Future Innovation Lab</a></li>
+   113→                <li><a class="dropdown-item" href="scalable-tech-frameworks.html"><img src="images/trans.svg"> Scalable Tech Frameworks</a></li>
+   114→              </ul>
+   115→            </div>
+   116→          </div>
+   117→        </li>
+   118→          <li class="nav-item dropdown">
+   119→          <a class="nav-link dropdown-toggle" href="#" id="LeadDropdown" 
+   120→             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+   121→            Lead
+   122→          </a>
+   123→          <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+   124→            <div class="drop-s-megamenu">
+   125→            <ul>
+   126→                <li><a class="dropdown-item" href="the-strategemist-edge.html"><img src="images/Union.svg">The Strategemist Edge</a></li>
+   127→                <li><a class="dropdown-item" href="deep-tech-market-disruption.html"><img src="images/Union.svg">Deep Tech Market Disruption</a></li>
+   128→                <li><a class="dropdown-item" href="scaling-growth-strategy.html"><img src="images/Union.svg">Scaling & Growth Strategy</a></li>
+   129→                <li><a class="dropdown-item" href="ai-governance-compliance.html"> <img src="images/Union.svg">AI Governance & Compliance </a></li>
+   130→                <li><a class="dropdown-item" href="future-of-digital-systems.html"> <img src="images/Union.svg">Future of Digital Systems</a></li>
+   131→                <li><a class="dropdown-item" href="human-centric-innovations.html"><img src="images/Union.svg"> Human-Centric Innovations</a></li>
+   132→               <li> <a class="dropdown-item" href="resilient-secure-networks.html"><img src="images/Union.svg">Resilient & Secure Networks</a></li>
+   133→               <li> <a class="dropdown-item" href="enterprise-evolution-hub.html"><img src="images/Union.svg">Enterprise Evolution Hub</a></li>
+   134→              </ul>
+   135→            </div>
+   136→          </div>
+   137→        </li>
+   138→        <li class="nav-item dropdown">
+   139→                <a class="nav-link dropdown-toggle" href="#" id="EmpowerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Empower </a>
+   140→                <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+   141→                  <div class="drop-s-megamenu">
+   142→                    <ul>
+   143→                      <li>
+   144→                        <a class="dropdown-item" href="q𝝁βrix.html"><img src="images/empower.svg" />QµPrix™</a>
+   145→                      </li>
+   146→                      <li>
+   147→                        <a class="dropdown-item" href="σ-graphion.html"><img src="images/empower.svg" />Σ-Graphion™</a>
+   148→                      </li>
+   149→                      <li>
+   150→                        <a class="dropdown-item" href="reinωlytix.html"><img src="images/empower.svg" />ReinQlynix™</a>
+   151→                      </li>
+   152→                      <li>
+   153→                        <a class="dropdown-item" href="𝝓-federis.html"> <img src="images/empower.svg" /> Φ-Federis™ </a>
+   154→                      </li>
+   155→                      <li>
+   156→                        <a class="dropdown-item" href="ethicξense.html"><img src="images/empower.svg" />EthicSense™ </a>
+   157→                      </li>
+   158→                      <li>
+   159→                        <a class="dropdown-item" href="gξ𝜂-forma.html"><img src="images/empower.svg" />G(π)-Forma™</a>
+   160→                      </li>
+   161→                      <li>
+   162→                        <a class="dropdown-item" href="holo𝚫ense.html"><img src="images/empower.svg" />HoloSense™ </a>
+   163→                      </li>
+   164→                      <li>
+   165→                        <a class="dropdown-item" href="neuro-𝑸uantis.html"><img src="images/empower.svg" />Neuro-Quantus™ </a>
+   166→                      </li>
+   167→                    </ul>
+   168→                  </div>
+   169→                </div>
+   170→              </li>
+   171→    <li class="nav-item dropdown">
+   172→          <a class="nav-link dropdown-toggle" href="#" id="EmpowerDropdown" 
+   173→             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+   174→            Services
+   175→          </a>
+   176→           <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+   177→            <div class="drop-s-megamenu service-menu">
+   178→            <ul class="service-list-1">
+   179→                <li><a class="dropdown-item" href="ai-consulting.html"><img src="images/servce.svg">AI Consulting</a></li>
+   180→                <li><a class="dropdown-item" href="ai-proof-of-concept.html"><img src="images/servce.svg">AI Proof of Concept (PoC)</a></li>
+   181→                <li><a class="dropdown-item" href="Big-Data-Consulting.html"><img src="images/servce.svg">Big Data Consulting</a></li>
+   182→                <li><a class="dropdown-item" href="generative-ai-consulting.html"> <img src="images/servce.svg">Generative AI Consulting</a></li>
+   183→              </ul>
+   184→               <ul class="service-list-2">
+   185→                <li><a class="dropdown-item" href="business-intelligence-services.html"><img src="images/servce.svg">Business Intelligence Services</a></li>
+   186→                <li><a class="dropdown-item" href="data-engineering-services.html"><img src="images/servce.svg">Data Engineering Services</a></li>
+   187→                <li><a class="dropdown-item" href="databricks-deployment-services.html"><img src="images/servce.svg">Databricks Deployment Services</a></li>
+   188→              </ul>
+   189→               <ul class="service-list-3">
+   190→                <li><a class="dropdown-item" href="ai-agents-development.html"><img src="images/servce.svg">AI Agents Development</a></li>
+   191→                <li><a class="dropdown-item" href="generative-ai-development-company.html"><img src="images/servce.svg">Generative AI Development Company</a></li>
+   192→                <li><a class="dropdown-item" href="llm.development.html"><img src="images/servce.svg">LLMs Development</a></li>
+   193→                <li><a class="dropdown-item" href="machine-learning-consulting.html"> <img src="images/servce.svg">Machine Learning Consulting</a></li>
+   194→              </ul>
+   195→               <ul class="service-list-4">
+   196→                <li><a class="dropdown-item" href="ai-integration-services.html"><img src="images/servce.svg">AI Integration Services</a></li>
+   197→                <li><a class="dropdown-item" href="mlops-consulting.html"><img src="images/servce.svg">MLOps Consulting</a></li>
+   198→              </ul>
+   199→            </div>
+   200→          </div>
+   201→        </li>
+   202→      </ul>
+   203→        <!-- Right button -->
+   204→        <a href="https://deepmindq.com/" class="btn btn-header" target="blank">
+   205→          <i class="bi bi-magic"></i>
+   206→          Let's Build Together
+   207→        </a>
+   208→      </div>
+   209→    </div>
+   210→  </nav>
+   211→</header>
+   212→  <!-- header end -->
+   213→
+   214→  <!-- thesis section start -->
+   215→<section class="thesis-sec about-first">
+   216→  <div class="container">
+   217→    <div class="row">
+   218→      <div class="col-lg-7">
+   219→        <div class="regular-content">
+   220→          <h5>About Strategemist</h5>
+   221→          <h2>Orchestrated Intelligence<img src="images/arrow-to.png" alt="icon"> Measurable Outcomes</h2>
+   222→          <p class="description">Strategemist unites data, AI, and delivery excellence to help enterprises move from insight to impact at boardroom speed. We operate a unified execution system—codified patterns, policy-enforced pipelines, and measurable value streams—to close the gap between strategy and shipped results.</p>
+   223→             <p class="description">The world doesn’t lack AI platforms or digital programs—it lacks disciplined systems that convert strategy into measurable progress. Strategemist was founded to restore that discipline: to bring engineering precision, ethical governance, and quantifiable performance to every enterprise transformation. We exist to make technology accountable—to business, to people, and to outcomes that endure.</p>
+   224→          <div class="sec-btn">
+   225→             <a href="#piilar-sd" class="talk-btn">Explore the Three Lanes<i class="bi bi-arrow-right-circle"></i></a>
+   226→             <a href="#differential" class="bg-btn">Why Strategemist<i class="bi bi-arrow-right-circle"></i></a>
+   227→         </div>
+   228→        </div>
+   229→      </div>
+   230→      <div class="col-lg-5">
+   231→        <div class="thesis-img">
+   232→          <img src="images/abs-img.png" alt="image">
+   233→        </div>
+   234→        <div class="exclusive-et">
+   235→          <h6>Execution Engine</h6>
+   236→          <h3>Strategy ↔ Data ↔ AI</h3>
+   237→          <p>Patterns • Telemetry • Governance • ROI</p>
+   238→          </div>
+   239→        </div>
+   240→      </div>
+   241→    </div>
+   242→  </div>
+   243→</section>
+   244→<!-- thesis section end -->
+   245→
+   246→<!-- section card start -->
+   247→ <section class="section-card about-card">
+   248→    <div class="container">
+   249→      <div class="row">
+   250→        <div class="col-md-4">
+   251→          <div class="card-address">
+   252→            <h4>US • UK • KSA • India</h4>
+   253→            <p>Operating Hubs</p>
+   254→            </div>
+   255→            </div>
+   256→            <div class="col-md-4">
+   257→          <div class="card-address">
+   258→            <h4>Data • AI • SRE/DevSecOps</h4>
+   259→            <p>Delivery Lanes</p>
+   260→            </div>
+   261→            </div>
+   262→            <div class="col-md-4">
+   263→          <div class="card-address">
+   264→            <h4>Audit-Ready Evidence</h4>
+   265→            <p>Assurance</p>
+   266→            </div>
+   267→            </div>
+   268→            </div>
+   269→            </div>
+   270→            </section>
+   271→<!-- section card end -->
+   272→
+   273→<!-- table-list start -->
+   274→<section class="table-listing">
+   275→  <div class="container">
+   276→  <ul id="main-menu">
+   277→  <li><a href="#innovate-sd" class="active">Narrative</a></li>
+   278→  <li><a href="#piilar-sd">Three Lanes</a></li>
+   279→  <li><a href="#differential">Differential</a></li>
+   280→  <li><a href="#global-prints">Global Footprint</a></li>
+   281→  <li><a href="#corporate">Corporate Structure</a></li>
+   282→  <li><a href="#governce">Governance</a></li>
+   283→</ul>
+   284→  </div>
+   285→</section>
+   286→<!-- table-list end -->
+   287→
+   288→<!-- about-choose start -->
+   289→<section class="redefine-sec table-one" id="innovate-sd">
+   290→  <div class="container">
+   291→   <div class="smart-comtent regular-content">
+   292→    <h5><img src="images/dots.svg" alt="icon">Narrative</h5>
+   293→    <h2>Architecting the Future of Enterprise Transformation</h2>
+   294→    <p class="description">In an age rich with digital potential, why do so many programs stall between slideware and sustained value? Enterprises are data-saturated yet insight-starved; AI budgets rise while ROI remains elusive; cloud footprints expand but operational complexity outpaces capability.</p>
+   295→    <p class="description">This chronic execution gap—between strategic intent and governed, repeatable delivery—is the single largest drag on modern enterprise progress.</p>
+   296→    <p class="description">Strategemist exists to close this gap definitively. We are not merely advisors; we are systems architects and engineering partners of a new discipline. We operate a unified execution system where corporate strategy, data intelligence, and artificial intelligence are orchestrated end-to-end—codified as patterns, enforced by policy, and measured by outcomes. Our mission is to equip enterprises with the clarity, control, and velocity required to compound value:</p>
+   297→    <h6>insight → implementation → impact.</h6>
+   298→    </div>
+   299→    <div class="table-s-content">
+   300→      <h3>Orchestrated Intelligence → Measurable Outcomes</h3>
+   301→      <p>Strategemist unites data, AI, and delivery excellence to help enterprises move from insight to impact at boardroom speed.</p>
+   302→    </div>
+   303→    </div>
+   304→</section>
+   305→<!-- about-choose end -->
+   306→
+   307→<!-- pillar-sec start -->
+   308→<section class="pillar-sec" id="piilar-sd">
+   309→  <div class="container">
+   310→     <div class="smart-comtent regular-content">
+   311→    <h5><img src="images/dots.svg" alt="icon">Three Lanes</h5>
+   312→    <h2>The Three Pillars of Our Execution System</h2>
+   313→  </div>
+   314→  <div class="row">
+   315→    <div class="col-md-4">
+   316→      <div class="table-pillar">
+   317→      <h6>Data Foundations — The Architecture of Trust</h6>
+   318→      <p>Before intelligence, there must be integrity. We design lake house-centric data estates that treat data as a product and governance as code.</p>
+   319→      <div class="reg-right">
+   320→        <ul>
+   321→          <li><span>Reference Architecture: Medallion (Bronze/Silver/Gold) on Databricks or cloud-native analogs; Delta/Apache Iceberg tables; CDC pipelines (Fivetran/Debezium) with idempotent replay.</span></li>
+   322→          <li><span>Data Contracts & Quality: Schema contracts at ingress, Great Expectations/Delta Live Tables expectations, anomaly detection on freshness/volume/velocity.</span></li>
+   323→          <li><span>Catalog & Lineage: Centralized governance with Unity Catalog; column-level lineage, purpose-based access, per-use audit trails.</span></li>
+   324→          <li><span>Privacy & Security: Fine-grained ABAC/RBAC, tokenization and format-preserving encryption for PII/PHI, differential privacy where applicable.</span></li>
+   325→          <li><span>Interoperability: Semantic layers (dbt/BI) with metric definitions under version control, enabling consistent executive reporting and CFO-grade reconciliation.</span></li>
+   326→          <li><span>Outcome: A single, defensible source of truth with provable data reliability, lower integration debt, and accelerated analytics re-use.</span></li>
+   327→        </ul>
+   328→      </div>
+   329→    </div>
+   330→    </div>
+   331→    <div class="col-md-4">
+   332→       <div class="table-pillar">
+   333→      <h6>Applied AI & Automation — Intelligence in Motion</h6>
+   334→      <p>We move AI from the lab to the line. Solutions are embedded into workflows with explicit guardrails, observability, and financial accountability.</p>
+   335→      <div class="reg-right">
+   336→        <ul>
+   337→          <li><span>Patterns We Operationalize: RAG with vector stores, document provenance, and policy filters; task-specific AI Agents with bounded autonomy, tool-use policies, and human-in-the-loop checkpoints; classical ML for prediction, optimization, and forecasting with feature stores and drift controls.</span></li>
+   338→          <li><span>MLOps at Scale: CI/CD for models and prompts; model registry with version pinning; offline/online feature parity; shadow, canary, and blue-green releases; automated rollback on guardrail breach.</span></li>
+   339→          <li><span>Evaluation & Safety: Benchmark harnesses for accuracy, latency, bias, toxicity; prompt/chain unit tests; red-teaming; enterprise prompt firewalls; content and data-use policies enforced at runtime.</span></li>
+   340→          <li><span>ROI Discipline: Each AI artifact ships with a benefit hypothesis, cash-flow instrumentation, and post-deployment value realization dashboards.</span></li>
+   341→          <li><span>Outcome: AI that is auditable, governable, and economically positive—measured in throughput gained, cycle time reduced, and error budgets preserved.</span></li>
+   342→        </ul>
+   343→      </div>
+   344→    </div>
+   345→    </div>
+   346→    <div class="col-md-4">
+   347→       <div class="table-pillar">
+   348→      <h6>Secure, Reliable Delivery — The Engine of Confidence</h6>
+   349→      <p>Innovation must sit on resilient rails. We embed Cloud, SRE, and DevSecOps as first principles.</p>
+   350→      <div class="reg-right">
+   351→        <ul>
+   352→          <li><span>Reliability Engineering: SLO/SLI definitions tied to user journeys; error budgets driving release cadence; chaos and fault-injection tests to harden critical paths.</span></li>
+   353→          <li><span>Security by Design: Zero-Trust networking, secrets management, SBOM/attestation, SAST/DAST/SCA in CI; policy-as-code (OPA) gating deployments.</span></li>
+   354→          <li><span>Platform Engineering: Golden paths, reusable scaffolds, paved-road IaC (Terraform/Crossplane), environment parity, and developer experience that eliminates fragile snowflakes.</span></li>
+   355→          <li><span>Compliance & Auditability: Evidence packs auto-generated from pipelines; immutable logs; segregation of duties; encryption in transit/at rest; regional data residency controls.</span></li>
+   356→          <li><span>Outcome: Systems that are shipping-ready, regulator-ready, and board-ready—without sacrificing velocity.</span></li>
+   357→        </ul>
+   358→      </div>
+   359→    </div>
+   360→    </div>
+   361→  </div>
+   362→</section>
+   363→<!-- pillar-sec end -->
+   364→
+   365→<!-- Differential-sec start -->
+   366→<section class="differential-sec" id="differential">
+   367→  <div class="container">
+   368→     <div class="smart-comtent regular-content">
+   369→    <h5><img src="images/dots.svg" alt="icon">Differential</h5>
+   370→    <h2>The Strategemist Differential - Why Our Programs Succeed</h2>
+   371→  </div>
+   372→  <div class="reg-right">
+   373→              <ul>
+   374→                <li>
+   375→                  <h6>Platform-Led Execution</h6>
+   376→                  <p>Reusable reference architectures, telemetry-rich pipelines, and a Prime PMO that operates with stage-gate rigor. We retire ad-hoc projects in favor of productized delivery lanes and measurable value streams.</p>
+   377→                </li>
+   378→                <li>
+   379→                  <h6>Patented AI Frameworks & Accelerators</h6>
+   380→                  <p>Proprietary patterns that de-risk integration, compress time-to-value, and formalize guardrails—codified as blueprints, not slides.</p>
+   381→                </li>
+   382→                <li>
+   383→                  <h6>Governance by Design, Trust by Default</h6>
+   384→                  <p>Policy-as-code, data lineage, and audit-ready evidence packs are produced by the system itself, not assembled after the fact. Benefits tracking is CFO-credible and repeatable.</p>
+   385→                </li>
+   386→                 <li>
+   387→                  <h6>Unified Alliance Model:</h6>
+   388→                  <p>A curated network of deep specialists operating under a single quality bar and brand standard—one accountability spine, zero vendor lock-in, domain expertise on tap.</p>
+   389→                </li>
+   390→                 <li>
+   391→                  <h6>Result</h6>
+   392→                  <p>Reduced technology debt, accelerated transformation, and intelligence that compounds into durable business value.</p>
+   393→                </li>
+   394→              </ul>
+   395→            </div>
+   396→  </div>
+   397→</section>
+   398→<!-- Differential-sec end -->
+   399→
+   400→<!-- global-print sec start -->
+   401→<section class="global-print" id="global-prints">
+   402→  <div class="container">
+   403→      <div class="smart-comtent regular-content">
+   404→        <h5><img src="images/dots.svg" alt="icon">Global Footprint</h5>
+   405→         <h2>Global Footprint, Local Context</h2>
+   406→      </div>
+   407→        <div class="row g-0">
+   408→          <div class="col-md-6">
+   409→            <div class="cyber-card">
+   410→              <h6>United States (Strategic Leadership)</h6>
+   411→              <p>Headquarters for governance, platforms, and global program direction.</p>
+   412→            </div>
+   413→          </div>
+   414→          <div class="col-md-6">
+   415→            <div class="cyber-card cd-tab-1">
+   416→              <h6>United Kingdom (European Hub)</h6>
+   417→              <p>Regional base for commercial operations, partnerships, and GDPR compliance.</p>
+   418→            </div>
+   419→          </div>
+   420→          <div class="col-md-6">
+   421→            <div class="cyber-card cd-tab-2">
+   422→              <h6>India (Execution Core)</h6>
+   423→              <p>Home to Strategemist Global and GCC Entra—driving PMO, delivery, and Capability Center enablement.</p>
+   424→            </div>
+   425→          </div>
+   426→          <div class="col-md-6">
+   427→            <div class="cyber-card cd-tab-3">
+   428→              <h6>Kingdom of Saudi Arabia (Growth Engine)</h6>
+   429→              <p>Partnership-led presence advancing Vision 2030 priorities with in-kingdom execution under U.S. oversight.</p>
+   430→            </div>
+   431→          </div>
+   432→        </div>
+   433→  </div>
+   434→</section>
+   435→<!-- global-print sec end -->
+   436→
+   437→<!-- corporate-sec start -->
+   438→<section class="corporate-sec" id="corporate">
+   439→  <div class="container">
+   440→    <div class="smart-comtent regular-content">
+   441→        <h5><img src="images/dots.svg" alt="icon">Corporate Structure</h5>
+   442→         <h2>Corporate Architecture Built for Global Assurance</h2>
+   443→         <p class="description">Strategemist operates as a unified global enterprise anchored in Delaware, integrating strategy, governance, and delivery through one coherent control spine. Each entity plays a defined role within this orchestration—ensuring compliance, agility, and market-specific specialization under the direction of the U.S. parent.</p>
+   444→      </div>
+   445→      <div class="row">
+   446→      <div class="col-md-4">
+   447→        <div class="corporate-box">
+   448→          <h3>Strategemist Corporation (Delaware, USA)</h3>
+   449→          <p class="description">The ultimate parent and command center of the group. It governs brand stewardship, corporate policy, and strategic decision-making across all regions. As the custodian of proprietary platforms and governance frameworks, it oversees alliance structures, licensing models, and global financial consolidation under U.S. law.</p>
+   450→        </div>
+   451→      </div>
+   452→      <div class="col-md-4">
+   453→        <div class="corporate-box">
+   454→          <h3>Strategemist Limited (United Kingdom)</h3>
+   455→          <p class="description"><strong>Wholly owned by Strategemist Corporation (Delaware, USA).</strong><br> Serves as the European holding and governance layer, managing UK/EU operations, GDPR compliance, and acting as the supervisory bridge for international business and royalty management.</p>
+   456→        </div>
+   457→      </div>
+   458→      <div class="col-md-4">
+   459→        <div class="corporate-box">
+   460→          <h3>Strategemist Global Private Limited (India)</h3>
+   461→          <p class="description"><strong>Operates under the strategic governance of Strategemist Corporation (Delaware, USA).</strong><br>Functions as the hub for program management, vendor orchestration, and global solutioning support—anchoring PMO discipline, VMO operations, and pre-sales enablement to ensure standardized delivery practices and transparent execution oversight.</p>
+   462→        </div>
+   463→      </div>
+   464→        <div class="col-md-4">
+   465→        <div class="corporate-box">
+   466→          <h3>Strategemist GCC Entra Private Limited (India)</h3>
+   467→          <p class="description"><strong>Wholly owned by Strategemist Corporation (Delaware, USA).</strong><br>Operates as the Global Delivery Center (GDC) driving scaled execution, engineering excellence, and alliance delivery. It also supports foreign enterprises establishing India-based Global Capability Centers (GCCs) under Strategemist’s governance and brand systems.</p>
+   468→        </div>
+   469→      </div>
+   470→        <div class="col-md-4">
+   471→        <div class="corporate-box">
+   472→          <h3>Strategemist Arabia (Kingdom of Saudi Arabia)</h3>
+   473→          <p class="description"><strong>Operates in strategic partnership with a locally registered enterprise under the governance of Strategemist Corporation (Delaware, USA).</strong><br>Leads in-kingdom execution, localization, and Vision 2030–aligned delivery, with commercial and financial oversight retained within the U.S. parent.</p>
+   474→        </div>
+   475→      </div>
+   476→        <div class="col-md-4">
+   477→        <div class="corporate-box">
+   478→          <h3>Strategemist IBC (Seychelles)</h3>
+   479→          <p class="description"><strong>Wholly owned by Strategemist Limited (United Kingdom).</strong><br>Structured for capital-market readiness, royalty management, and prospective MERJ VCAP participation under UK-supervised governance and international audit standards.</p>
+   480→        </div>
+   481→      </div>
+   482→      </div>
+   483→      <p class="bottom-content">Together, these entities operate as <span>One Strategemist</span> — a harmonized architecture balancing regional independence with centralized control, ensuring agility in markets and accountability at the boardroom level.</p>
+   484→    </div>
+   485→</section>
+   486→<!-- corporate-sec end -->
+   487→
+   488→<!-- governce-sec start -->
+   489→<section class="governce-sec" id="governce">
+   490→  <div class="container">
+   491→      <div class="smart-comtent regular-content">
+   492→        <h5><img src="images/dots.svg" alt="icon">Governance</h5>
+   493→         <h2>Governance: The Non-Negotiable Core</h2>
+   494→         <p class="description">Trust is engineered, not asserted. Our operating model aligns to ISO/IEC 42001 for AI management and the NIST AI Risk Management Framework, with privacy-by-design, least-privilege access, and full provenance across data, prompts, models, and decisions. Evidence is generated automatically by pipelines; compliance is continuous, not periodic.</p>
+   495→      </div>
+   496→  </div>
+   497→</section>
+   498→<!-- governce-sec end -->
+   499→
+   500→<!-- blue-print sec start -->
+   501→<section class="blue-print">
+   502→  <div class="container">
+   503→      <div class="regular-content">
+   504→         <h4>Your Blueprint for Transformation Awaits</h4>
+   505→         <p class="description">The disconnect between insight and impact is solvable with orchestrated systems and measurable accountability. Partner with Strategemist to replace friction with flow, assumptions with evidence, and ambition with achievement—at boardroom speed.</p>
+   506→      </div>
+   507→      <div class="Solution-outer">
+   508→        <h5>Every solution aligns to three clear lanes:</h5>
+   509→        <div class="reg-right">
+   510→          <ul>
+   511→            <li><span>Data Foundations - </span> trusted, scalable data platforms (BI, Data Engineering, Databricks)</li>
+   512→            <li><span>Applied AI & Automation - </span>GenAI, AI Agents, MLOps operationalized for real ROI</li>
+   513→            <li><span>Secure, Reliable Delivery - </span>Cloud/SRE, DevSecOps, governance for compliant scale</li>
+   514→          </ul>
+   515→        </div>
+   516→        <p class="bottom-content">Strategemist. Orchestrated Intelligence → Measurable Outcomes.</p>
+   517→      </div>
+   518→
+   519→  </div>
+   520→</section>
+   521→<!-- blue-print sec end -->
+   522→
+   523→
+   524→<!-- get start sec start -->
+   525→<section class="get-start-sc pb-5 pathway-sec green-bg">
+   526→  <div class="container">
+   527→    <div class="tech-content regular-content">
+   528→      <h2 class="text-center">Get Started – AI Efficiency with <br>Proven Performance</h2>
+   529→      <p class="text-center">Accelerate AI workloads with rigorously tested Quantum-Inspired Neuromorphic AI.</p>
+   530→    </div>
+   531→    <div class="row">
+   532→      <div class="col-md-6">
+   533→        <div class="get-img">
+   534→          <img src="images/proven.png" alt="image">
+   535→        </div>
+   536→      </div>
+   537→      <div class="col-md-6">
+   538→        <div class="get-form">
+   539→           <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+   540→            <input type="hidden" name="access_key" value="">
+   541→             <input type="text" name="name" placeholder="Name" required>
+   542→              <input type="email" name="email" placeholder="Email" required>
+   543→              <input type="text" name="phone" placeholder="Phone No." required>
+   544→              <input type="text" name="company" placeholder="Company">
+   545→              <textarea name="message" placeholder="Message" required></textarea>
+   546→            <button type="submit" class="blue-bg">Contact us for a consultation on enterprise AI, cloud AI & edge AI development</button>
+   547→          </form>
+   548→        </div>
+   549→      </div>
+   550→    </div>
+   551→  </div>
+   552→</section>
+   553→
+   554→  <!--Footer section-->
+   555→    <section class="d-flex align-items-center footer footer-sub">
+   556→      <div class="container">
+   557→        <div class="row">
+   558→          <!-- col 1 -->
+   559→          <div class="col-lg-6 col-md-6 mb-4">
+   560→           <div class="form-des">
+   561→            <p>Unlock exclusive deep-tech insights, industry trends, and strategic foresight- straight to your inbox.</p>
+   562→          </div>
+   563→          </div>
+   564→          <!-- col 2 -->
+   565→          <div class="col-lg-6 col-md-6 mb-4">
+   566→            <div class="fm-sb">
+   567→            <div class="subscribe">
+   568→              <form>
+   569→            <input type="text" placeholder="Email address">
+   570→            <button type="submit" name="subscribe">Subscribe</button>
+   571→          </form>
+   572→          </div>
+   573→        </div>
+   574→          </div>
+   575→          </div>
+   576→      </div>
+   577→  </section>
+   578→  <!--Footer section-->
+   579→
+   580→<!--Footer section-->
+   581→  <section class="footer py-5">
+   582→  <div class="container">
+   583→    <div class="row text-start">
+   584→              <div class="col-lg col-md-4 mb-4 col-sm-6">
+   585→          <h6>Innovate</h6>
+   586→          <ul class="list1">
+   587→               <li><a href="the-patent-value.html">The Patent Vault</a></li>
+   588→                <li><a href="quantum-computing.html"> Quantum Computing </a></li>
+   589→                <li><a href="contextual-intelligence.html">Contextual Intelligence</a></li>
+   590→                <li><a href="self-learning-frameworks.html">Self-Learning Frameworks</a></li>
+   591→                <li><a href="cognitive-pattern-engines.html">Cognitive Pattern Engines</a></li>
+   592→                <li><a href="federated-intelligence-grid.html">Federated Intelligence Grid</a></li>
+   593→                <li><a  href="algorithmic-ethics-trust.html">Algorithmic Ethics & Trust </a></li>
+   594→                <li><a href="autonomous-knowledge-core.html">Autonomous Knowledge Core</a></li>
+   595→                <li><a href="sustainable-compute-models.html">Sustainable Compute Models  </a></li>
+   596→                <li><a href="Real-Time-optimization-hub.html">Real-Time Optimization Hub</a></li>
+   597→                <li><a href="genomic-data-intelligence.html">Genomic Data Intelligence</a></li>
+   598→                <li><a href="blockchain-trust-systems.html">Blockchain Trust Systems  </a></li>
+   599→          </ul>
+   600→        </div>
+   601→
+   602→        <!-- Column 2 -->
+   603→        <div class="col-lg col-md-4 mb-4 col-sm-6">
+   604→          <h6>Solve</h6>
+   605→          <ul class="list1">
+   606→                <li><a href="intelligent-decision-hubs.html">Intelligent Decision Hubs</a></li>
+   607→                <li><a  href="enterprise-process-control.html">Enterprise Process Control</a></li>
+   608→                <li><a  href="smart-automation-systems.html">Smart Automation Systems</a></li>
+   609→                <li><a  href="scalable-security-frameworks.html">Scalable Security Frameworks</a></li>
+   610→                <li><a  href="advanced-risk-analytics.html">Advanced Risk Analytics</a></li>
+   611→                <li><a  href="high-performance-systems.html">High-Performance Systems</a></li>
+   612→               <li> <a  href="predictive-supply-chains.html">Predictive Supply Chains</a></li>
+   613→               <li> <a  href="compliance-digital-trust.html">Compliance & Digital Trust</a></li>
+   614→                <li><a href="real-time-intelligence-hub.html">Real-Time Intelligence Hub</a></li>
+   615→                <li><a href="blockchain-audit-models.html">Blockchain Audit Models</a></li>
+   616→                <li><a  href="hybrid-cloud-computing.html">Hybrid Cloud Computing</a></li>
+   617→                <li><a  href="autonomous-digital-core.html">Autonomous Digital Core</a></li>
+   618→          </ul>
+   619→        </div>
+   620→
+   621→        <!-- Column 3 -->
+   622→        <div class="col-lg col-md-4 mb-4 col-sm-6">
+   623→          <h6>Transform</h6>
+   624→          <ul class="list1">
+   625→            <li><a href="digital-business-models.html">Digital Business Models</a></li>
+   626→            <li><a href="autonomous-enterprise-grid.html">Autonomous Enterprise Grid</a></li>
+   627→            <li><a href="human-tech-synergy-hub.html">Human-Tech Synergy Hub</a></li>
+   628→            <li><a href="quantum-driven-acceleration.html">Quantum-Driven Acceleration</a></li>
+   629→            <li><a href="zero-trust-digital-security.html">Zero-Trust Digital Security</a></li>
+   630→            <li><a href="predictive-enterprise-strategy.html">Predictive Enterprise Strategy</a></li>
+   631→            <li><a href="esg-sustainable-systems.html">ESG & Sustainable Systems</a></li>
+   632→            <li><a href="cloud-edge-convergence.html">Cloud-Edge Convergence</a></li>
+   633→            <li><a href="cyber-resilient-networks.html">Cyber-Resilient Networks</a></li>
+   634→            <li><a href="self-optimizing-ecosystems.html">Self-Optimizing Ecosystems</a></li>
+   635→            <li><a href="future-innovation-lab.html">Future Innovation Lab</a></li>
+   636→            <li><a href="scalable-tech-frameworks.html">Scalable Tech Frameworks</a></li>
+   637→          </ul>
+   638→        </div>
+   639→
+   640→        <!-- Column 4 -->
+   641→        <div class="col-lg col-md-4 mb-4 col-sm-6">
+   642→          <h6>Lead</h6>
+   643→          <ul class="list1">
+   644→            <li><a href="the-strategemist-edge.html">The Strategemist Edge</a></li>
+   645→            <li><a href="deep-tech-market-disruption.html">Deep Tech Market Disruption</a></li>
+   646→            <li><a href="scaling-growth-strategy.html">Scaling & Growth Strategy</a></li>
+   647→            <li><a href="ai-governance-compliance.html">AI Governance & Compliance</a></li>
+   648→            <li><a href="future-of-digital-systems.html">Future of Digital Systems</a></li>
+   649→            <li><a href="human-centric-innovations.html">Human-Centric Innovations</a></li>
+   650→            <li><a href="resilient-secure-networks.html">Resilient & Secure Networks</a></li>
+   651→            <li><a href="enterprise-evolution-hub.html">Enterprise Evolution Hub</a></li>
+   652→          </ul>
+   653→        </div>
+   654→
+   655→        <!-- Column 5 -->
+   656→        <div class="col-lg col-md-4 mb-4 col-sm-6">
+   657→          <h6>Empower</h6>
+   658→          <ul class="list1">
+   659→            <li><a href="q𝝁βrix.html">QµPrix™</a></li>
+   660→            <li><a href="σ-graphion.html">Σ-Graphion™</a></li>
+   661→            <li><a href="reinωlytix.html">ReinQlynix™</a></li>
+   662→            <li><a href="neuro-𝑸uantis.html">Neuro-Quantus™</a></li>
+   663→            <li><a href="𝝓-federis.html">Φ-Federis™</a></li>
+   664→            <li><a href="ethicξense.html">EthicSense™</a></li>
+   665→            <li><a href="gξ𝜂-forma.html">G(π)-Forma™</a></li>
+   666→            <li><a href="holo𝚫ense.html">HoloSense™</a></li>
+   667→          </ul>
+   668→        </div>
+   669→    </div>
+   670→  </div>
+   671→</section>
+   672→<!--Footer section-->
+   673→<!--Footer section-->
+   674→  <section class="location py-3">
+   675→      <div class="container">
+   676→        <div class="row">
+   677→
+   678→          <!-- Card 1 -->
+   679→          <div class="col-md-3 col-sm-6">
+   680→            <div class="location-card">
+   681→              <h6>United States</h6>
+   682→              <p>Strategemist Corporation <br>16192 Coastal Highway Lewes, Delaware 19958</p>
+   683→            </div>
+   684→          </div>
+   685→
+   686→          <!-- Card 2 -->
+   687→          <div class="col-md-3 col-sm-6">
+   688→            <div class="location-card">
+   689→              <h6>United Kingdom</h6>
+   690→              <p>Strategemist Limited<br> 71-75 Shelton Street,Covent Garden, London, WC2H 9JQ</p>
+   691→            </div>
+   692→          </div>
+   693→
+   694→          <!-- Card 3 -->
+   695→          <div class="col-md-3 col-sm-6">
+   696→            <div class="location-card">
+   697→              <h6>India</h6>
+   698→              <p>Strategemist Global Private Limited<br> Cyber Towers 1st Floor, Q3-A2, Hitech City Rd, Madhapur, Telangana 500081, India</p>
+   699→            </div>
+   700→          </div>
+   701→
+   702→          <!-- Card 4 -->
+   703→          <div class="col-md-3 col-sm-6">
+   704→            <div class="location-card">
+   705→              <h6>KSA</h6>
+   706→              <p>Strategemist - EIITC<br> Building No. 44, Ibn Katheer St, King Abdul Aziz, Unit A11, Riyadh 13334, Saudi Arabia</p>
+   707→            </div>
+   708→          </div>
+   709→
+   710→        </div>
+   711→      </div>
+   712→    </section>
+   713→    <!--Footer section-->
+   714→    
+   715→  <!--Footer section-->
+   716→    <footer class="end-bottom-sc">
+   717→      <div class="container d-flex  flex-lg-row align-items-center justify-content-between">
+   718→          <div class="info-mail">
+   719→      <a href="mailto:info@strategemist.com">info@strategemist.com</a>
+   720→    </div>
+   721→    <div class=" mb-lg-0 footer-lg">
+   722→      <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+   723→        <img src="images/logo-footer.png" alt="Strategemist" height="24" class="me-2">
+   724→      </a>
+   725→    </div>
+   726→    <ul class="nav  mb-lg-0 footer-lk">
+   727→      <li class="nav-item"><a href="about-us.html" class="nav-link px-2">About</a></li>
+   728→      <li class="nav-item"><a href="https://in.linkedin.com/company/strategemist" class="nav-link px-2 " target="blank">Career</a></li>
+   729→      <li class="nav-item"><a href="#" class="nav-link px-2" data-bs-toggle="modal" data-bs-target="#termsModal">Terms</a></li>
+   730→    </ul>
+   731→      <div class="d-flex align-items-center follow-sec">
+   732→      <span class="small me-2">Follow us</span>
+   733→      <div class="link-icon">
+   734→      <a href="https://www.youtube.com/@Strategemist" class="ms-2 fs-5" target="blank"><img src="images/youtube.png"></a>
+   735→      <a href="https://x.com/strategemist" class="ms-2 fs-5" target="blank"><img src="images/twit.png"></a>
+   736→      <a href="https://www.linkedin.com/company/strategemist/" class="ms-2 fs-5" target="blank"><img src="images/link.png"></a>
+   737→    </div>
+   738→    </div>
+   739→  </div>
+   740→</footer>
+   741→<!--Footer section-->
+   742→
+   743→<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+   744→  <script src="js/custom.js"></script>
+   745→  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+   746→<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+   747→  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+   748→  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+   749→
+   750→
+   751→</body>
+   752→
+   753→</html>

@@ -4,7 +4,7 @@ import * as React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Bot, X, Send, Sparkles, RotateCcw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { LogoMark } from './logo'
+import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
 interface Msg {
@@ -138,7 +138,7 @@ export function AIAssistant() {
             {/* Header */}
             <div className="flex items-center justify-between border-b border-border/60 bg-gradient-to-r from-primary/8 to-accent/8 px-4 py-3">
               <div className="flex items-center gap-2.5">
-                <LogoMark className="h-7 w-7" />
+                <Image src="/logo.jpeg" alt="Strategemist" width={28} height={28} className="rounded-[4px]" />
                 <div>
                   <div className="text-sm font-semibold leading-none">Strategemist Advisor</div>
                   <div className="mt-1 flex items-center gap-1.5 text-[11px] text-muted-foreground">
@@ -242,7 +242,7 @@ function MessageBubble({ msg }: { msg: Msg }) {
           isUser ? 'bg-accent/15 text-accent' : 'bg-primary/15 text-primary'
         )}
       >
-        {isUser ? <span className="text-[10px] font-bold">YOU</span> : <LogoMark className="h-5 w-5" />}
+        {isUser ? <span className="text-[10px] font-bold">YOU</span> : <Image src="/logo.jpeg" alt="Strategemist" width={20} height={20} className="rounded-[3px]" />}
       </span>
       <div
         className={cn(
@@ -262,7 +262,7 @@ function TypingBubble() {
   return (
     <div className="flex gap-2.5">
       <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-primary/15 text-primary">
-        <LogoMark className="h-5 w-5" />
+        <Image src="/logo.jpeg" alt="Strategemist" width={20} height={20} className="rounded-[3px]" />
       </span>
       <div className="flex items-center gap-1 rounded-2xl rounded-tl-sm bg-muted/60 px-4 py-3">
         {[0, 1, 2].map((i) => (
