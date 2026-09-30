@@ -70,12 +70,47 @@ export function AgentOrchestration() {
             <p className="mt-12 text-center text-sm text-muted-foreground">
               <span className="font-mono text-[10px] uppercase tracking-wider text-gold">Governed autonomy</span> · bounded + audited · Orchestration Engine (105) · Feedback Loop (106)
             </p>
-            <div className="mt-4 flex justify-center">
+            <div className="mt-4 flex justify-center gap-4">
               <a href="/innovate/autonomous-knowledge-core" className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-400">View the agent spec →</a>
+              <RunWorkflowDemo />
             </div>
           </div>
         </div>
       </div>
     </section>
+  )
+}
+
+/* Run-a-sample-workflow mini demo (item 105) — opens a tiny animated 4-step workflow */
+function RunWorkflowDemo() {
+  const [running, setRunning] = React.useState(false)
+  const [step, setStep] = React.useState(-1)
+  const STEPS = ['ingest task', 'plan', 'execute', 'govern', 'done']
+  React.useEffect(() => {
+    if (!running) return
+    setStep(0)
+    const id = setInterval(() => {
+      setStep((s) => {
+        if (s >= STEPS.length - 1) { setRunning(false); return -1 }
+        return s + 1
+      })
+    }, 500)
+    return () => clearInterval(id)
+  }, [running])
+  return (
+    <div>
+      <button onClick={() => setRunning(true)} disabled={running} className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-card/50 px-3 py-1 text-xs font-medium text-foreground/80 transition-colors hover:border-primary/40 disabled:opacity-50">
+        {running ? 'running…' : 'run a sample workflow'}
+      </button>
+      {running && (
+        <div className="mt-2 rounded-lg border border-white/8 bg-black/40 p-2 font-mono text-[10px] text-emerald-400/80">
+          {STEPS.map((s, i) => (
+            <div key={s} className={i <= step ? 'opacity-100' : 'opacity-30'}>
+              {i <= step ? '✓' : '○'} {s}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
   )
 }

@@ -3,7 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowRight, FileText, Search, Lock, ChevronDown } from 'lucide-react'
+import { ArrowRight, FileText, Search, Lock, ChevronDown, Download } from 'lucide-react'
 import { REAL_PATENTS, type RealPatent } from '@/lib/patents'
 import { SectionHeader, SectionDivider } from './section-header'
 import { Glossary } from './glossary'
@@ -36,6 +36,14 @@ export function PatentVault() {
     <section id="vault" className="relative py-24 lg:py-32">
       <SectionDivider />
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-20" />
+      {/* vault-door SVG motif behind the heading */}
+      <svg className="pointer-events-none absolute left-1/2 top-12 -z-0 hidden h-32 w-32 -translate-x-1/2 opacity-[0.06] lg:block" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+        <rect x="10" y="10" width="80" height="80" rx="4" />
+        <circle cx="50" cy="50" r="28" />
+        <circle cx="50" cy="50" r="6" fill="currentColor" />
+        <line x1="50" y1="22" x2="50" y2="38" /><line x1="50" y1="62" x2="50" y2="78" /><line x1="22" y1="50" x2="38" y2="50" /><line x1="62" y1="50" x2="78" y2="50" />
+        <line x1="30" y1="30" x2="40" y2="40" /><line x1="60" y1="60" x2="70" y2="70" /><line x1="70" y1="30" x2="60" y2="40" /><line x1="40" y1="60" x2="30" y2="70" />
+      </svg>
       <div className="relative mx-auto max-w-[1200px] px-6 lg:px-8">
         <SectionHeader number="§04" eyebrow="Innovate" stage="IP" title="8 patents. Each one a filed specification." description="The IP our pipeline starts from — filed by Strategemist Global Pvt Ltd. Three featured below; open any for its real architecture." />
 
@@ -146,6 +154,7 @@ function FeaturedPatentCard({ patent, index, open, onToggle }: { patent: RealPat
                   </div>
                 </div>
                 <Link href={`/innovate/${patent.id}`} className="inline-flex items-center gap-1 text-xs font-medium text-primary">View full specification <ArrowRight className="h-3 w-3" /></Link>
+                <a href={`/innovate/${patent.id}#spec`} className="ml-3 inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary"><Download className="h-3 w-3" /> Spec</a>
               </div>
             </motion.div>
           )}

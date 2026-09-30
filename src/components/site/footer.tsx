@@ -47,16 +47,49 @@ export function Footer() {
       <div className="h-px w-full" style={{ background: 'linear-gradient(to right, transparent, var(--primary), transparent)' }} />
 
       <div className="relative mx-auto max-w-[1200px] px-6 lg:px-8">
-        {/* offices (compact) */}
+        {/* mini-map SVG with pulsing offices (item 205) */}
         <div className="py-10">
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {OFFICES.map((o) => (
-              <div key={o.country} className="rounded-lg border border-white/8 bg-card/40 p-4">
-                <div className="flex items-center gap-2"><Globe className="h-3.5 w-3.5 text-primary" /><h4 className="text-xs font-bold">{o.country}</h4><span className="ml-auto text-[9px] font-semibold uppercase tracking-wider text-gold">{o.role}</span></div>
-                <p className="mt-1.5 text-[11px] font-medium text-primary">{o.entity}</p>
-                <p className="mt-0.5 text-[10px] leading-relaxed text-muted-foreground">{o.address}</p>
+          <div className="mb-6 flex items-center gap-2">
+            <Globe className="h-4 w-4 text-primary" />
+            <span className="t-mono text-primary">Global Footprint</span>
+          </div>
+          <div className="grid gap-6 md:grid-cols-12">
+            {/* left: the map */}
+            <div className="md:col-span-5">
+              <svg viewBox="0 0 200 100" className="w-full opacity-40">
+                {/* simplified world map dots */}
+                {Array.from({ length: 200 }).map((_, i) => {
+                  const x = (i % 20) * 10 + 5; const y = Math.floor(i / 20) * 10 + 5
+                  return <circle key={i} cx={x} cy={y} r="0.5" fill="white" opacity="0.3" />
+                })}
+                {/* office nodes: US, UK, India, KSA */}
+                {[[30, 40], [50, 35], [75, 50], [70, 45]].map(([cx, cy], i) => (
+                  <g key={i}>
+                    <circle cx={cx} cy={cy} r="2" fill="var(--primary)" />
+                    <circle cx={cx} cy={cy} r="2" fill="none" stroke="var(--primary)" strokeWidth="0.5">
+                      <animate attributeName="r" values="2;6;2" dur="2s" begin={`${i * 0.5}s`} repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" begin={`${i * 0.5}s`} repeatCount="indefinite" />
+                    </circle>
+                  </g>
+                ))}
+                {/* connecting lines */}
+                <line x1="30" y1="40" x2="50" y2="35" stroke="var(--primary)" strokeWidth="0.3" opacity="0.5" />
+                <line x1="50" y1="35" x2="75" y2="50" stroke="var(--primary)" strokeWidth="0.3" opacity="0.5" />
+                <line x1="75" y1="50" x2="70" y2="45" stroke="var(--primary)" strokeWidth="0.3" opacity="0.5" />
+              </svg>
+            </div>
+            {/* right: the office cards */}
+            <div className="md:col-span-7">
+              <div className="grid gap-3 sm:grid-cols-2">
+                {OFFICES.map((o) => (
+                  <div key={o.country} className="rounded-lg border border-white/8 bg-card/40 p-4">
+                    <div className="flex items-center gap-2"><Globe className="h-3.5 w-3.5 text-primary" /><h4 className="text-xs font-bold">{o.country}</h4><span className="ml-auto text-[9px] font-semibold uppercase tracking-wider text-gold">{o.role}</span></div>
+                    <p className="mt-1.5 text-[11px] font-medium text-primary">{o.entity}</p>
+                    <p className="mt-0.5 text-[10px] leading-relaxed text-muted-foreground">{o.address}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
 

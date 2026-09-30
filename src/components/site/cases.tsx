@@ -20,6 +20,10 @@ export function CaseStudies() {
   const cases = getCaseStudies()
   const featured = cases[0]
   const rest = cases.slice(1)
+  const [filter, setFilter] = React.useState('All')
+  const FILTERS = ['All', 'Financial', 'Cybersecurity', 'Logistics']
+  const filterMap: Record<string, string> = { All: '', Financial: 'Bank', Cybersecurity: 'tech', Logistics: '3PL' }
+  const visible = filter === 'All' ? cases : cases.filter((c) => c.industry?.includes(filterMap[filter]))
 
   return (
     <section id="cases" className="relative py-24 lg:py-32">
@@ -30,10 +34,18 @@ export function CaseStudies() {
           <ViewAllLink href="/case-studies" label="All case studies" />
         </div>
 
-        {/* asymmetric: 1 large feature + 2 smaller */}
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          {featured && <FeatureCard c={featured} e={ENRICHED[0]} />}
-          {rest.map((c, i) => <SmallCard key={c.slug} c={c} e={ENRICHED[i + 1]} />)}
+        {/* industry filter (item 147) */}
+        <div className="mt-8 flex flex-wrap gap-2">
+          {FILTERS.map((f) => (
+            <button key={f} onClick={() => setFilter(f)} className={cn('rounded-full px-3 py-1.5 text-xs font-medium transition-all', filter === f ? 'bg-primary text-primary-foreground' : 'border border-white/10 text-foreground/70 hover:border-primary/40')}>{f}</button>
+          ))}
+        </div>
+
+        {/* asymmetric: 1 large feature + 2 smaller (filtered) */}
+        <div className="mt-8 grid gap-6 lg:grid-cols-3">
+          {filter === 'All' && featured && <FeatureCard c={featured} e={ENRICHED[0]} />}
+          {rest.filter((c) => filter === 'All' || c.industry?.includes(filterMap[filter])).map((c, i) => <SmallCard key={c.slug} c={c} e={ENRICHED[i + 1]} />)}
+          {filter !== 'All' && visible.slice(0, 1).map((c, i) => <FeatureCard key={c.slug} c={c} e={ENRICHED[i]} />)}
         </div>
       </div>
     </section>

@@ -3,6 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import { SOLVE_ICONS } from './custom-icons'
 import { ArrowRight } from 'lucide-react'
 import { SOLVE_TABS } from '@/lib/site-data'
 import { routeForLabel } from '@/lib/content'
@@ -83,7 +84,9 @@ export function Solve() {
               <motion.div key={active} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.25 }} className="space-y-3">
                 {tab.services.map((s, i) => (
                   <Link key={s.name} href={routeForLabel('solve', s.name)} className="group flex items-start gap-4 rounded-xl border border-white/8 bg-card/50 p-5 transition-all hover:border-primary/30 hover:bg-primary/5">
-                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-primary/12 font-mono text-sm font-bold text-primary ring-1 ring-primary/20 transition-transform group-hover:scale-110">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-primary/12 font-mono text-sm font-bold text-primary ring-1 ring-primary/20 transition-transform group-hover:scale-110">
+                      {(() => { const I = SOLVE_ICONS[s.name]; return I ? <I /> : <span>{String(i + 1).padStart(2, '0')}</span> })()}
+                    </span>
                     <div className="min-w-0 flex-1">
                       <h4 className="flex items-center gap-2 font-semibold">{s.name}<ArrowRight className="h-3.5 w-3.5 opacity-0 transition-all group-hover:translate-x-0.5 group-hover:opacity-100" /></h4>
                       <p className="t-small mt-1 text-foreground/80">{s.desc}</p>

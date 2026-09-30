@@ -150,6 +150,10 @@ export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
       <a href="#system" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-20 focus:z-50 focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:text-white">Skip to content</a>
+      {/* system-online micro-line (top-right, fades in during load then fades) */}
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: [0, 1, 1, 0] }} transition={{ duration: 3, delay: 1.8, times: [0, 0.2, 0.8, 1] }} className="pointer-events-none absolute right-6 top-24 z-10 hidden font-mono text-[10px] uppercase tracking-[0.16em] text-primary/60 lg:block">
+        ● system initializing…
+      </motion.div>
       {/* background layers — real parallax depth */}
       <div className="pointer-events-none absolute inset-0">
         <motion.div style={{ y: gridY }} className="absolute inset-0 bg-grid opacity-40" />
