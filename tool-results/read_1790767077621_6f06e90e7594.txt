@@ -1,0 +1,1381 @@
+     1→     1→<!DOCTYPE html>
+     2→     2→<html lang="en">
+     3→     3→  <head>
+     4→     4→    <meta charset="utf-8" />
+     5→     5→    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     6→     6→    <title>strategemist</title>
+     7→     7→    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+     8→     8→    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+     9→     9→    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+    10→    10→    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    11→    11→    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    12→    12→    <link rel="stylesheet" href="css/style.css" />
+    13→    13→  </head>
+    14→    14→
+    15→    15→  <body>
+    16→    16→    <!-- header start -->
+    17→    17→    <header>
+    18→    18→      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    19→    19→        <div class="container">
+    20→    20→          <!-- Logo with dropdown -->
+    21→    21→          <a class="navbar-brand d-flex align-items-center" href="index.html">
+    22→    22→            <img src="images/logo.svg" alt="logo" class="logo" />
+    23→    23→          </a>
+    24→    24→          <div class="arrow-drop">
+    25→    25→            <button class="option-drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    26→    26→              <img src="images/logo-arrow.svg" />
+    27→    27→            </button>
+    28→    28→            <ul class="dropdown-menu option-bg">
+    29→    29→              <li>
+    30→    30→                <a class="dropdown-item" href="about-us.html">About Us <span>Want to know more about us?</span></a>
+    31→    31→              </li>
+    32→    32→              <li>
+    33→    33→                <a class="dropdown-item" href="team.html">Team <span>Become a part of our team</span></a>
+    34→    34→              </li>
+    35→    35→            </ul>
+    36→    36→          </div>
+    37→    37→          <!-- Toggler -->
+    38→    38→          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    39→    39→            <span class="navbar-toggler-icon"></span>
+    40→    40→          </button>
+    41→    41→
+    42→    42→          <!-- Menu -->
+    43→    43→          <div class="collapse navbar-collapse" id="navbarNav">
+    44→    44→            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+    45→    45→              <!-- Dropdown -->
+    46→    46→              <li class="nav-item dropdown">
+    47→    47→                <a class="nav-link dropdown-toggle active" href="innovate.html" id="innovateDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Innovate </a>
+    48→    48→                <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+    49→    49→                  <div class="drop-s-megamenu">
+    50→    50→                    <ul>
+    51→    51→                      <li>
+    52→    52→                        <a class="dropdown-item" href="the-patent-value.html"><img src="images/color-star.svg" />The Patent Vault</a>
+    53→    53→                      </li>
+    54→    54→                      <li>
+    55→    55→                        <a class="dropdown-item" href="quantum-computing.html"><img src="images/color-star.svg" /> Quantum Computing </a>
+    56→    56→                      </li>
+    57→    57→                      <li>
+    58→    58→                        <a class="dropdown-item" href="contextual-intelligence.html"> <img src="images/color-star.svg" />Contextual Intelligence</a>
+    59→    59→                      </li>
+    60→    60→                      <li>
+    61→    61→                        <a class="dropdown-item" href="self-learning-frameworks.html"> <img src="images/color-star.svg" />Self-Learning Frameworks</a>
+    62→    62→                      </li>
+    63→    63→                      <li>
+    64→    64→                        <a class="dropdown-item" href="cognitive-pattern-engines.html"><img src="images/color-star.svg" />Cognitive Pattern Engines</a>
+    65→    65→                      </li>
+    66→    66→                      <li>
+    67→    67→                        <a class="dropdown-item" href="federated-intelligence-grid.html"><img src="images/color-star.svg" />Federated Intelligence Grid</a>
+    68→    68→                      </li>
+    69→    69→                      <li>
+    70→    70→                        <a class="dropdown-item" href="algorithmic-ethics-trust.html"> <img src="images/color-star.svg" />Algorithmic Ethics & Trust </a>
+    71→    71→                      </li>
+    72→    72→                      <li>
+    73→    73→                        <a class="dropdown-item" href="autonomous-knowledge-core.html"><img src="images/color-star.svg" />Autonomous Knowledge Core</a>
+    74→    74→                      </li>
+    75→    75→                      <li>
+    76→    76→                        <a class="dropdown-item" href="sustainable-compute-models.html"><img src="images/color-star.svg" />Sustainable Compute Models </a>
+    77→    77→                      </li>
+    78→    78→                      <li>
+    79→    79→                        <a class="dropdown-item" href="Real-Time-optimization-hub.html"><img src="images/color-star.svg" />Real-Time Optimization Hub</a>
+    80→    80→                      </li>
+    81→    81→                      <li>
+    82→    82→                        <a class="dropdown-item" href="genomic-data-intelligence.html"><img src="images/color-star.svg" />Genomic Data Intelligence</a>
+    83→    83→                      </li>
+    84→    84→                      <li>
+    85→    85→                        <a class="dropdown-item" href="blockchain-trust-systems.html"><img src="images/color-star.svg" />Blockchain Trust Systems </a>
+    86→    86→                      </li>
+    87→    87→                    </ul>
+    88→    88→                  </div>
+    89→    89→                </div>
+    90→    90→              </li>
+    91→    91→              <li class="nav-item dropdown">
+    92→    92→                <a class="nav-link dropdown-toggle" href="#" id="SolveDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Solve </a>
+    93→    93→                <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+    94→    94→                  <div class="drop-s-megamenu">
+    95→    95→                    <ul>
+    96→    96→                      <li>
+    97→    97→                        <a class="dropdown-item" href="intelligent-decision-hubs.html"><img src="images/solve.svg" />Intelligent Decision Hubs</a>
+    98→    98→                      </li>
+    99→    99→                      <li>
+   100→   100→                        <a class="dropdown-item" href="enterprise-process-control.html"><img src="images/solve.svg" />Enterprise Process Control</a>
+   101→   101→                      </li>
+   102→   102→                      <li>
+   103→   103→                        <a class="dropdown-item" href="smart-automation-systems.html"><img src="images/solve.svg" />Smart Automation Systems</a>
+   104→   104→                      </li>
+   105→   105→                      <li>
+   106→   106→                        <a class="dropdown-item" href="scalable-security-frameworks.html"><img src="images/solve.svg" />Scalable Security Frameworks</a>
+   107→   107→                      </li>
+   108→   108→                      <li>
+   109→   109→                        <a class="dropdown-item" href="advanced-risk-analytics.html"><img src="images/solve.svg" />Advanced Risk Analytics</a>
+   110→   110→                      </li>
+   111→   111→                      <li>
+   112→   112→                        <a class="dropdown-item" href="high-performance-systems.html"><img src="images/solve.svg" />High-Performance Systems</a>
+   113→   113→                      </li>
+   114→   114→                      <li>
+   115→   115→                        <a class="dropdown-item" href="predictive-supply-chains.html"><img src="images/solve.svg" />Predictive Supply Chains</a>
+   116→   116→                      </li>
+   117→   117→                      <li>
+   118→   118→                        <a class="dropdown-item" href="compliance-digital-trust.html"><img src="images/solve.svg" />Compliance & Digital Trust</a>
+   119→   119→                      </li>
+   120→   120→                      <li>
+   121→   121→                        <a class="dropdown-item" href="real-time-intelligence-hub.html"><img src="images/solve.svg" />Real-Time Intelligence Hub</a>
+   122→   122→                      </li>
+   123→   123→                      <li>
+   124→   124→                        <a class="dropdown-item" href="blockchain-audit-models.html"><img src="images/solve.svg" />Blockchain Audit Models</a>
+   125→   125→                      </li>
+   126→   126→                      <li>
+   127→   127→                        <a class="dropdown-item" href="hybrid-cloud-computing.html"><img src="images/solve.svg" />Hybrid Cloud Computing</a>
+   128→   128→                      </li>
+   129→   129→                      <li>
+   130→   130→                        <a class="dropdown-item" href="autonomous-digital-core.html"><img src="images/solve.svg" />Autonomous Digital Core</a>
+   131→   131→                      </li>
+   132→   132→                    </ul>
+   133→   133→                  </div>
+   134→   134→                </div>
+   135→   135→              </li>
+   136→   136→              <li class="nav-item dropdown">
+   137→   137→                <a class="nav-link dropdown-toggle" href="#" id="TransformDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Transform </a>
+   138→   138→                <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+   139→   139→                  <div class="drop-s-megamenu">
+   140→   140→                    <ul>
+   141→   141→                      <li>
+   142→   142→                        <a class="dropdown-item" href="digital-business-models.html"><img src="images/trans.svg" />Digital Business Models </a>
+   143→   143→                      </li>
+   144→   144→                      <li>
+   145→   145→                        <a class="dropdown-item" href="autonomous-enterprise-grid.html"><img src="images/trans.svg" />Autonomous Enterprise Grid</a>
+   146→   146→                      </li>
+   147→   147→                      <li>
+   148→   148→                        <a class="dropdown-item" href="human-tech-synergy-hub.html"><img src="images/trans.svg" />Human-Tech Synergy Hub</a>
+   149→   149→                      </li>
+   150→   150→                      <li>
+   151→   151→                        <a class="dropdown-item" href="quantum-driven-acceleration.html"><img src="images/trans.svg" />Quantum-Driven Acceleration</a>
+   152→   152→                      </li>
+   153→   153→                      <li>
+   154→   154→                        <a class="dropdown-item" href="zero-trust-digital-security.html"><img src="images/trans.svg" />Zero-Trust Digital Security</a>
+   155→   155→                      </li>
+   156→   156→                      <li>
+   157→   157→                        <a class="dropdown-item" href="predictive-enterprise-strategy.html"><img src="images/trans.svg" />Predictive Enterprise Strategy</a>
+   158→   158→                      </li>
+   159→   159→                      <li>
+   160→   160→                        <a class="dropdown-item" href="esg-sustainable-systems.html"><img src="images/trans.svg" /> ESG & Sustainable Systems</a>
+   161→   161→                      </li>
+   162→   162→                      <li>
+   163→   163→                        <a class="dropdown-item" href="cloud-edge-convergence.html"><img src="images/trans.svg" /> Cloud-Edge Convergence</a>
+   164→   164→                      </li>
+   165→   165→                      <li>
+   166→   166→                        <a class="dropdown-item" href="cyber-resilient-networks.html"><img src="images/trans.svg" /> Cyber-Resilient Networks</a>
+   167→   167→                      </li>
+   168→   168→                      <li>
+   169→   169→                        <a class="dropdown-item" href="self-optimizing-ecosystems.html"><img src="images/trans.svg" />Self-Optimizing Ecosystems </a>
+   170→   170→                      </li>
+   171→   171→                      <li>
+   172→   172→                        <a class="dropdown-item" href="future-innovation-lab.html"><img src="images/trans.svg" />Future Innovation Lab</a>
+   173→   173→                      </li>
+   174→   174→                      <li>
+   175→   175→                        <a class="dropdown-item" href="scalable-tech-frameworks.html"><img src="images/trans.svg" /> Scalable Tech Frameworks</a>
+   176→   176→                      </li>
+   177→   177→                    </ul>
+   178→   178→                  </div>
+   179→   179→                </div>
+   180→   180→              </li>
+   181→   181→              <li class="nav-item dropdown">
+   182→   182→                <a class="nav-link dropdown-toggle" href="#" id="LeadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Lead </a>
+   183→   183→                <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+   184→   184→                  <div class="drop-s-megamenu">
+   185→   185→                    <ul>
+   186→   186→                      <li>
+   187→   187→                        <a class="dropdown-item" href="the-strategemist-edge.html"><img src="images/Union.svg" />The Strategemist Edge</a>
+   188→   188→                      </li>
+   189→   189→                      <li>
+   190→   190→                        <a class="dropdown-item" href="deep-tech-market-disruption.html"><img src="images/Union.svg" />Deep Tech Market Disruption</a>
+   191→   191→                      </li>
+   192→   192→                      <li>
+   193→   193→                        <a class="dropdown-item" href="scaling-growth-strategy.html"><img src="images/Union.svg" />Scaling & Growth Strategy</a>
+   194→   194→                      </li>
+   195→   195→                      <li>
+   196→   196→                        <a class="dropdown-item" href="ai-governance-compliance.html"> <img src="images/Union.svg" />AI Governance & Compliance </a>
+   197→   197→                      </li>
+   198→   198→                      <li>
+   199→   199→                        <a class="dropdown-item" href="future-of-digital-systems.html"> <img src="images/Union.svg" />Future of Digital Systems</a>
+   200→   200→                      </li>
+   201→   201→                      <li>
+   202→   202→                        <a class="dropdown-item" href="human-centric-innovations.html"><img src="images/Union.svg" /> Human-Centric Innovations</a>
+   203→   203→                      </li>
+   204→   204→                      <li>
+   205→   205→                        <a class="dropdown-item" href="resilient-secure-networks.html"><img src="images/Union.svg" />Resilient & Secure Networks</a>
+   206→   206→                      </li>
+   207→   207→                      <li>
+   208→   208→                        <a class="dropdown-item" href="enterprise-evolution-hub.html"><img src="images/Union.svg" />Enterprise Evolution Hub</a>
+   209→   209→                      </li>
+   210→   210→                    </ul>
+   211→   211→                  </div>
+   212→   212→                </div>
+   213→   213→              </li>
+   214→   214→              <li class="nav-item dropdown">
+   215→   215→                <a class="nav-link dropdown-toggle" href="#" id="EmpowerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Empower </a>
+   216→   216→                <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+   217→   217→                  <div class="drop-s-megamenu">
+   218→   218→                    <ul>
+   219→   219→                      <li>
+   220→   220→                        <a class="dropdown-item" href="q𝝁βrix.html"><img src="images/empower.svg" />QµPrix™</a>
+   221→   221→                      </li>
+   222→   222→                      <li>
+   223→   223→                        <a class="dropdown-item" href="σ-graphion.html"><img src="images/empower.svg" />Σ-Graphion™</a>
+   224→   224→                      </li>
+   225→   225→                      <li>
+   226→   226→                        <a class="dropdown-item" href="reinωlytix.html"><img src="images/empower.svg" />ReinQlynix™</a>
+   227→   227→                      </li>
+   228→   228→                      <li>
+   229→   229→                        <a class="dropdown-item" href="𝝓-federis.html"> <img src="images/empower.svg" /> Φ-Federis™ </a>
+   230→   230→                      </li>
+   231→   231→                      <li>
+   232→   232→                        <a class="dropdown-item" href="ethicξense.html"><img src="images/empower.svg" />EthicSense™ </a>
+   233→   233→                      </li>
+   234→   234→                      <li>
+   235→   235→                        <a class="dropdown-item" href="gξ𝜂-forma.html"><img src="images/empower.svg" />G(π)-Forma™</a>
+   236→   236→                      </li>
+   237→   237→                      <li>
+   238→   238→                        <a class="dropdown-item" href="holo𝚫ense.html"><img src="images/empower.svg" />HoloSense™</a>
+   239→   239→                      </li>
+   240→   240→                      <li>
+   241→   241→                        <a class="dropdown-item" href="neuro-𝑸uantis.html"><img src="images/empower.svg" />Neuro-Quantus™ </a>
+   242→   242→                      </li>
+   243→   243→                    </ul>
+   244→   244→                  </div>
+   245→   245→                </div>
+   246→   246→              </li>
+   247→   247→              <li class="nav-item dropdown">
+   248→   248→                <a class="nav-link dropdown-toggle" href="#" id="EmpowerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
+   249→   249→                <div class="dropdown-menu mega-menu p-3" aria-labelledby="innovateDropdown">
+   250→   250→                  <div class="drop-s-megamenu service-menu">
+   251→   251→                    <ul class="service-list-1">
+   252→   252→                      <li>
+   253→   253→                        <a class="dropdown-item" href="ai-consulting.html"><img src="images/servce.svg" />AI Consulting</a>
+   254→   254→                      </li>
+   255→   255→                      <li>
+   256→   256→                        <a class="dropdown-item" href="ai-proof-of-concept.html"><img src="images/servce.svg" />AI Proof of Concept (PoC)</a>
+   257→   257→                      </li>
+   258→   258→                      <li>
+   259→   259→                        <a class="dropdown-item" href="Big-Data-Consulting.html"><img src="images/servce.svg" />Big Data Consulting</a>
+   260→   260→                      </li>
+   261→   261→                      <li>
+   262→   262→                        <a class="dropdown-item" href="generative-ai-consulting.html"> <img src="images/servce.svg" />Generative AI Consulting</a>
+   263→   263→                      </li>
+   264→   264→                    </ul>
+   265→   265→                    <ul class="service-list-2">
+   266→   266→                      <li>
+   267→   267→                        <a class="dropdown-item" href="business-intelligence-services.html"><img src="images/servce.svg" />Business Intelligence Services</a>
+   268→   268→                      </li>
+   269→   269→                      <li>
+   270→   270→                        <a class="dropdown-item" href="data-engineering-services.html"><img src="images/servce.svg" />Data Engineering Services</a>
+   271→   271→                      </li>
+   272→   272→                      <li>
+   273→   273→                        <a class="dropdown-item" href="databricks-deployment-services.html"><img src="images/servce.svg" />Databricks Deployment Services</a>
+   274→   274→                      </li>
+   275→   275→                    </ul>
+   276→   276→                    <ul class="service-list-3">
+   277→   277→                      <li>
+   278→   278→                        <a class="dropdown-item" href="ai-agents-development.html"><img src="images/servce.svg" />AI Agents Development</a>
+   279→   279→                      </li>
+   280→   280→                      <li>
+   281→   281→                        <a class="dropdown-item" href="generative-ai-development-company.html"><img src="images/servce.svg" />Generative AI Development Company</a>
+   282→   282→                      </li>
+   283→   283→                      <li>
+   284→   284→                        <a class="dropdown-item" href="llm.development.html"><img src="images/servce.svg" />LLMs Development</a>
+   285→   285→                      </li>
+   286→   286→                      <li>
+   287→   287→                        <a class="dropdown-item" href="machine-learning-consulting.html"> <img src="images/servce.svg" />Machine Learning Consulting</a>
+   288→   288→                      </li>
+   289→   289→                    </ul>
+   290→   290→                    <ul class="service-list-4">
+   291→   291→                      <li>
+   292→   292→                        <a class="dropdown-item" href="ai-integration-services.html"><img src="images/servce.svg" />AI Integration Services</a>
+   293→   293→                      </li>
+   294→   294→                      <li>
+   295→   295→                        <a class="dropdown-item" href="mlops-consulting.html"><img src="images/servce.svg" />MLOps Consulting</a>
+   296→   296→                      </li>
+   297→   297→                    </ul>
+   298→   298→                  </div>
+   299→   299→                </div>
+   300→   300→              </li>
+   301→   301→            </ul>
+   302→   302→            <!-- Right button -->
+   303→   303→            <a href="https://deepmindq.com/" class="btn btn-header" target="blank">
+   304→   304→              <i class="bi bi-magic"></i>
+   305→   305→              Let's Build Together
+   306→   306→            </a>
+   307→   307→          </div>
+   308→   308→        </div>
+   309→   309→      </nav>
+   310→   310→    </header>
+   311→   311→    <!-- header end -->
+   312→   312→
+   313→   313→    <!-- modal sec start -->
+   314→   314→    <section class="models-section mt-5">
+   315→   315→      <div class="container">
+   316→   316→        <div class="row">
+   317→   317→          <div class="left-col d-lg-flex justify-content-start align-items-start">
+   318→   318→            <div class="left-content position-sticky">
+   319→   319→              <h3 class="big-medium mb-5">BACKED BY 11 PATENTS.</h3>
+   320→   320→              <h1 class="big-heading">BEYOND <span>CONSULTING</span>. ENGINEERING THE <span>FUTURE.</span></h1>
+   321→   321→              <p>
+   322→   322→                At Strategemist, innovation is an experience. Discover our AI–powered intelligence tool—designed to help you explore, adapt, and create real solutions. While others speculate, we
+   323→   323→                deliver. See innovation in action.
+   324→   324→              </p>
+   325→   325→              <a href="https://deepmindq.com/" class="cta-btn"> Try our AI model <i class="bi bi-arrow-right-circle"></i></a>
+   326→   326→            </div>
+   327→   327→          </div>
+   328→   328→          <div class="right-col">
+   329→   329→            <div class="smart-comtent">
+   330→   330→              <h5><img src="images/dots.svg" alt="icon" />Empower</h5>
+   331→   331→              <p class="description">Redefining Intelligent Systems – Choose Your Breakthrough</p>
+   332→   332→            </div>
+   333→   333→            <!-- Example card -->
+   334→   334→            <div class="model-card d-flex justify-content-start align-items-start">
+   335→   335→              <div class="flex-grow-1">
+   336→   336→                <h1 class="fw-bold text-light mb-2">QµPrix™</h1>
+   337→   337→                <h4>Unleash Limitless Computational power</h4>
+   338→   338→                <p class="text-muted mb-3">Think faster. Compute smarter. Transform any system with unparalleled speed and intelligence.</p>
+   339→   339→                <a href="q𝝁βrix.html" class="text-muted text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   340→   340→              </div>
+   341→   341→              <img src="images/Qubrix.png" alt="Quβrix" class="model-img" />
+   342→   342→            </div>
+   343→   343→
+   344→   344→            <!--2-->
+   345→   345→            <div class="model-card d-flex justify-content-start align-items-start">
+   346→   346→              <div class="flex-grow-1">
+   347→   347→                <h1 class="fw-bold text-light mb-2">Σ-Graphion™</h1>
+   348→   348→                <h4>Where intelligence sees beyond Data</h4>
+   349→   349→                <p class="text-muted mb-3">Go beyond numbers—decode hidden relationships, predict outcomes, and gain deep, data-driven insights.</p>
+   350→   350→                <a href="σ-graphion.html" class="text-muted text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   351→   351→              </div>
+   352→   352→              <img src="images/E-Grapgh.png" alt="Quβrix" class="model-img" />
+   353→   353→            </div>
+   354→   354→
+   355→   355→            <!--3-->
+   356→   356→            <div class="model-card d-flex justify-content-start align-items-start">
+   357→   357→              <div class="flex-grow-1">
+   358→   358→                <h1 class="fw-bold text-light mb-2">ReinQlynix™</h1>
+   359→   359→                <h4>Continuous learning, Infinite adaptability</h4>
+   360→   360→                <p class="text-muted mb-3">Smarter decisions. Zero stagnation. AI that evolves seamlessly with an ever-changing world</p>
+   361→   361→                <a href="reinωlytix.html" class="text-muted text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   362→   362→              </div>
+   363→   363→              <img src="images/Rein.png" alt="Quβrix" class="model-img" />
+   364→   364→            </div>
+   365→   365→
+   366→   366→            <!--4-->
+   367→   367→            <div class="model-card d-flex justify-content-start align-items-start">
+   368→   368→              <div class="flex-grow-1">
+   369→   369→                <h1 class="fw-bold text-light mb-2">Neuro-Quantus™</h1>
+   370→   370→                <h4>Compact brilliance, Infinite Potential</h4>
+   371→   371→                <p class="text-muted mb-3">Precision-engineered intelligence in ultra-efficient models—powerful, scalable, and optimized.</p>
+   372→   372→                <a href="neuro-𝑸uantis.html" class="text-muted text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   373→   373→              </div>
+   374→   374→              <img src="images/neuro.png" alt="Quβrix" class="model-img" />
+   375→   375→            </div>
+   376→   376→            <!--5-->
+   377→   377→            <div class="model-card d-flex justify-content-start align-items-start">
+   378→   378→              <div class="flex-grow-1">
+   379→   379→                <h1 class="fw-bold text-light mb-2">Φ-Federis™</h1>
+   380→   380→                <h4>Uncompromising Security, Unparalleled Collaboration</h4>
+   381→   381→                <p class="text-muted mb-3">Train across networks without exposing data—intelligence without boundaries, privacy without compromise.</p>
+   382→   382→                <a href="𝝓-federis.html" class="text-muted text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   383→   383→              </div>
+   384→   384→              <img src="images/Fedries.png" alt="Quβrix" class="model-img" />
+   385→   385→            </div>
+   386→   386→
+   387→   387→            <!--6-->
+   388→   388→
+   389→   389→            <div class="model-card d-flex justify-content-start align-items-start">
+   390→   390→              <div class="flex-grow-1">
+   391→   391→                <h1 class="fw-bold text-light mb-2">EthicSense™</h1>
+   392→   392→                <h4>AI with Integrity, Transparency, and Trust</h4>
+   393→   393→                <p class="text-muted mb-3">No bias. No hidden processes. Just ethical, explainable, and responsible decision-making.</p>
+   394→   394→                <a href="ethicξense.html" class="text-muted text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   395→   395→              </div>
+   396→   396→              <img src="images/ethic.png" alt="Quβrix" class="model-img" />
+   397→   397→            </div>
+   398→   398→
+   399→   399→            <!--7-->
+   400→   400→
+   401→   401→            <div class="model-card d-flex justify-content-start align-items-start">
+   402→   402→              <div class="flex-grow-1">
+   403→   403→                <h1 class="fw-bold text-light mb-2">G(π)-Forma™</h1>
+   404→   404→                <h4>Intelligence that Creates, Adapts and Evolves</h4>
+   405→   405→                <p class="text-muted mb-3">AI-driven synthesis, continuous refinement—shaping the future of generative intelligence.</p>
+   406→   406→                <a href="gξ𝜂-forma.html" class="text-muted text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   407→   407→              </div>
+   408→   408→              <img src="images/Genforma.png" alt="Quβrix" class="model-img" />
+   409→   409→            </div>
+   410→   410→
+   411→   411→            <!--8-->
+   412→   412→            <div class="model-card d-flex justify-content-start align-items-start">
+   413→   413→              <div class="flex-grow-1">
+   414→   414→                <h1 class="fw-bold text-light mb-2">HoloSense™</h1>
+   415→   415→                <h4>Spatial Perception like never before</h4>
+   416→   416→                <p class="text-muted mb-3">Real-time awareness. Seamless interaction. A new dimension of AI-driven reality unlocked.</p>
+   417→   417→                <a href="holo𝚫ense.html" class="text-muted text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   418→   418→              </div>
+   419→   419→              <img src="images/holo.png" alt="Quβrix" class="model-img" />
+   420→   420→            </div>
+   421→   421→          </div>
+   422→   422→        </div>
+   423→   423→      </div>
+   424→   424→    </section>
+   425→   425→    <!-- modal sec end -->
+   426→   426→
+   427→   427→    <!-- Visionary Innovators Section start-->
+   428→   428→    <section class="Visionary-Innovators">
+   429→   429→      <div class="container">
+   430→   430→        <h2 class="section-header">Engineered for Visionary Innovators</h2>
+   431→   431→        <p class="description">
+   432→   432→          We drive strategy, innovation, and transformation through cutting-edge <br />
+   433→   433→          technology, delivering proven excellence in execution.
+   434→   434→        </p>
+   435→   435→        <div class="slider-btn">
+   436→   436→          <div class="slider-prev"><img src="images/cs-left.png" /></div>
+   437→   437→          <div class="slider-next"><img src="images/right.png" /></div>
+   438→   438→        </div>
+   439→   439→        <div class="vsion-slider">
+   440→   440→          <div class="card custom-line">
+   441→   441→            <div class="card-box">
+   442→   442→              <img src="images/Quantum-Computing.png" alt="Quantum Computing" class="card-icon mb-3" />
+   443→   443→              <h5 class="card-title mb-5">Quantum <br />Computing</h5>
+   444→   444→              <div class="card-footer">
+   445→   445→                <a href="quantum-computing.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   446→   446→              </div>
+   447→   447→            </div>
+   448→   448→          </div>
+   449→   449→          <div class="card custom-line">
+   450→   450→            <div class="card-box">
+   451→   451→              <img src="images/Genomic-Data.png" alt="Quantum Computing" class="card-icon mb-3" />
+   452→   452→              <h5 class="card-title mb-5">Genomic Data <br />Intelligence</h5>
+   453→   453→              <div class="card-footer">
+   454→   454→                <a href="genomic-data-intelligence.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   455→   455→              </div>
+   456→   456→            </div>
+   457→   457→          </div>
+   458→   458→          <div class="card custom-line">
+   459→   459→            <div class="card-box">
+   460→   460→              <img src="images/Contextual-Intelligence.png" alt="Quantum Computing" class="card-icon mb-3" />
+   461→   461→              <h5 class="card-title mb-5">
+   462→   462→                Contextual <br />
+   463→   463→                Intelligence
+   464→   464→              </h5>
+   465→   465→              <div class="card-footer">
+   466→   466→                <a href="contextual-intelligence.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   467→   467→              </div>
+   468→   468→            </div>
+   469→   469→          </div>
+   470→   470→          <div class="card custom-line">
+   471→   471→            <div class="card-box">
+   472→   472→              <img src="images/Sustainable-Compute.png" alt="Quantum Computing" class="card-icon mb-3" />
+   473→   473→              <h5 class="card-title mb-5">Sustainable <br />Compute Models</h5>
+   474→   474→              <div class="card-footer">
+   475→   475→                <a href="sustainable-compute-models.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   476→   476→              </div>
+   477→   477→            </div>
+   478→   478→          </div>
+   479→   479→          <div class="card custom-line">
+   480→   480→            <div class="card-box">
+   481→   481→              <img src="images/Self-Learning.png" alt="Quantum Computing" class="card-icon mb-3" />
+   482→   482→              <h5 class="card-title mb-5">Self-Learning <br />Frameworks</h5>
+   483→   483→              <div class="card-footer">
+   484→   484→                <a href="self-learning-frameworks.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   485→   485→              </div>
+   486→   486→            </div>
+   487→   487→          </div>
+   488→   488→          <div class="card custom-line">
+   489→   489→            <div class="card-box">
+   490→   490→              <img src="images/Cognitive-Pattern.png" alt="Quantum Computing" class="card-icon mb-3" />
+   491→   491→              <h5 class="card-title mb-5">
+   492→   492→                Cognitive Pattern<br />
+   493→   493→                Engines
+   494→   494→              </h5>
+   495→   495→              <div class="card-footer">
+   496→   496→                <a href="cognitive-pattern-engines.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   497→   497→              </div>
+   498→   498→            </div>
+   499→   499→          </div>
+   500→   500→          <div class="card custom-line">
+   501→   501→            <div class="card-box">
+   502→   502→              <img src="images/Algorithmic-Ethics.png" alt="Quantum Computing" class="card-icon mb-3" />
+   503→   503→              <h5 class="card-title mb-5">Algorithmic Ethics <br />& Trust</h5>
+   504→   504→              <div class="card-footer">
+   505→   505→                <a href="algorithmic-ethics-trust.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   506→   506→              </div>
+   507→   507→            </div>
+   508→   508→          </div>
+   509→   509→          <div class="card custom-line">
+   510→   510→            <div class="card-box">
+   511→   511→              <img src="images/Real-Time-Hub.png" alt="Quantum Computing" class="card-icon mb-3" />
+   512→   512→              <h5 class="card-title mb-5">Real-Time <br />Optimization Hub</h5>
+   513→   513→              <div class="card-footer">
+   514→   514→                <a href="Real-Time-optimization-hub.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   515→   515→              </div>
+   516→   516→            </div>
+   517→   517→          </div>
+   518→   518→          <div class="card custom-line">
+   519→   519→            <div class="card-box">
+   520→   520→              <img src="images/Autonomou-Core.png" alt="Quantum Computing" class="card-icon mb-3" />
+   521→   521→              <h5 class="card-title mb-5">
+   522→   522→                Autonomous Knowledge<br />
+   523→   523→                Core
+   524→   524→              </h5>
+   525→   525→              <div class="card-footer">
+   526→   526→                <a href="autonomous-knowledge-core.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   527→   527→              </div>
+   528→   528→            </div>
+   529→   529→          </div>
+   530→   530→          <div class="card custom-line">
+   531→   531→            <div class="card-box">
+   532→   532→              <img src="images/Federated-Grid.png" alt="Quantum Computing" class="card-icon mb-3" />
+   533→   533→              <h5 class="card-title mb-5">
+   534→   534→                Federated Intelligence<br />
+   535→   535→                Grid
+   536→   536→              </h5>
+   537→   537→              <div class="card-footer">
+   538→   538→                <a href="federated-intelligence-grid.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   539→   539→              </div>
+   540→   540→            </div>
+   541→   541→          </div>
+   542→   542→        </div>
+   543→   543→      </div>
+   544→   544→    </section>
+   545→   545→    <!-- Visionary Innovators Section end-->
+   546→   546→
+   547→   547→    <!-- smart Section start -->
+   548→   548→    <section class="smart-sec">
+   549→   549→      <div class="container">
+   550→   550→        <div class="smart-comtent">
+   551→   551→          <h5><img src="images/dots.svg" alt="icon" />Solve</h5>
+   552→   552→          <h2 class="section-header">Smart. Secure. Scalable. Future-Ready.</h2>
+   553→   553→          <p class="description">
+   554→   554→            At Strategemist, we deliver intelligent decision-making, robust security, high-performance systems, and scalable infrastructure. <br />Our solutions power enterprises with real-time
+   555→   555→            intelligence, predictive automation, and resilient digital frameworks—built for the future.
+   556→   556→          </p>
+   557→   557→        </div>
+   558→   558→
+   559→   559→        <!-- Tab Navigation -->
+   560→   560→        <ul class="nav nav-tabs justify-content-left" id="myTab" role="tablist">
+   561→   561→          <li class="nav-item" role="presentation">
+   562→   562→            <a class="nav-link active text-muted" id="intelligence-tab" data-bs-toggle="tab" href="#intelligence" role="tab" aria-controls="intelligence" aria-selected="true">Intelligence</a>
+   563→   563→          </li>
+   564→   564→          <li class="nav-item" role="presentation">
+   565→   565→            <a class="nav-link text-muted" id="security-tab" data-bs-toggle="tab" href="#security" role="tab" aria-controls="security" aria-selected="false">Security</a>
+   566→   566→          </li>
+   567→   567→          <li class="nav-item" role="presentation">
+   568→   568→            <a class="nav-link text-muted" id="performance-tab" data-bs-toggle="tab" href="#performance" role="tab" aria-controls="performance" aria-selected="false">Performance</a>
+   569→   569→          </li>
+   570→   570→          <li class="nav-item" role="presentation">
+   571→   571→            <a class="nav-link text-muted" id="infrastructure-tab" data-bs-toggle="tab" href="#infrastructure" role="tab" aria-controls="infrastructure" aria-selected="false">Infrastructure</a>
+   572→   572→          </li>
+   573→   573→        </ul>
+   574→   574→
+   575→   575→        <!-- Tab Content -->
+   576→   576→        <div class="tab-content" id="myTabContent">
+   577→   577→          <!-- Intelligence Tab -->
+   578→   578→          <div class="tab-pane fade show active" id="intelligence" role="tabpanel" aria-labelledby="intelligence-tab">
+   579→   579→            <div class="descision-head">
+   580→   580→              <h2 class="section-header">Decisions Reimagined. Intelligence Redefined.</h2>
+   581→   581→              <p class="description">
+   582→   582→                Harness the power of real-time intelligence and smart automation to make faster, smarter, and more strategic decisions. Breakthrough insights, predictive analytics, and adaptive
+   583→   583→                systems put you ahead—every time.
+   584→   584→              </p>
+   585→   585→            </div>
+   586→   586→            <div class="row">
+   587→   587→              <!-- Image 1 -->
+   588→   588→              <div class="col-lg-4 col-md-6">
+   589→   589→                <a href="intelligent-decision-hubs.html" class="img-anchor">
+   590→   590→                  <img src="images/Intelligen-Decisions.png" alt="Intelligent Decision Hubs" />
+   591→   591→                  <h5>Intelligent Decision Hubs</h5>
+   592→   592→                </a>
+   593→   593→              </div>
+   594→   594→              <!-- Image 2 -->
+   595→   595→              <div class="col-lg-4 col-md-6">
+   596→   596→                <a href="Real-Time-intelligence-hub.html" class="img-anchor">
+   597→   597→                  <img src="images/real-hub.png" alt="Real-Time Analytics" />
+   598→   598→                  <h5>Real-Time Intelligence Hub</h5>
+   599→   599→                </a>
+   600→   600→              </div>
+   601→   601→              <!-- Image 3 -->
+   602→   602→              <div class="col-lg-4 col-md-6">
+   603→   603→                <a href="smart-automation-systems.html" class="img-anchor">
+   604→   604→                  <img src="images/smart-auto.jpg" alt="images" />
+   605→   605→                  <h5>Smart Automation Systems</h5>
+   606→   606→                </a>
+   607→   607→              </div>
+   608→   608→            </div>
+   609→   609→          </div>
+   610→   610→
+   611→   611→          <!-- Security Tab -->
+   612→   612→          <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+   613→   613→            <div class="row">
+   614→   614→              <div class="descision-head">
+   615→   615→                <h2 class="section-header">Unbreakable. Uncompromising. Unstoppable.</h2>
+   616→   616→                <p class="description">
+   617→   617→                  Build an impenetrable security ecosystem with scalable frameworks, blockchain-powered trust, and next-gen compliance. Stay ahead of threats, protect critical assets, and ensure
+   618→   618→                  absolute digital trust.
+   619→   619→                </p>
+   620→   620→              </div>
+   621→   621→              <!-- Image 1 -->
+   622→   622→              <div class="col-lg-4 col-md-6">
+   623→   623→                <a href="scalable-security-frameworks.html" class="img-anchor">
+   624→   624→                  <img src="images/Scalable.png" alt="Intelligent Decision Hubs" />
+   625→   625→                  <h5>Scalable Security Frameworks</h5>
+   626→   626→                </a>
+   627→   627→              </div>
+   628→   628→              <!-- Image 2 -->
+   629→   629→              <div class="col-lg-4 col-md-6">
+   630→   630→                <a href="compliance-digital-trust.html" class="img-anchor">
+   631→   631→                  <img src="images/trust.png" alt="Real-Time Analytics" />
+   632→   632→                  <h5>Compliance & Digital Trust</h5>
+   633→   633→                </a>
+   634→   634→              </div>
+   635→   635→              <!-- Image 3 -->
+   636→   636→              <div class="col-lg-4 col-md-6">
+   637→   637→                <a href="blockchain-audit-models.html" class="img-anchor">
+   638→   638→                  <img src="images/Audit-Models.png" alt="image" />
+   639→   639→                  <h5>Blockchain Audit Models</h5>
+   640→   640→                </a>
+   641→   641→              </div>
+   642→   642→            </div>
+   643→   643→          </div>
+   644→   644→
+   645→   645→          <!-- Performance Tab -->
+   646→   646→          <div class="tab-pane fade" id="performance" role="tabpanel" aria-labelledby="performance-tab">
+   647→   647→            <div class="row">
+   648→   648→              <div class="descision-head">
+   649→   649→                <h2 class="section-header">Maximum Speed. Zero Limits. Total Control.</h2>
+   650→   650→                <p class="description">
+   651→   651→                  Supercharge your operations with high–performance systems and predictive intelligence that redefine efficiency. Optimize workflows, accelerate supply chains, and execute
+   652→   652→                  flawlessly—at any scale.
+   653→   653→                </p>
+   654→   654→              </div>
+   655→   655→              <!-- Image 1 -->
+   656→   656→              <div class="col-lg-4 col-md-6">
+   657→   657→                <a href="high-performance-systems.html" class="img-anchor">
+   658→   658→                  <img src="images/high-system.png" alt="Intelligent Decision Hubs" />
+   659→   659→                  <h5>High-Performance Systems</h5>
+   660→   660→                </a>
+   661→   661→              </div>
+   662→   662→              <!-- Image 2 -->
+   663→   663→              <div class="col-lg-4 col-md-6">
+   664→   664→                <a href="predictive-supply-chains.html" class="img-anchor">
+   665→   665→                  <img src="images/supply-chain.png" alt="Real-Time Analytics" />
+   666→   666→                  <h5>Predictive Supply Chains</h5>
+   667→   667→                </a>
+   668→   668→              </div>
+   669→   669→              <!-- Image 3 -->
+   670→   670→              <div class="col-lg-4 col-md-6">
+   671→   671→                <a href="enterprise-process-control.html" class="img-anchor">
+   672→   672→                  <img src="images/Process-Control.png" alt="image" />
+   673→   673→                  <h5>Enterprise Process Control</h5>
+   674→   674→                </a>
+   675→   675→              </div>
+   676→   676→            </div>
+   677→   677→          </div>
+   678→   678→
+   679→   679→          <!-- Infrastructure Tab -->
+   680→   680→          <div class="tab-pane fade" id="infrastructure" role="tabpanel" aria-labelledby="infrastructure-tab">
+   681→   681→            <div class="row">
+   682→   682→              <div class="descision-head">
+   683→   683→                <h2 class="section-header">Scalable. Autonomous. Future-Ready.</h2>
+   684→   684→                <p class="description">
+   685→   685→                  Revolutionize enterprise infrastructure with hybrid cloud computing, advanced risk intelligence, and self–optimizing digital cores. Designed for limitless scalability, resilience,
+   686→   686→                  and transformation in an ever-evolving world.
+   687→   687→                </p>
+   688→   688→              </div>
+   689→   689→              <!-- Image 1 -->
+   690→   690→              <div class="col-lg-4 col-md-6">
+   691→   691→                <a href="hybrid-cloud-computing.html" class="img-anchor">
+   692→   692→                  <img src="images/Hybrid-system.png" alt="Intelligent Decision Hubs" />
+   693→   693→                  <h5>Hybrid Cloud Computing</h5>
+   694→   694→                </a>
+   695→   695→              </div>
+   696→   696→              <!-- Image 2 -->
+   697→   697→              <div class="col-lg-4 col-md-6">
+   698→   698→                <a href="advanced-risk-analytics.html" class="img-anchor">
+   699→   699→                  <img src="images/risk-sc.png" alt="Real-Time Analytics" />
+   700→   700→                  <h5>Advanced Risk Analytics</h5>
+   701→   701→                </a>
+   702→   702→              </div>
+   703→   703→              <!-- Image 3 -->
+   704→   704→              <div class="col-lg-4 col-md-6">
+   705→   705→                <a href="autonomous-digital-core.html" class="img-anchor">
+   706→   706→                  <img src="images/dg-core.png" alt="image" />
+   707→   707→                  <h5>Autonomous Digital Core</h5>
+   708→   708→                </a>
+   709→   709→              </div>
+   710→   710→            </div>
+   711→   711→          </div>
+   712→   712→        </div>
+   713→   713→      </div>
+   714→   714→    </section>
+   715→   715→    <!-- smart Section end -->
+   716→   716→
+   717→   717→    <!-- redefine section start -->
+   718→   718→    <section id="tool-list" class="redefine-sec smart-sec transforn-design">
+   719→   719→      <div class="container">
+   720→   720→        <div class="smart-comtent">
+   721→   721→          <h5><img src="images/dots.svg" alt="icon" />Transform</h5>
+   722→   722→          <h2 class="section-header">Redefine the Future. Build What’s Next.</h2>
+   723→   723→          <p class="description">
+   724→   724→            Transformation isn’t just about change—it’s about intelligent reinvention. From autonomous systems to predictive intelligence and scalable digital ecosystems, Strategemist empowers global
+   725→   725→            enterprises to lead, disrupt, and shape the future.
+   726→   726→          </p>
+   727→   727→        </div>
+   728→   728→
+   729→   729→        <!-- Tab Navigation -->
+   730→   730→        <ul class="nav nav-tabs justify-content-left" id="myTab" role="tablist">
+   731→   731→          <li class="nav-item" role="presentation">
+   732→   732→            <a class="nav-link active text-muted" id="evolution-tab" data-bs-toggle="tab" href="#evolution" role="tab" aria-controls="evolution" aria-selected="true">Evolution</a>
+   733→   733→          </li>
+   734→   734→          <li class="nav-item" role="presentation">
+   735→   735→            <a class="nav-link text-muted" id="acceleration-tab" data-bs-toggle="tab" href="#acceleration" role="tab" aria-controls="acceleration" aria-selected="false">Acceleration</a>
+   736→   736→          </li>
+   737→   737→          <li class="nav-item" role="presentation">
+   738→   738→            <a class="nav-link text-muted" id="resilience-tab" data-bs-toggle="tab" href="#resilience" role="tab" aria-controls="resilience" aria-selected="false">Resilience</a>
+   739→   739→          </li>
+   740→   740→          <li class="nav-item" role="presentation">
+   741→   741→            <a class="nav-link text-muted" id="optimization-tab" data-bs-toggle="tab" href="#optimization" role="tab" aria-controls="optimization" aria-selected="false">Optimization</a>
+   742→   742→          </li>
+   743→   743→        </ul>
+   744→   744→
+   745→   745→        <!-- Tab Content -->
+   746→   746→        <div class="tab-content" id="myTabContent">
+   747→   747→          <!-- Evolution Tab -->
+   748→   748→          <div class="tab-pane fade show active" id="evolution" role="tabpanel" aria-labelledby="evolution-tab">
+   749→   749→            <h2 class="section-header mb-3">Reimagine Business. Redefine Possibilities.</h2>
+   750→   750→            <p class="description">
+   751→   751→              The future belongs to enterprises that adapt and evolve. Strategemist empowers organizations with digital business models, autonomous enterprise grids, and human–tech synergy, creating
+   752→   752→              new frontiers for growth and transformation.
+   753→   753→            </p>
+   754→   754→            <div class="row border-row">
+   755→   755→              <!-- Block 1 -->
+   756→   756→              <div class="col-lg-4 col-md-4">
+   757→   757→                <div class="digital-col">
+   758→   758→                  <img src="images/digital-modal.png" alt="image" />
+   759→   759→                  <h5>Digital Business Models</h5>
+   760→   760→                  <div class="card-footer">
+   761→   761→                    <a href="digital-business-models.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   762→   762→                  </div>
+   763→   763→                </div>
+   764→   764→              </div>
+   765→   765→              <div class="col-lg-4 col-md-4">
+   766→   766→                <div class="digital-col">
+   767→   767→                  <img src="images/human-tech.png" alt="image" />
+   768→   768→                  <h5>Human-Tech Synergy Hub</h5>
+   769→   769→                  <div class="card-footer">
+   770→   770→                    <a href="human-tech-synergy-hub.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   771→   771→                  </div>
+   772→   772→                </div>
+   773→   773→              </div>
+   774→   774→              <div class="col-lg-4 col-md-4">
+   775→   775→                <div class="digital-col">
+   776→   776→                  <img src="images/enterprise-grid.png" alt="image" />
+   777→   777→                  <h5>Autonomous Enterprise Grid</h5>
+   778→   778→                  <div class="card-footer">
+   779→   779→                    <a href="autonomous-enterprise-grid.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   780→   780→                  </div>
+   781→   781→                </div>
+   782→   782→              </div>
+   783→   783→            </div>
+   784→   784→          </div>
+   785→   785→          <!-- acceleration tab  -->
+   786→   786→          <div class="tab-pane fade show" id="acceleration" role="tabpanel" aria-labelledby="acceleration-tab">
+   787→   787→            <h2 class="section-header mb-3">Break Barriers. Drive Exponential Growth</h2>
+   788→   788→            <p class="description">
+   789→   789→              Speed and innovation fuel competitive advantage. With quantum-driven acceleration, future innovation labs, and scalable tech frameworks, Strategemist enables enterprises to move faster,
+   790→   790→              scale smarter, and lead markets with breakthrough technologies.
+   791→   791→            </p>
+   792→   792→            <div class="row border-row">
+   793→   793→              <!-- Block 1 -->
+   794→   794→              <div class="col-lg-4 col-md-4">
+   795→   795→                <div class="digital-col">
+   796→   796→                  <img src="images/Quantum-Driven.png" alt="image" />
+   797→   797→                  <h5>Quantum-Driven Acceleration</h5>
+   798→   798→                  <div class="card-footer">
+   799→   799→                    <a href="/quantum-driven-acceleration.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   800→   800→                  </div>
+   801→   801→                </div>
+   802→   802→              </div>
+   803→   803→              <div class="col-lg-4 col-md-4">
+   804→   804→                <div class="digital-col">
+   805→   805→                  <img src="images/Future-Lab.png" alt="image" />
+   806→   806→                  <h5>Future Innovation Lab</h5>
+   807→   807→                  <div class="card-footer">
+   808→   808→                    <a href="future-innovation-lab.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   809→   809→                  </div>
+   810→   810→                </div>
+   811→   811→              </div>
+   812→   812→              <div class="col-lg-4 col-md-4">
+   813→   813→                <div class="digital-col">
+   814→   814→                  <img src="images/Scalable-frame.png" alt="image" />
+   815→   815→                  <h5>Scalable Tech Frameworks</h5>
+   816→   816→                  <div class="card-footer">
+   817→   817→                    <a href="scalable-tech-frameworks.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   818→   818→                  </div>
+   819→   819→                </div>
+   820→   820→              </div>
+   821→   821→            </div>
+   822→   822→          </div>
+   823→   823→          <!-- Resilience tab  -->
+   824→   824→          <div class="tab-pane fade show" id="resilience" role="tabpanel" aria-labelledby="resilience-tab">
+   825→   825→            <h2 class="section-header mb-3">Secure. Sustainable. Future-Proof.</h2>
+   826→   826→            <p class="description">
+   827→   827→              In a world of cyber threats and evolving risks, resilience is non-negotiable. Strategemist builds zero-trust security, cyber-resilient networks, and ESG-driven sustainable systems to
+   828→   828→              protect and strengthen enterprises for the long run.
+   829→   829→            </p>
+   830→   830→            <div class="row border-row">
+   831→   831→              <!-- Block 1 -->
+   832→   832→              <div class="col-lg-4 col-md-4">
+   833→   833→                <div class="digital-col">
+   834→   834→                  <img src="images/zer-digital.png" alt="image" />
+   835→   835→                  <h5>Zero-Trust Digital Security</h5>
+   836→   836→                  <div class="card-footer">
+   837→   837→                    <a href="zero-trust-digital-security.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   838→   838→                  </div>
+   839→   839→                </div>
+   840→   840→              </div>
+   841→   841→              <div class="col-lg-4 col-md-4">
+   842→   842→                <div class="digital-col">
+   843→   843→                  <img src="images/Cyber-Networks.png" alt="image" />
+   844→   844→                  <h5>Cyber-Resilient Networks</h5>
+   845→   845→                  <div class="card-footer">
+   846→   846→                    <a href="cyber-resilient-networks.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   847→   847→                  </div>
+   848→   848→                </div>
+   849→   849→              </div>
+   850→   850→              <div class="col-lg-4 col-md-4">
+   851→   851→                <div class="digital-col">
+   852→   852→                  <img src="images/esg-system.png" alt="image" />
+   853→   853→                  <h5>ESG & Sustainable Systems</h5>
+   854→   854→                  <div class="card-footer">
+   855→   855→                    <a href="esg-sustainable-systems.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   856→   856→                  </div>
+   857→   857→                </div>
+   858→   858→              </div>
+   859→   859→            </div>
+   860→   860→          </div>
+   861→   861→          <!-- optimization tab  -->
+   862→   862→          <div class="tab-pane fade show" id="optimization" role="tabpanel" aria-labelledby="optimization-tab">
+   863→   863→            <h2 class="section-header mb-3">Intelligent Infrastructure for Limitless Potential</h2>
+   864→   864→            <p class="description">
+   865→   865→              Enterprise success lies in precision and adaptability. Strategemist delivers predictive enterprise strategies, cloud-edge convergence, and self-optimizing ecosystems, ensuring businesses
+   866→   866→              operate smarter, faster, and more efficiently.
+   867→   867→            </p>
+   868→   868→            <div class="row border-row">
+   869→   869→              <!-- Block 1 -->
+   870→   870→              <div class="col-lg-4 col-md-4">
+   871→   871→                <div class="digital-col">
+   872→   872→                  <img src="images/Cloud-Edge Convergence.png" alt="image" />
+   873→   873→                  <h5>Predictive Enterprise Strategy</h5>
+   874→   874→                  <div class="card-footer">
+   875→   875→                    <a href="predictive-enterprise-strategy.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   876→   876→                  </div>
+   877→   877→                </div>
+   878→   878→              </div>
+   879→   879→              <div class="col-lg-4 col-md-4">
+   880→   880→                <div class="digital-col">
+   881→   881→                  <img src="images/Enterprise-Strategy.png" alt="image" />
+   882→   882→                  <h5>Cloud-Edge Convergence</h5>
+   883→   883→                  <div class="card-footer">
+   884→   884→                    <a href="cloud-edge-convergence.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   885→   885→                  </div>
+   886→   886→                </div>
+   887→   887→              </div>
+   888→   888→              <div class="col-lg-4 col-md-4">
+   889→   889→                <div class="digital-col">
+   890→   890→                  <img src="images/self-optimise.png" alt="image" />
+   891→   891→                  <h5>Self-Optimizing Ecosystems</h5>
+   892→   892→                  <div class="card-footer">
+   893→   893→                    <a href="self-optimizing-ecosystems.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+   894→   894→                  </div>
+   895→   895→                </div>
+   896→   896→              </div>
+   897→   897→            </div>
+   898→   898→          </div>
+   899→   899→        </div>
+   900→   900→      </div>
+   901→   901→    </section>
+   902→   902→    <!-- redefine section end -->
+   903→   903→
+   904→   904→    <!-- Scale innovation Section start -->
+   905→   905→    <section class="redefine-sec smart-sec security-sec">
+   906→   906→      <div class="container">
+   907→   907→        <div class="smart-comtent">
+   908→   908→          <h5><img src="images/dots.svg" alt="icon" />Security</h5>
+   909→   909→          <h2 class="section-header">Scale Innovation with Precision</h2>
+   910→   910→          <p class="description">AI-driven, quantum-secure, and zero-trust architectures engineered to outpace evolving threats and fortify digital sovereignty.</p>
+   911→   911→        </div>
+   912→   912→        <div class="row g-0 mt-5">
+   913→   913→          <!-- Card 1 -->
+   914→   914→          <div class="col-md-4">
+   915→   915→            <div class="cyber-card">
+   916→   916→              <h6>Cybersecurity Governance & Risk Management</h6>
+   917→   917→              <p>ISO 27001, ISO 27701 & ISO 22301</p>
+   918→   918→              <span>Al-driven risk governance, quantum-resilient encryption, and automated compliance.</span>
+   919→   919→            </div>
+   920→   920→          </div>
+   921→   921→
+   922→   922→          <!-- Card 2 -->
+   923→   923→          <div class="col-md-4">
+   924→   924→            <div class="cyber-card">
+   925→   925→              <h6>AI, Industrial, & OT Cyber Resilience</h6>
+   926→   926→              <p>IEC 62443, NIST 800-82 & Autonomous SOC</p>
+   927→   927→              <span>Zero-trust ICS/SCADA protection, cryptographic segmentation, and Al-native anomaly detection.</span>
+   928→   928→            </div>
+   929→   929→          </div>
+   930→   930→
+   931→   931→          <!-- Card 3 -->
+   932→   932→          <div class="col-md-4">
+   933→   933→            <div class="cyber-card">
+   934→   934→              <h6>Cloud, Edge & Confidential Computing</h6>
+   935→   935→              <p>CSA STAR, FedRAMP & Confidential AI</p>
+   936→   936→              <span>End-to-end encrypted cloud workloads, confidential Al processing, and sovereign cloud security.</span>
+   937→   937→            </div>
+   938→   938→          </div>
+   939→   939→
+   940→   940→          <!-- Card 4 -->
+   941→   941→          <div class="col-md-4">
+   942→   942→            <div class="cyber-card">
+   943→   943→              <h6>Financial & Digital Asset Security</h6>
+   944→   944→              <p>PCI DSS, FIPS 140-3 & Blockchain Security</p>
+   945→   945→              <span>Post-quantum encryption, Al-driven fraud analytics, and privacy-preserving transactions.</span>
+   946→   946→            </div>
+   947→   947→          </div>
+   948→   948→
+   949→   949→          <!-- Card 5 (Highlighted) -->
+   950→   950→          <div class="col-md-4">
+   951→   951→            <div class="cyber-card">
+   952→   952→              <h6>Threat Intelligence & Adversarial Defense</h6>
+   953→   953→              <p>NIST 800-53, MITRE ATT&CK & ATT&CK for ICS</p>
+   954→   954→              <span>Al-powered cyber threat intelligence, adversarial emulation, and real-time attack disruption.</span>
+   955→   955→            </div>
+   956→   956→          </div>
+   957→   957→
+   958→   958→          <!-- Card 6 -->
+   959→   959→          <div class="col-md-4">
+   960→   960→            <div class="cyber-card">
+   961→   961→              <h6>Government & Defense-Grade Cybersecurity</h6>
+   962→   962→              <p>CMMC, SOC 2 Type II, NIST 800-171 & NATO NIAP</p>
+   963→   963→              <span>Military-grade security, supply-chain hardening, and continuous authorization frameworks.</span>
+   964→   964→            </div>
+   965→   965→          </div>
+   966→   966→
+   967→   967→          <!-- Card 7 -->
+   968→   968→          <div class="col-md-4">
+   969→   969→            <div class="cyber-card">
+   970→   970→              <h6>Data Privacy & AI Security</h6>
+   971→   971→              <p>GDPR, HIPAA & ISO 42001</p>
+   972→   972→              <span>Federated privacy controls, AI/ML risk management, and zero-trust data protection.</span>
+   973→   973→            </div>
+   974→   974→          </div>
+   975→   975→
+   976→   976→          <!-- Card 8 -->
+   977→   977→          <div class="col-md-4">
+   978→   978→            <div class="cyber-card">
+   979→   979→              <h6>Zero Trust & Next Gen Security Architectures</h6>
+   980→   980→              <p>Zero Trust (NIST 800-207), CIS Controls & PQAuth</p>
+   981→   981→              <span>Post-quantum authentication, decentralized identity, and multi-domain cyber deception.</span>
+   982→   982→            </div>
+   983→   983→          </div>
+   984→   984→
+   985→   985→          <!-- Card 9 -->
+   986→   986→          <div class="col-md-4">
+   987→   987→            <div class="cyber-card">
+   988→   988→              <h6>Quantum & Future-Ready Security</h6>
+   989→   989→              <p>CSA STAR, FedRAMP & Confidential AI</p>
+   990→   990→              <span>Quantum-safe encryption, secure multiparty computation, and Al-powered cryptographic resilience.</span>
+   991→   991→            </div>
+   992→   992→          </div>
+   993→   993→        </div>
+   994→   994→      </div>
+   995→   995→    </section>
+   996→   996→    <!-- Scale innovation Section end -->
+   997→   997→
+   998→   998→    <!-- Scale innovation Section start -->
+   999→   999→    <section class="security-scale-innovation smart-sec engineer-section">
+  1000→  1000→      <div class="container">
+  1001→  1001→        <div class="smart-comtent">
+  1002→  1002→          <h5><img src="images/dots.svg" alt="icon" />Lead</h5>
+  1003→  1003→          <h1 class="scale-innovation-title">Lead the Change. Shape the Future</h1>
+  1004→  1004→          <p class="scale-innovation-subtext">
+  1005→  1005→            Disruption isn’t a challenge—it’s an opportunity. At Strategemist, we empower enterprises with deep-tech innovation, scalable strategies, and resilient digital ecosystems to lead markets,
+  1006→  1006→            redefine industries, and drive the future of technology.
+  1007→  1007→          </p>
+  1008→  1008→        </div>
+  1009→  1009→        <div class="row">
+  1010→  1010→          <div class="col-md-3">
+  1011→  1011→            <div class="enginneer-box digital-col">
+  1012→  1012→              <h5>The Strategemist Edge</h5>
+  1013→  1013→              <p class="description">
+  1014→  1014→                Innovating beyond limits. Strategemist delivers <span>cutting-edge deep-tech solutions, enterprise transformation strategies, and disruptive technologies</span> that redefine
+  1015→  1015→                industries.
+  1016→  1016→              </p>
+  1017→  1017→              <div class="card-footer">
+  1018→  1018→                <a href="the-strategemist-edge.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+  1019→  1019→              </div>
+  1020→  1020→            </div>
+  1021→  1021→          </div>
+  1022→  1022→          <div class="col-md-3">
+  1023→  1023→            <div class="enginneer-box digital-col">
+  1024→  1024→              <h5>Deep Tech Market Disruption</h5>
+  1025→  1025→              <p class="description">
+  1026→  1026→                We don’t follow trends—we create them. <span>Strategemist pioneers breakthrough innovations in AI, quantum computing, and autonomous systems,</span> shaping the next wave of
+  1027→  1027→                technological disruption.
+  1028→  1028→              </p>
+  1029→  1029→              <div class="card-footer">
+  1030→  1030→                <a href="deep-tech-market-disruption.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+  1031→  1031→              </div>
+  1032→  1032→            </div>
+  1033→  1033→          </div>
+  1034→  1034→          <div class="col-md-3">
+  1035→  1035→            <div class="enginneer-box digital-col">
+  1036→  1036→              <h5>Scaling & Growth Strategy</h5>
+  1037→  1037→              <p class="description">
+  1038→  1038→                From startups to enterprises, scaling requires precision. <span>Our strategies optimize infrastructure, operations, and digital ecosystems</span> to fuel sustainable and exponential
+  1039→  1039→                growth.
+  1040→  1040→              </p>
+  1041→  1041→              <div class="card-footer">
+  1042→  1042→                <a href="scaling-growth-strategy.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+  1043→  1043→              </div>
+  1044→  1044→            </div>
+  1045→  1045→          </div>
+  1046→  1046→          <div class="col-md-3">
+  1047→  1047→            <div class="enginneer-box digital-col">
+  1048→  1048→              <h5>AI Governance & Compliance</h5>
+  1049→  1049→              <p class="description">
+  1050→  1050→                AI without accountability is a risk. <span>Strategemist ensures ethical AI deployment, regulatory compliance, and trust-driven intelligence frameworks</span> for responsible
+  1051→  1051→                innovation.
+  1052→  1052→              </p>
+  1053→  1053→              <div class="card-footer">
+  1054→  1054→                <a href="ai-governance-compliance.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+  1055→  1055→              </div>
+  1056→  1056→            </div>
+  1057→  1057→          </div>
+  1058→  1058→          <div class="col-md-3">
+  1059→  1059→            <div class="enginneer-box digital-col">
+  1060→  1060→              <h5>Future of Digital Systems</h5>
+  1061→  1061→              <p class="description">
+  1062→  1062→                Tomorrow’s enterprises demand next-gen solutions. <span>We architect AI-native, cloud-optimized, and quantum-powered digital infrastructures </span>that future-proof businesses.
+  1063→  1063→              </p>
+  1064→  1064→              <div class="card-footer">
+  1065→  1065→                <a href="future-of-digital-systems.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+  1066→  1066→              </div>
+  1067→  1067→            </div>
+  1068→  1068→          </div>
+  1069→  1069→          <div class="col-md-3">
+  1070→  1070→            <div class="enginneer-box digital-col">
+  1071→  1071→              <h5>Human-Centric Innovations</h5>
+  1072→  1072→              <p class="description">
+  1073→  1073→                Technology should empower, not replace. <span>Our human–tech synergy approach enhances experiences, automates intelligently, and drives impact without losing the human touch.</span>
+  1074→  1074→              </p>
+  1075→  1075→              <div class="card-footer">
+  1076→  1076→                <a href="human-centric-innovations.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+  1077→  1077→              </div>
+  1078→  1078→            </div>
+  1079→  1079→          </div>
+  1080→  1080→          <div class="col-md-3">
+  1081→  1081→            <div class="enginneer-box digital-col">
+  1082→  1082→              <h5>Resilient & Secure Networks</h5>
+  1083→  1083→              <p class="description">
+  1084→  1084→                Security is not an option—it’s a necessity. <span>Strategemist builds zero-trust architectures, cyber-resilient infrastructures, and defense-grade security </span> solutions to protect
+  1085→  1085→                what matters most.
+  1086→  1086→              </p>
+  1087→  1087→              <div class="card-footer">
+  1088→  1088→                <a href="resilient-secure-networks.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+  1089→  1089→              </div>
+  1090→  1090→            </div>
+  1091→  1091→          </div>
+  1092→  1092→          <div class="col-md-3">
+  1093→  1093→            <div class="enginneer-box digital-col">
+  1094→  1094→              <h5>Enterprise Evolution Hub</h5>
+  1095→  1095→              <p class="description">
+  1096→  1096→                Industries evolve. We accelerate the process. <span>Strategemist delivers strategic transformation, intelligent automation, and adaptable frameworks</span> that keep enterprises ahead
+  1097→  1097→                in an era of rapid change.
+  1098→  1098→              </p>
+  1099→  1099→              <div class="card-footer">
+  1100→  1100→                <a href="enterprise-evolution-hub.html" class="text-decoration-none"> Learn More <i class="bi bi-arrow-right-circle"></i> </a>
+  1101→  1101→              </div>
+  1102→  1102→            </div>
+  1103→  1103→          </div>
+  1104→  1104→        </div>
+  1105→  1105→      </div>
+  1106→  1106→    </section>
+  1107→  1107→    <!-- Scale innovation Section end -->
+  1108→  1108→
+  1109→  1109→    <!--Footer section-->
+  1110→  1110→    <section class="d-flex align-items-center footer footer-sub">
+  1111→  1111→      <div class="container">
+  1112→  1112→        <div class="row">
+  1113→  1113→          <!-- col 1 -->
+  1114→  1114→          <div class="col-lg-6 col-md-6 mb-4">
+  1115→  1115→            <div class="form-des">
+  1116→  1116→              <p>Unlock exclusive deep-tech insights, industry trends, and strategic foresight- straight to your inbox.</p>
+  1117→  1117→            </div>
+  1118→  1118→          </div>
+  1119→  1119→          <!-- col 2 -->
+  1120→  1120→          <div class="col-lg-6 col-md-6 mb-4">
+  1121→  1121→            <div class="fm-sb">
+  1122→  1122→              <div class="subscribe">
+  1123→  1123→                <form>
+  1124→  1124→                  <input type="text" placeholder="Email address" />
+  1125→  1125→                  <button type="submit" name="subscribe">Subscribe</button>
+  1126→  1126→                </form>
+  1127→  1127→              </div>
+  1128→  1128→            </div>
+  1129→  1129→          </div>
+  1130→  1130→        </div>
+  1131→  1131→      </div>
+  1132→  1132→    </section>
+  1133→  1133→    <!--Footer section-->
+  1134→  1134→
+  1135→  1135→    <!--Footer section-->
+  1136→  1136→    <section class="footer py-5">
+  1137→  1137→      <div class="container">
+  1138→  1138→        <div class="row text-start">
+  1139→  1139→          <div class="col-lg col-md-4 mb-4 col-sm-6">
+  1140→  1140→            <h6>Innovate</h6>
+  1141→  1141→            <ul class="list1">
+  1142→  1142→              <li><a href="the-patent-value.html">The Patent Vault</a></li>
+  1143→  1143→              <li><a href="quantum-computing.html"> Quantum Computing </a></li>
+  1144→  1144→              <li><a href="contextual-intelligence.html">Contextual Intelligence</a></li>
+  1145→  1145→              <li><a href="self-learning-frameworks.html">Self-Learning Frameworks</a></li>
+  1146→  1146→              <li><a href="cognitive-pattern-engines.html">Cognitive Pattern Engines</a></li>
+  1147→  1147→              <li><a href="federated-intelligence-grid.html">Federated Intelligence Grid</a></li>
+  1148→  1148→              <li><a href="algorithmic-ethics-trust.html">Algorithmic Ethics & Trust </a></li>
+  1149→  1149→              <li><a href="autonomous-knowledge-core.html">Autonomous Knowledge Core</a></li>
+  1150→  1150→              <li><a href="sustainable-compute-models.html">Sustainable Compute Models </a></li>
+  1151→  1151→              <li><a href="Real-Time-optimization-hub.html">Real-Time Optimization Hub</a></li>
+  1152→  1152→              <li><a href="genomic-data-intelligence.html">Genomic Data Intelligence</a></li>
+  1153→  1153→              <li><a href="blockchain-trust-systems.html">Blockchain Trust Systems </a></li>
+  1154→  1154→            </ul>
+  1155→  1155→          </div>
+  1156→  1156→
+  1157→  1157→          <!-- Column 2 -->
+  1158→  1158→          <div class="col-lg col-md-4 mb-4 col-sm-6">
+  1159→  1159→            <h6>Solve</h6>
+  1160→  1160→            <ul class="list1">
+  1161→  1161→              <li><a href="intelligent-decision-hubs.html">Intelligent Decision Hubs</a></li>
+  1162→  1162→              <li><a href="enterprise-process-control.html">Enterprise Process Control</a></li>
+  1163→  1163→              <li><a href="smart-automation-systems.html">Smart Automation Systems</a></li>
+  1164→  1164→              <li><a href="scalable-security-frameworks.html">Scalable Security Frameworks</a></li>
+  1165→  1165→              <li><a href="advanced-risk-analytics.html">Advanced Risk Analytics</a></li>
+  1166→  1166→              <li><a href="high-performance-systems.html">High-Performance Systems</a></li>
+  1167→  1167→              <li><a href="predictive-supply-chains.html">Predictive Supply Chains</a></li>
+  1168→  1168→              <li><a href="compliance-digital-trust.html">Compliance & Digital Trust</a></li>
+  1169→  1169→              <li><a href="real-time-intelligence-hub.html">Real-Time Intelligence Hub</a></li>
+  1170→  1170→              <li><a href="blockchain-audit-models.html">Blockchain Audit Models</a></li>
+  1171→  1171→              <li><a href="hybrid-cloud-computing.html">Hybrid Cloud Computing</a></li>
+  1172→  1172→              <li><a href="autonomous-digital-core.html">Autonomous Digital Core</a></li>
+  1173→  1173→            </ul>
+  1174→  1174→          </div>
+  1175→  1175→
+  1176→  1176→          <!-- Column 3 -->
+  1177→  1177→          <div class="col-lg col-md-4 mb-4 col-sm-6">
+  1178→  1178→            <h6>Transform</h6>
+  1179→  1179→            <ul class="list1">
+  1180→  1180→              <li><a href="digital-business-models.html">Digital Business Models</a></li>
+  1181→  1181→              <li><a href="autonomous-enterprise-grid.html">Autonomous Enterprise Grid</a></li>
+  1182→  1182→              <li><a href="human-tech-synergy-hub.html">Human-Tech Synergy Hub</a></li>
+  1183→  1183→              <li><a href="quantum-driven-acceleration.html">Quantum-Driven Acceleration</a></li>
+  1184→  1184→              <li><a href="zero-trust-digital-security.html">Zero-Trust Digital Security</a></li>
+  1185→  1185→              <li><a href="predictive-enterprise-strategy.html">Predictive Enterprise Strategy</a></li>
+  1186→  1186→              <li><a href="esg-sustainable-systems.html">ESG & Sustainable Systems</a></li>
+  1187→  1187→              <li><a href="cloud-edge-convergence.html">Cloud-Edge Convergence</a></li>
+  1188→  1188→              <li><a href="cyber-resilient-networks.html">Cyber-Resilient Networks</a></li>
+  1189→  1189→              <li><a href="self-optimizing-ecosystems.html">Self-Optimizing Ecosystems</a></li>
+  1190→  1190→              <li><a href="future-innovation-lab.html">Future Innovation Lab</a></li>
+  1191→  1191→              <li><a href="scalable-tech-frameworks.html">Scalable Tech Frameworks</a></li>
+  1192→  1192→            </ul>
+  1193→  1193→          </div>
+  1194→  1194→
+  1195→  1195→          <!-- Column 4 -->
+  1196→  1196→          <div class="col-lg col-md-4 mb-4 col-sm-6">
+  1197→  1197→            <h6>Lead</h6>
+  1198→  1198→            <ul class="list1">
+  1199→  1199→              <li><a href="the-strategemist-edge.html">The Strategemist Edge</a></li>
+  1200→  1200→              <li><a href="deep-tech-market-disruption.html">Deep Tech Market Disruption</a></li>
+  1201→  1201→              <li><a href="scaling-growth-strategy.html">Scaling & Growth Strategy</a></li>
+  1202→  1202→              <li><a href="ai-governance-compliance.html">AI Governance & Compliance</a></li>
+  1203→  1203→              <li><a href="future-of-digital-systems.html">Future of Digital Systems</a></li>
+  1204→  1204→              <li><a href="human-centric-innovations.html">Human-Centric Innovations</a></li>
+  1205→  1205→              <li><a href="resilient-secure-networks.html">Resilient & Secure Networks</a></li>
+  1206→  1206→              <li><a href="enterprise-evolution-hub.html">Enterprise Evolution Hub</a></li>
+  1207→  1207→            </ul>
+  1208→  1208→          </div>
+  1209→  1209→
+  1210→  1210→          <!-- Column 5 -->
+  1211→  1211→          <div class="col-lg col-md-4 mb-4 col-sm-6">
+  1212→  1212→            <h6>Empower</h6>
+  1213→  1213→            <ul class="list1">
+  1214→  1214→              <li><a href="q𝝁βrix.html">QµPrix™</a></li>
+  1215→  1215→              <li><a href="σ-graphion.html">Σ-Graphion™</a></li>
+  1216→  1216→              <li><a href="reinωlytix.html">ReinQlynix™</a></li>
+  1217→  1217→              <li><a href="neuro-𝑸uantis.html">Neuro-Quantus™</a></li>
+  1218→  1218→              <li><a href="𝝓-federis.html">Φ-Federis™</a></li>
+  1219→  1219→              <li><a href="ethicξense.html">EthicSense™</a></li>
+  1220→  1220→              <li><a href="gξ𝜂-forma.html">G(π)-Forma™</a></li>
+  1221→  1221→              <li><a href="holo𝚫ense.html">HoloSense™</a></li>
+  1222→  1222→            </ul>
+  1223→  1223→          </div>
+  1224→  1224→        </div>
+  1225→  1225→      </div>
+  1226→  1226→    </section>
+  1227→  1227→    <!--Footer section-->
+  1228→  1228→
+  1229→  1229→    <!--Footer section-->
+  1230→  1230→    <section class="location py-3">
+  1231→  1231→      <div class="container">
+  1232→  1232→        <div class="row">
+  1233→  1233→          <!-- Card 1 -->
+  1234→  1234→          <div class="col-md-3 col-sm-6">
+  1235→  1235→            <div class="location-card">
+  1236→  1236→              <h6>United States</h6>
+  1237→  1237→              <p>Strategemist Corporation <br />16192 Coastal Highway Lewes, Delaware 19958</p>
+  1238→  1238→            </div>
+  1239→  1239→          </div>
+  1240→  1240→
+  1241→  1241→          <!-- Card 2 -->
+  1242→  1242→          <div class="col-md-3 col-sm-6">
+  1243→  1243→            <div class="location-card">
+  1244→  1244→              <h6>United Kingdom</h6>
+  1245→  1245→              <p>
+  1246→  1246→                Strategemist Limited<br />
+  1247→  1247→                71-75 Shelton Street,Covent Garden, London, WC2H 9JQ
+  1248→  1248→              </p>
+  1249→  1249→            </div>
+  1250→  1250→          </div>
+  1251→  1251→
+  1252→  1252→          <!-- Card 3 -->
+  1253→  1253→          <div class="col-md-3 col-sm-6">
+  1254→  1254→            <div class="location-card">
+  1255→  1255→              <h6>India</h6>
+  1256→  1256→              <p>
+  1257→  1257→                Strategemist Global Private Limited<br />
+  1258→  1258→                Cyber Towers 1st Floor, Q3-A2, Hitech City Rd, Madhapur, Telangana 500081, India
+  1259→  1259→              </p>
+  1260→  1260→            </div>
+  1261→  1261→          </div>
+  1262→  1262→
+  1263→  1263→          <!-- Card 4 -->
+  1264→  1264→          <div class="col-md-3 col-sm-6">
+  1265→  1265→            <div class="location-card">
+  1266→  1266→              <h6>KSA</h6>
+  1267→  1267→              <p>
+  1268→  1268→                Strategemist - EIITC<br />
+  1269→  1269→                Building No. 44, Ibn Katheer St, King Abdul Aziz, Unit A11, Riyadh 13334, Saudi Arabia
+  1270→  1270→              </p>
+  1271→  1271→            </div>
+  1272→  1272→          </div>
+  1273→  1273→        </div>
+  1274→  1274→      </div>
+  1275→  1275→    </section>
+  1276→  1276→    <!--Footer section-->
+  1277→  1277→
+  1278→  1278→    <!--Footer section-->
+  1279→  1279→    <footer class="end-bottom-sc">
+  1280→  1280→      <div class="container d-flex flex-lg-row align-items-center justify-content-between">
+  1281→  1281→        <div class="info-mail">
+  1282→  1282→          <a href="mailto:info@strategemist.com">info@strategemist.com</a>
+  1283→  1283→        </div>
+  1284→  1284→        <div class="mb-lg-0 footer-lg">
+  1285→  1285→          <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+  1286→  1286→            <img src="images/logo-footer.png" alt="Strategemist" height="24" class="me-2" />
+  1287→  1287→          </a>
+  1288→  1288→        </div>
+  1289→  1289→        <ul class="nav mb-lg-0 footer-lk">
+  1290→  1290→          <li class="nav-item"><a href="about-us.html" class="nav-link px-2">About</a></li>
+  1291→  1291→          <li class="nav-item"><a href="https://in.linkedin.com/company/strategemist" class="nav-link px-2" target="blank">Career</a></li>
+  1292→  1292→          <li class="nav-item"><a href="#" class="nav-link px-2" data-bs-toggle="modal" data-bs-target="#termsModal">Terms</a></li>
+  1293→  1293→        </ul>
+  1294→  1294→        <div class="d-flex align-items-center follow-sec">
+  1295→  1295→          <span class="small me-2">Follow us</span>
+  1296→  1296→          <div class="link-icon">
+  1297→  1297→            <a href="https://www.youtube.com/@Strategemist" class="ms-2 fs-5" target="blank"><img src="images/youtube.png" /></a>
+  1298→  1298→            <a href="https://x.com/strategemist" class="ms-2 fs-5" target="blank"><img src="images/twit.png" /></a>
+  1299→  1299→            <a href="https://www.linkedin.com/company/strategemist/" class="ms-2 fs-5" target="blank"><img src="images/link.png" /></a>
+  1300→  1300→          </div>
+  1301→  1301→        </div>
+  1302→  1302→      </div>
+  1303→  1303→    </footer>
+  1304→  1304→    <!--Footer section-->
+  1305→  1305→
+  1306→  1306→    <!-- Modal -->
+  1307→  1307→    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+  1308→  1308→      <div class="modal-dialog modal-lg modal-dialog-centered">
+  1309→  1309→        <div class="modal-content">
+  1310→  1310→          <div class="modal-header">
+  1311→  1311→            <h5 class="modal-title" id="termsModalLabel">Terms & Conditions</h5>
+  1312→  1312→            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  1313→  1313→          </div>
+  1314→  1314→          <div class="modal-body">
+  1315→  1315→            <h6>Welcome to Our Website</h6>
+  1316→  1316→            <p>These terms and conditions outline the rules and regulations for the use of our website.</p>
+  1317→  1317→            <p>
+  1318→  1318→              By accessing this website we assume you accept these terms and conditions. Do not continue to use this site if you do not agree to take all of the terms and conditions stated on this
+  1319→  1319→              page.
+  1320→  1320→            </p>
+  1321→  1321→            <h6>License</h6>
+  1322→  1322→            <p>
+  1323→  1323→              Unless otherwise stated, we and/or its licensors own the intellectual property rights for all material on this site. You may access this for your own personal use subjected to
+  1324→  1324→              restrictions set in these terms and conditions.
+  1325→  1325→            </p>
+  1326→  1326→            <ul>
+  1327→  1327→              <li>You must not republish material</li>
+  1328→  1328→              <li>You must not sell, rent or sub-license material</li>
+  1329→  1329→              <li>You must not reproduce, duplicate or copy material</li>
+  1330→  1330→            </ul>
+  1331→  1331→            <p>This Agreement shall begin on the date hereof.</p>
+  1332→  1332→          </div>
+  1333→  1333→        </div>
+  1334→  1334→      </div>
+  1335→  1335→    </div>
+  1336→  1336→
+  1337→  1337→    <!-- Cookie Banner -->
+  1338→  1338→    <div class="cookie-banner" id="cookieBanner">
+  1339→  1339→      <p>We use cookies on our website to provide you with a more personalized digital experience. To learn more about how we use cookies and how you can change your cookie settings</p>
+  1340→  1340→      <div class="cookie-buttons">
+  1341→  1341→        <button class="reject-btn" onclick="rejectAll()">Reject All</button>
+  1342→  1342→        <button class="accept-btn" onclick="acceptAll()">Accept All</button>
+  1343→  1343→      </div>
+  1344→  1344→    </div>
+  1345→  1345→
+  1346→  1346→    <script>
+  1347→  1347→      function acceptAll() {
+  1348→  1348→        localStorage.setItem("cookieConsent", "accepted");
+  1349→  1349→        document.getElementById("cookieBanner").style.display = "none";
+  1350→  1350→      }
+  1351→  1351→
+  1352→  1352→      function rejectAll() {
+  1353→  1353→        localStorage.setItem("cookieConsent", "rejected");
+  1354→  1354→        document.getElementById("cookieBanner").style.display = "none";
+  1355→  1355→      }
+  1356→  1356→
+  1357→  1357→      window.onload = function () {
+  1358→  1358→        let consent = localStorage.getItem("cookieConsent");
+  1359→  1359→        if (consent === "accepted" || consent === "rejected") {
+  1360→  1360→          document.getElementById("cookieBanner").style.display = "none";
+  1361→  1361→        }
+  1362→  1362→      };
+  1363→  1363→    </script>
+  1364→  1364→
+  1365→  1365→    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  1366→  1366→    <script src="js/custom.js"></script>
+  1367→  1367→    <script
+  1368→  1368→      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  1369→  1369→      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+  1370→  1370→      crossorigin="anonymous"
+  1371→  1371→    ></script>
+  1372→  1372→    <script
+  1373→  1373→      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+  1374→  1374→      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+  1375→  1375→      crossorigin="anonymous"
+  1376→  1376→    ></script>
+  1377→  1377→    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  1378→  1378→    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  1379→  1379→  </body>
+  1380→  1380→</html>
+  1381→  1381→

@@ -13,16 +13,16 @@ interface Msg {
 }
 
 const SUGGESTIONS = [
-  'How would you cut our customer churn with AI?',
-  'What does an outcome-linked engagement look like?',
-  'Can you automate our invoice reconciliation end-to-end?',
-  'How do you keep generative AI safe in regulated industries?',
+  'How can Strategemist reduce our supply-chain disruptions?',
+  'Which of your 8 IP platforms fits a regulated bank?',
+  'How do you keep generative AI safe and explainable?',
+  'What does "insight → implementation → impact" mean in practice?',
 ]
 
 const SEED: Msg = {
   role: 'assistant',
   content:
-    "I'm the Strategemist Advisor. Tell me the business problem you're trying to move—cost, revenue, risk, speed, or quality—and I'll sketch how we'd approach it, which IP we'd bring, and the outcome we'd target.",
+    "I'm the Strategemist Advisor. We go BEYOND CONSULTING — engineering the future with 11 patents and 8 IP platforms. Tell me the business outcome you want to move, and I'll sketch how we'd approach it, which IP we'd bring (QµPrix, Σ-Graphion, Φ-Federis, EthicSense, and more), and the measurable result we'd target.",
 }
 
 export function AIAssistant() {

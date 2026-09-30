@@ -1,0 +1,174 @@
+   588→- **Measurable results**: 80% reduction in threat vulnerabilities; faster response times; enhanced protection; fortified cybersecurity posture; reduced risk exposure; seamless compliance with global security standards
+   589→
+   590→### 10.3 Case Study 3 — Multinational Supply Chain (65% Fewer Disruptions)
+   591→- File: `how-a-multinational-supply-chain-reduced-disruptions-by-65-using-strategemists-predictive-intelligence.html`
+   592→- Title: "How a Multinational Supply Chain Reduced Disruptions by 65% Using Strategemist's Predictive Intelligence"
+   593→- Narrative (verbatim): "A multinational supply chain leader minimized disruptions by 65% with Strategemist's predictive intelligence. Previously challenged by unforeseen delays and inefficiencies, the company leveraged AI-driven forecasting, real-time risk assessment, and automated workflow optimizations. This transformation enabled proactive issue resolution, optimized logistics, and seamless coordination across global operations. The result? Greater supply chain resilience, improved operational efficiency, and a significant reduction in costly disruptions. Strategemist empowered the company to anticipate challenges and act decisively. Ready to enhance your supply chain's reliability? Discover Strategemist today."
+   594→
+   595→**Interpreted structure**:
+   596→- **Client/Industry**: Multinational supply chain leader (unnamed)
+   597→- **Challenge**: Unforeseen delays and inefficiencies in the supply chain
+   598→- **Solution**: AI-driven forecasting, real-time risk assessment, and automated workflow optimizations — enabling proactive issue resolution, optimized logistics, and seamless global coordination
+   599→- **Measurable results**: 65% reduction in disruptions; greater supply chain resilience; improved operational efficiency; significant reduction in costly disruptions; ability to anticipate challenges and act decisively
+   600→
+   601→### Cross-case-study strip intro
+   602→- Eyebrow: "case studies"
+   603→- Heading: "See More Case Studies"
+   604→- Sub: "At Strategemist, we don't sell case studies—we build success stories that speak for themselves. Your journey with us is unique, powered by innovation, precision, and transformation. Partner with us and experience success, redefined."
+   605→
+   606→---
+   607→
+   608→## 11. Services Catalogue
+   609→
+   610→For each service page: **filename** · **page `<title>`** · **main page heading (h1 or h2 hero)** · **1–2 sentence intro** (verbatim from the hero/intro area).
+   611→
+   612→### 11.1 INNOVATE (12 — patent / deep-tech R&D pages)
+   613→
+   614→| File | Title | Hero heading | Intro (verbatim) |
+   615→|---|---|---|---|
+   616→| `the-patent-value.html` | The Patent Vault | (h1) "The Patent Vault" | "Experience the fusion of cutting-edge technology and real-world impact. From AI-driven intelligence to quantum-powered automation, our patents push the frontiers of innovation—driving the next wave of enterprise transformation and intelligent evolution." |
+   617→| `quantum-computing.html` | Quantum-Inspired Computational System for Enterprise Data Processing | (h1) "Quantum-Inspired Computational System for Enterprise Data Processing" | *(No intro paragraph in the hero — the page goes straight to a "Technical Breakthroughs" section. The 3 lead cards are: "Quantum-Optimized Tensor Processing — Encodes enterprise data into multi-rank tensor representations, enabling efficient compression and low-overhead transformations.", "Logarithmic-Scale Probabilistic Exploration — Utilizes quantum-inspired traversal models, reducing state-space exploration complexity from O(2^n) to O(log n) for optimized decision-making", "Self-Adaptive Computational Architectures — Deploys dynamically reconfigurable neural processing, adjusting computational pathways in response to changing enterprise workloads.")* |
+   618→| `contextual-intelligence.html` | Revolutionizing Contextual Intelligence Processing with Advanced Graph Neural Networks | (h1) same | "The invention introduces a cutting-edge computational framework integrating Graph Neural Networks (GNNs) with quantum-inspired and topological analytics. This breakthrough enables scalable, deterministic, and adaptive contextual intelligence processing, providing real-time insights for fraud detection, precision medicine, supply chain optimization, and smart infrastructure management." |
+   619→| `self-learning-frameworks.html` | Adaptive Learning Framework for Enterprise Optimization | (h1) same | "This framework introduces a self-evolving reinforcement learning system, enabling real-time decision-making, workflow optimization, and intelligent resource orchestration across distributed enterprise architectures. Leveraging probabilistic models, temporal-spatial learning, and federated AI, this system dynamically adapts to changing environments, high-dimensional datasets, and non-deterministic enterprise conditions, ensuring scalability, efficiency, and computational integrity." |
+   620→| `cognitive-pattern-engines.html` | Next-Generation Adaptive Pattern Recognition for Real-Time Data Processing | (h1) same | "Traditional AI-driven pattern recognition models lack real-time adaptability, efficient multi-modal processing, and computational scalability. This patent introduces a hierarchical neural framework that dynamically adjusts feature extraction, learning pathways, and inference strategies, ensuring efficiency across diverse and evolving data streams." |
+   621→| `federated-intelligence-grid.html` | Federated Intelligence Processing: Secure & Scalable Distributed AI | (h1) same | "This patent describes a distributed learning framework enabling secure multi-party AI model training without raw data sharing. The system introduces fault-tolerant coordination, optimized model synchronization, and dynamic workload distribution across enterprise networks. It ensures:" (followed by a list of guarantees) |
+   622→| `algorithmic-ethics-trust.html` | Ethical Decision Processing Using Multi-Layered Neural Validation Framework | (h1) same | "This patent introduces a hierarchical decision validation framework integrating deep neural architectures, recursive probabilistic refinement, and neuro-symbolic reasoning to facilitate computationally efficient, ethically compliant AI decision-making. The system employs graph-based ethical encoding, structured attention mechanisms, and federated validation layers to ensure low-latency inference, interpretability, and high-dimensional scalability." |
+   623→| `autonomous-knowledge-core.html` | Autonomous Knowledge Core: Intelligent Workflow Orchestration and Optimization | (h1) same | "This Autonomous Knowledge Core introduces a multi-layer AI-driven workflow orchestration system, enabling self-optimizing knowledge automation through generative intelligence, temporal reasoning, and federated execution models. The architecture is designed for adaptive scheduling, cross-layer computational optimization, and dynamic AI governance, ensuring workflow execution under variable resource constraints and evolving task dependencies." |
+   624→| `sustainable-compute-models.html` | Autonomous AI for Sustainable Compute Models in Distributed Systems | (h1) same | "This AI-governed workload execution framework integrates tensor-based workload segmentation, reinforcement learning-based execution scheduling, and multi-agent task synchronization to optimize computational energy efficiency in distributed environments. The system autonomously adjusts execution workloads based on real-time power grid fluctuations, execution state dependencies, and AI-driven task migration optimization, ensuring sustainable compute scaling." |
+   625→| `real-time-optimization-hub.html` | Autonomous Knowledge Core: AI-Driven Digital Twin Optimization for Industrial Process Control | (h1) same | "Industrial process automation requires adaptive intelligence, real-time anomaly detection, and high-complexity optimization beyond classical AI models. This proprietary solution integrates Digital Twin models with AI-driven computational acceleration, enabling real-time process adjustments, federated decision-making, and multi-variable optimization. The system leverages hybrid AI execution frameworks, tensor-based industrial modeling, and self-learning process adaptation to enhance efficiency, reliability, and scalability." |
+   626→| `genomic-data-intelligence.html` | AI-Powered Genomic Data Processing & Predictive Modeling | (h1) same | "This patent introduces an AI-driven genomic processing system that enables adaptive sequence transformation, regulatory modeling, and multi-omics data integration. Using reinforcement learning, tensor-driven inference models, and hierarchical genomic adaptation, the system facilitates real-time evolution modeling, epigenetic state forecasting, and optimized sequence restructuring. It overcomes traditional genomic analysis limitations by supporting high-resolution regulatory inference and dynamic sequence optimization." |
+   627→| `blockchain-trust-systems.html` | Blockchain-Enabled Predictive Analytics & Data Integrity Across Multiple Application Domains | (h1) same | "This patent introduces a decentralized predictive analytics framework integrating blockchain, federated learning, and quantum-resistant cryptography to enhance data integrity, security, and privacy across multiple application domains. The system leverages zero-knowledge proofs, homomorphic encryption, and Byzantine fault-tolerant consensus to facilitate secure model validation, privacy-preserving AI training, and adversarial threat mitigation." |
+   628→
+   629→> **Note**: The `real-time-optimization-hub.html` page uses the title "Autonomous Knowledge Core: AI-Driven Digital Twin Optimization for Industrial Process Control" — which appears to duplicate the "Autonomous Knowledge Core" name from a separate Innovate page. This is likely a content bug in the source (or a deliberately shared IP platform name across two patents).
+   630→
+   631→### 11.2 SOLVE (12 — capability pages)
+   632→
+   633→| File | Title | Hero h2 | Intro (verbatim) |
+   634→|---|---|---|---|
+   635→| `intelligent-decision-hubs.html` | intelligent-decision-hubs *(under-cased title — likely should be "Intelligent Decision Hubs")* | Intelligent Decision Hubs – Autonomous, Scalable, and Self-Learning Decision Intelligence | "Seamlessly integrating real-time data, advanced analytics, and predictive intelligence, Intelligent Decision Hubs empower enterprises with high-speed, self-optimizing decision execution at scale." |
+   636→| `enterprise-process-control.html` | Enterprise Process Control – Strategemist Corporation \| Beyond Consulting. Engineering the Future. | Enterprise Process Control – The Future of Autonomous Execution | "Intelligent, self-optimizing process control that eliminates bottlenecks, automates execution cycles, and enhances operational efficiency at scale." |
+   637→| `smart-automation-systems.html` | Smart Automation Systems – Strategemist Corporation \| Beyond Consulting. Engineering the Future. | Smart Automation Systems – Fully Autonomous, Decision-Driven Process Execution | "Eliminating static workflows with self-learning, real-time adaptive automation that evolves with operational needs." |
+   638→| `scalable-security-frameworks.html` | Scalable Security Frameworks – Autonomous, Adaptive, and Quantum-Secured Cyber Defense | Scalable Security Frameworks – Autonomous, Adaptive, and Quantum-Secured Cyber Defense | "Intelligent, self-evolving security that eliminates vulnerabilities, neutralizes threats in real-time, and scales seamlessly with enterprise operations." |
+   639→| `advanced-risk-analytics.html` | Advanced Risk Analytics – AI-Driven Predictive Risk Intelligence & Decision Optimization | Advanced Risk Analytics – AI-Driven Predictive Risk Intelligence & Decision Optimization | "Real-time risk intelligence that eliminates uncertainty, enhances decision-making, and ensures operational resilience." |
+   640→| `high-performance-systems.html` | High-Performance Systems – AI-Optimized Computational Speed, Efficiency & Enterprise Intelligence | High-Performance Systems – AI-Optimized Computational Speed, Efficiency & Enterprise Intelligence | "Intelligent, scalable, and ultra-efficient computing that eliminates latency, maximizes performance, and redefines enterprise infrastructure." |
+   641→| `predictive-supply-chains.html` | Predictive Supply Chains – AI-Powered Logistics Precision & Autonomous Inventory Optimization | Predictive Supply Chains – AI-Powered Logistics Precision & Autonomous Inventory Optimization | "Intelligent, self-adaptive supply chain orchestration that eliminates inefficiencies, predicts disruptions, and ensures real-time logistics precision." |
+   642→| `compliance-digital-trust.html` | Compliance & Digital Trust – AI-Driven Integrity, Security & Risk Governance | Compliance & Digital Trust – AI-Driven Integrity, Security & Risk Governance | "Automated, tamper-proof compliance frameworks that eliminate regulatory risks, ensure transparency, and establish unbreakable digital trust." |
+   643→| `real-time-intelligence-hub.html` | Real-Time Intelligence Hub – AI-Powered Insights, Decision Engines & Autonomous Strategy Execution | Real-Time Intelligence Hub – AI-Powered Insights, Decision Engines & Autonomous Strategy Execution | "Unifying high-velocity data, intelligent decision-making, and real-time analytics to create a self-learning enterprise intelligence ecosystem." |
+   644→| `blockchain-audit-models.html` | Blockchain Audit Models – AI-Powered, Immutable Trust & Compliance-Driven Enterprise Security | Blockchain Audit Models – AI-Powered, Immutable Trust & Compliance-Driven Enterprise Security | "Tamper-proof, autonomous auditing frameworks that ensure absolute data integrity, real-time compliance, and fraud-proof transactions." |
+   645→| `hybrid-cloud-computing.html` | Hybrid Cloud Computing – AI-Powered, Secure & Autonomous Multi-Cloud Orchestration | Hybrid Cloud Computing – AI-Powered, Secure & Autonomous Multi-Cloud Orchestration | "Seamless, self-optimizing cloud management that ensures scalability, security, and intelligent workload orchestration across private, public, and edge environments." |
+   646→| `autonomous-digital-core.html` | Autonomous Digital Core – AI-Powered, Self-Evolving Enterprise Backbone | Autonomous Digital Core – AI-Powered, Self-Evolving Enterprise Backbone | "A self-learning, autonomous digital infrastructure that optimizes, governs, and scales enterprise operations without manual intervention." |
+   647→
+   648→### 11.3 TRANSFORM (12 — capability pages)
+   649→
+   650→| File | Title | Hero h2 | Sub-headline (h4) |
+   651→|---|---|---|---|
+   652→| `digital-business-models.html` | Digital Business Models: Intelligent Revenue Transformation for the AI-Driven Enterprise | (h2) same | Rearchitecting Business for the Digital Economy |
+   653→| `autonomous-enterprise-grid.html` | Autonomous Enterprise Grid: Self-Optimizing Business Operations for Scalable Growth | (h2) same | Revolutionizing Enterprise Efficiency with Autonomous Intelligence |
+   654→| `human-tech-synergy-hub.html` | Human-Tech Synergy Hub: Engineering Intelligent Collaboration Between Humans & Machines | (h2) same | Elevating Enterprise Performance with Human-Technology Synergy |
+   655→| `quantum-driven-acceleration.html` | Quantum-Driven Acceleration: Unleashing Enterprise Performance with Next-Gen Computing | (h2) same | Transforming Enterprise Speed and Intelligence with Quantum-Inspired Computing |
+   656→| `zero-trust-digital-security.html` | Zero-Trust Digital Security: Next-Generation Enterprise Protection with AI-Driven Zero-Trust Frameworks | (h2) same | Reengineering Security for a Perimeterless Enterprise |
+   657→| `predictive-enterprise-strategy.html` | Predictive Enterprise Strategy: AI-Driven Decision Intelligence for Future-Ready Enterprises | (h2) same | Engineering a Future-Proof Enterprise with Predictive Intelligence |
+   658→| `esg-sustainable-systems.html` | ESG & Sustainable Systems: Intelligent Transformation for Sustainable Enterprise Growth | (h2) same | Engineering a Sustainable Future with Intelligent ESG Strategies |
+   659→| `cloud-edge-convergence.html` | Cloud-Edge Convergence: Unifying Intelligent Computing for Hyper-Scalable Enterprises | (h2) same | Seamless Integration of Cloud & Edge for Enterprise Acceleration |
+   660→| `cyber-resilient-networks.html` | Cyber-Resilient Networks: Intelligent Security and Autonomous Threat Defense | (h2) same | Building Next-Generation Resilient Enterprise Networks |
+   661→| `self-optimizing-ecosystems.html` | Self-Optimizing Ecosystems: Autonomous Enterprise Efficiency & Intelligent Workflow Optimization | (h2) same | Unleashing Intelligent Systems That Continuously Improve Themselves |
+   662→| `future-innovation-lab.html` | Future Innovation Lab: Architecting the Next Era of Intelligent Enterprise Transformation | (h2) same | Building the Future with Intelligent, Scalable Innovation |
+   663→| `scalable-tech-frameworks.html` | Scalable Tech Frameworks: Engineering Future-Ready, High-Performance Enterprise Infrastructure | (h2) same | Building Hyper-Scalable, Adaptive, and Intelligent Technology Ecosystems |
+   664→
+   665→> All 12 Transform pages share an identical section structure: hero (h2 + h4) → "How Enterprises Transform with X" → "Transforming X with Y" → "Scaling Enterprise Intelligence with AI-Powered [topic]" (with sub-headline "Strategemist's Approach to …") → "Why Choose Strategemist for X?" → Get Started CTA.
+   666→
+   667→### 11.4 LEAD (8 — strategy/thought-leadership pages, excluding The Strategemist Edge which is in Section 8)
+   668→
+   669→| File | Title | Hero h2 | Sub-headline (h4) |
+   670→|---|---|---|---|
+   671→| `deep-tech-market-disruption.html` | Deep Tech Market Disruption: Engineering the Next Era of Enterprise Innovation | (h2) same | Strategemist: Powering Market Disruption Through Scalable, Intelligent Technologies |
+   672→| `scaling-growth-strategy.html` | Scaling & Growth Strategy: Engineering Sustainable, High-Performance Enterprise Expansion | (h2) same | Strategemist: Driving Intelligent, Scalable Growth with Deep-Tech Integration |
+   673→| `ai-governance-compliance.html` | AI Governance & Compliance: Engineering Responsible, Secure, and Scalable AI Systems | (h2) same | Strategemist: Delivering AI Governance, Security, and Compliance at Enterprise Scale |
+   674→| `future-of-digital-systems.html` | Future of Digital Systems: Engineering Scalable, Secure & Intelligent Enterprise Frameworks | (h2) same | Strategemist: Defining the Next Era of Digital Infrastructure & Enterprise Evolution |
+   675→| `human-centric-innovations.html` | Human-Centric Innovations: Engineering Intelligent, Adaptive, and Ethical Digital Systems | (h2) same | Strategemist: Driving Digital Innovation with Human-Centric, Intelligent Systems |
+   676→| `resilient-secure-networks.html` | Resilient & Secure Networks: Engineering Future-Proof, High-Performance Enterprise Connectivity | (h2) same | Strategemist: Architecting Intelligent, Secure, and Adaptive Network Ecosystems |
+   677→| `enterprise-evolution-hub.html` | Enterprise Evolution Hub: Engineering Intelligent, Scalable & Future-Ready Business Systems | (h2) same | Strategemist: Redefining Enterprise Evolution with Intelligent, Adaptive, and Scalable Architectures |
+   678→
+   679→> All 7 (above) Lead pages share an identical 6-section structure: hero (h2 + h4) → "How Strategemist Powers X" → "Strategemist's X Model vs. Traditional Y Approaches" → "Scaling Enterprise Evolution with The Strategemist Edge" (sub: "Strategemist's Approach to …") → "Why Enterprises Choose Strategemist for X" → Get Started CTA. Plus `the-strategemist-edge.html` (Section 8) which has its own richer structure.
+   680→
+   681→### 11.5 EMPOWER (8 — the unicode-named IP-platform product pages)
+   682→
+   683→| File | Title | Hero h2 | Sub-headline (h4) | Intro paragraph (verbatim) |
+   684→|---|---|---|---|---|
+   685→| `q𝝁βrix.html` | Qμβrix™ – Quantum-Inspired Neuromorphic AI | Qμβrix™ – Quantum-Inspired Neuromorphic AI | AI Acceleration Beyond Limits – Faster, Smarter, More Energy-Efficient | "Traditional AI is constrained by high computational costs, slow adaptability, and excessive power consumption. Qμβrix™ (Quantum-Inspired Neuromorphic AI) addresses these limitations using quantum-inspired tensor processing and neuromorphic learning." |
+   686→| `σ-graphion.html` | Σ-Graphion™ – Hyperdimensional Graph Neural Networks (HGNN) | Σ-Graphion™ – Hyperdimensional Graph Neural Networks (HGNN) | Unlock the Power of AI That Understands Complex Relationships | "Traditional AI struggles with non-linear, multi-relational data structures, limiting its ability to capture complex dependencies. Σ-Graphion™ leverages hyperdimensional graph neural networks (HGNNs) to enhance AI's reasoning, scalability, and interpretability across large-scale knowledge graphs." |
+   687→| `reinωlytix.html` | ReinΩlytix™ – Adaptive Reinforcement Learning & Bayesian Meta-Learning | ReinΩlytix™ – Adaptive Reinforcement Learning & Bayesian Meta-Learning | Empowering AI to Continuously Learn, Adapt, and Optimize in Dynamic Environments | "Traditional AI struggles with real-world unpredictability, requiring extensive retraining, high computational resources, and failing in unfamiliar situations. ReinΩlytix™ redefines reinforcement learning (RL) and Bayesian decision-making by introducing adaptive AI models that self-optimize in real-time environments." |
+   688→| `neuro-𝑸uantis.html` | Neuro-𝑸uantis™ – Quantum-Inspired Neural Architectures | Neuro-𝑸uantis™ – Quantum-Inspired Neural Architectures | AI That's Smaller, Faster & More Efficient | "Deep learning models are growing exponentially in size, leading to computational inefficiencies, high energy costs, and hardware constraints. Neuro-𝑸uantis™ addresses these challenges with Quantum Tensor Networks (QTN) to optimize AI models without compromising accuracy." |
+   689→| `𝝓-federis.html` | 𝝓-Federis™ – Secure Federated AI & Homomorphic Learning | 𝝓-Federis™ – Secure Federated AI & Homomorphic Learning | Privacy-Preserving AI for Secure, Decentralized Data Intelligence | "As AI adoption expands across industries, data privacy risks, regulatory challenges, and cybersecurity threats are growing exponentially. 𝝓-Federis™ enables secure, federated learning and encrypted AI training using homomorphic encryption, ensuring decentralized AI collaboration without exposing raw data." |
+   690→| `ethicξense.html` | EthicΞense™ – Ethical AI Governance & Compliance Engine | EthicΞense™ – Ethical AI Governance & Compliance Engine | Ensure AI Transparency, Fairness, and Regulatory Compliance | "As AI adoption increases across hiring, finance, healthcare, security, and legal decision-making, the risks of bias, lack of transparency, and regulatory non-compliance grow significantly. EthicΞense™ ensures responsible AI development by enabling real-time fairness monitoring, bias auditing, and automated compliance enforcement." |
+   691→| `gξ𝜂-forma.html` | GΞ𝜂-Forma™ – Generative AI for Autonomous Synthesis | GΞ𝜂-Forma™ – Generative AI for Autonomous Synthesis | Unleash AI Creativity with Self-Optimizing Generative Intelligence | "Traditional generative AI models are static, computationally expensive, and limited in adaptability. GΞ𝜂-Forma™ introduces self-learning generative AI, capable of refining content dynamically, optimizing multi-modal synthesis, and reducing computational costs for large-scale AI-driven content generation." |
+   692→| `holo𝚫ense.html` | Holo𝚫ense™ – Holographic AI for Spatial Intelligence | Holo𝚫ense™ – Holographic AI for Spatial Intelligence | Revolutionizing AI with Real-Time 3D Spatial Awareness | "As industries converge digital and physical spaces, AI must evolve beyond 2D perception to understand volumetric, dynamic, and complex 3D environments. Holo𝚫ense™ enables real-time AI-powered spatial intelligence using holographic encoding, multi-sensor fusion, and event-based AI learning, unlocking advanced perception for mixed reality, robotics, and autonomous systems." |
+   693→
+   694→> **Note on unicode rendering**: The filenames contain Greek letters and mathematical symbols (μ, β, Σ, ω, 𝑸, 𝝓, ξ, 𝜂, Ξ, 𝚫) that display differently across fonts/systems. The "display name" used in the nav (with trademark symbols) is the canonical marketing name — e.g., the file `q𝝁βrix.html` is shown in nav and on the homepage card as **QµPrix™**; the page itself uses **Qμβrix™** in its title (slight inconsistency: µ vs μ).
+   695→> The 8 products together form the "Empower" platform suite. Their card-level taglines (from the homepage hero, Section 4.1) are the primary short marketing copy.
+   696→
+   697→### 11.6 SERVICES (13 — service offering pages)
+   698→
+   699→The 13 service pages use a different, much more "consulting-style" copy tone (shorter, business-outcome oriented) than the Innovate/Solve/Transform/Lead/Empower pages. Each has a simple h1 + one-sentence intro paragraph.
+   700→
+   701→| File | Title | Hero h1 | Intro (verbatim) |
+   702→|---|---|---|---|
+   703→| `ai-consulting.html` | AI Strategy & Transformation | AI Strategy & Transformation | "Move beyond experimentation. We align AI to P&L and risk mandates, architecting enterprise operating models and controls that scale value—responsibly." |
+   704→| `ai-proof-of-concept.html` | AI Proof of Concept (PoC) | AI Proof of Concept (PoC) | "Replace hype with evidence. We validate value, feasibility, and adoption risks so capital allocation is confident and defensible" |
+   705→| `Big-Data-Consulting.html` | Big Data & Advanced Analytics | Big Data & Advanced Analytics | "Turn sprawling data estates into a strategic asset. We design cloud-native platforms, governance, and MLOps that scale intelligence across the enterprise" |
+   706→| `generative-ai-consulting.html` | Generative AI Enterprise Strategy | Generative AI Enterprise Strategy | "Reimagine how work gets done. We scale GenAI across content, code and customer experience—with governance that protects brand, IP and data." |
+   707→| `business-intelligence-services.html` | Business Intelligence Services | Business Intelligence Services | "Turn metrics into management. We build executive-grade BI that aligns with strategy, controls, and decision cadence." |
+   708→| `data-engineering-services.html` | Data Engineering Services | Data Engineering Services | "Build resilient, observable pipelines that move trusted data from source to decision—at SLA." |
+   709→| `databricks-deployment-services.html` | Databricks Deployment Services | Databricks Deployment Services | "Deploy Lakehouse, Unity Catalog, and MLflow the right way—secure, governable, and cost-aware from day one." |
+   710→| `ai-agents-development.html` | AI Agents Development | AI Agents Development | "Build goal-directed, tool-using agents that operate safely within your data, systems, and controls." |
+   711→| `generative-ai-development-company.html` | Generative AI Development Company | Generative AI Development Company | "We design and ship GenAI apps—secure, brand-faithful, and cost-controlled—ready for enterprise scale." |
+   712→| `llm.development.html` | LLMs Development | LLMs Development | "Fine-tune, distill, and operate LLMs with measurable quality, controlled cost, and enforceable policy." |
+   713→| `machine-learning-consulting.html` | Machine Learning Consulting | Machine Learning Consulting | "From feature engineering to MLOps, we build reliable ML systems with clear business linkage and lifecycle control." |
+   714→| `ai-integration-services.html` | AI Integration Services | AI Integration Services | "Embed AI safely into your products and processes—through governed APIs, secure data pathways, and reliable operations" |
+   715→| `mlops-consulting.html` | MLOps Consulting | MLOps Consulting | "Standardize ML/LLM lifecycle—data, models, deployment, and monitoring—with governance that stands up to audit." |
+   716→
+   717→> Note: `ai-consulting.html` and `Big-Data-Consulting.html` are the only service filenames that diverge in naming convention from the others (the first uses `ai-` lowercase; the second uses Title-Case-with-dashes — both pre-existing inconsistencies to canonicalize in the rebuild).
+   718→
+   719→---
+   720→
+   721→## 12. Unicode-named Pages (the "Empower" IP-platform suite)
+   722→
+   723→All 8 of these pages represent **Strategemist's proprietary IP platforms / products** — they are the trademarked products that are referenced as "BACKED BY 11 PATENTS" and "Redefining Intelligent Systems – Choose Your Breakthrough". Together they are the Empower pillar of the nav.
+   724→
+   725→Each page follows the same structure: hero (h2 product name + h4 tagline + intro paragraph) → "Why [Product]?" section (positioning against the limits of traditional AI) → "Industry Applications" → "The Science Behind [Product]" → "Technical Architecture" → "Future Innovations" → Get Started CTA.
+   726→
+   727→| Filename (unicode) | Nav display name | Category / what it represents | One-line essence |
+   728→|---|---|---|---|
+   729→| `q𝝁βrix.html` | **QµPrix™** | Quantum-inspired neuromorphic AI accelerator | Faster, smarter, more energy-efficient AI via quantum-inspired tensor processing + neuromorphic learning. |
+   730→| `σ-graphion.html` | **Σ-Graphion™** | Hyperdimensional Graph Neural Networks (HGNN) | AI that understands complex multi-relational relationships across large knowledge graphs. |
+   731→| `reinωlytix.html` | **ReinQlynix™** | Adaptive Reinforcement Learning + Bayesian Meta-Learning | AI that continuously learns, adapts, and optimizes in dynamic, unfamiliar environments. |
+   732→| `neuro-𝑸uantis.html` | **Neuro-Quantus™** | Quantum-Inspired Neural Architectures | Smaller, faster, more efficient AI via Quantum Tensor Networks (QTN). |
+   733→| `𝝓-federis.html` | **Φ-Federis™** | Secure Federated AI + Homomorphic Learning | Privacy-preserving AI training across organizations without exposing raw data. |
+   734→| `ethicξense.html` | **EthicSense™** | Ethical AI Governance & Compliance Engine | Real-time fairness monitoring, bias auditing, and automated AI regulatory compliance. |
+   735→| `gξ𝜂-forma.html` | **G(π)-Forma™** | Generative AI for Autonomous Synthesis | Self-learning generative AI that refines content dynamically and reduces compute cost. |
+   736→| `holo𝚫ense.html` | **HoloSense™** | Holographic AI for Spatial Intelligence | Real-time 3D spatial awareness via holographic encoding + multi-sensor fusion. |
+   737→
+   738→These 8 are the products being marketed in the homepage hero "Empower" column ("Redefining Intelligent Systems – Choose Your Breakthrough") and are the implementation of Strategemist's patent portfolio — they correspond to several of the patents listed in The Patent Vault (Section 9), though the mapping is not 1:1 (there are 12 patent cards in the Vault but 8 Empower products).
+   739→
+   740→---
+   741→
+   742→## 13. Cross-cutting notes for the Next.js rebuild
+   743→
+   744→1. **Brand assets missing**: `images/logo.svg`, `images/logo-footer.png`, `images/logo-arrow.svg`, `css/style.css`, `js/custom.js`, all section icons (`dots.svg`, `color-star.svg`, `solve.svg`, `trans.svg`, `Union.svg`, `empower.svg`, `servce.svg`, `double-arrow.png`, `arrow-to.png`, `more-ar.svg`), all card images, all team member photos, and all case-study images were NOT uploaded. The rebuild must either re-create these or substitute with the existing `public/logo.svg` plus brand icons (Bootstrap Icons are referenced throughout).
+   745→2. **External link**: "Try our AI model" / "Let's Build Together" both link to https://deepmindq.com/ — appears to be the AI-product sister brand.
+   746→3. **Web3Forms integration**: about-us.html posts its contact form to `https://api.web3forms.com/submit` with an empty `access_key` (intentionally blanked in the upload). The Next.js rebuild should replace this with the existing `/api/contact` route.
+   747→4. **Cookies / Terms**: cookie consent state stored in `localStorage.cookieConsent`; terms in a Bootstrap modal `#termsModal`.
+   748→5. **Fonts**: Lexend (300–700) via Google Fonts; Bootstrap Icons via CDN.
+   749→6. **Frameworks in source**: Bootstrap 5.3.2 / 5.3.8, jQuery 3.7.1, Popper 2.11.8, Slick carousel 1.9.0.
+   750→7. **Inconsistencies to canonicalize**:
+   751→   - `Real-Time-optimization-hub.html` (nav) vs `real-time-optimization-hub.html` (file)
+   752→   - `.html.html` double-extension on one case study
+   753→   - `Big-Data-Consulting.html` (Title-Case) vs other service filenames (lowercase-kebab)
+   754→   - "QµPrix™" (nav) vs "Qμβrix™" (page) — pick one
+   755→   - "EthicSense™" (nav) vs "EthicΞense™" (page) — pick one
+   756→   - Patent Vault lists 12 patents but homepage says "BACKED BY 11 PATENTS" — confirm canonical count
+   757→   - Homepage Optimization-tab card images for "Predictive Enterprise Strategy" and "Cloud-Edge Convergence" are swapped
+   758→   - `real-time-optimization-hub.html` page title duplicates the "Autonomous Knowledge Core" name from another Innovate page
+   759→   - The `<title>` of `intelligent-decision-hubs.html` is the under-cased literal "intelligent-decision-hubs" (not "Intelligent Decision Hubs")
+   760→8. **Page count**: 71 HTML files = 1 homepage + 1 about + 1 team + 1 strategemist-edge + 1 patent-value + 3 case studies + 12 Innovate + 12 Solve + 12 Transform + 8 Lead + 8 Empower + 13 Services = 73 listed pages; the discrepancy is because `innovate.html` (the top-level nav anchor for the Innovate dropdown) is referenced but NOT present in the upload, while a couple of files may exist that aren't linked from the main nav.
+   761→

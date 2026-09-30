@@ -1,14 +1,13 @@
 import { Navbar } from '@/components/site/navbar'
 import { Hero } from '@/components/site/hero'
-import { Stats } from '@/components/site/stats'
-import { Capabilities } from '@/components/site/capabilities'
-import { Approach } from '@/components/site/approach'
-import { IPPortfolio } from '@/components/site/ip-portfolio'
-import { AnalyticsDemo } from '@/components/site/analytics-demo'
+import { Empower } from '@/components/site/empower'
+import { Innovate } from '@/components/site/innovate'
+import { Solve, Transform } from '@/components/site/solve-transform'
+import { SecurityGrid, Lead, Edge } from '@/components/site/lead-security'
+import { About } from '@/components/site/about'
+import { Team } from '@/components/site/team'
 import { CaseStudies } from '@/components/site/case-studies'
-import { Industries } from '@/components/site/industries'
-import { Differentiators } from '@/components/site/differentiators'
-import { Insights } from '@/components/site/insights'
+import { Services } from '@/components/site/services'
 import { CTA } from '@/components/site/cta'
 import { Contact } from '@/components/site/contact'
 import { Footer } from '@/components/site/footer'
@@ -20,15 +19,17 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <Stats />
-        <Capabilities />
-        <Approach />
-        <IPPortfolio />
-        <AnalyticsDemo />
+        <Empower />
+        <Innovate />
+        <Solve />
+        <Transform />
+        <SecurityGrid />
+        <Lead />
+        <Edge />
+        <About />
+        <Team />
         <CaseStudies />
-        <Industries />
-        <Differentiators />
-        <Insights />
+        <Services />
         <CTA />
         <Contact />
       </main>

@@ -15,24 +15,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Strategemist — Deep-Tech Innovation, Engineered for Outcomes",
+  title: "Strategemist — Beyond Consulting. Engineering the Future.",
   description:
-    "Strategemist is an IP-led technology firm turning predictive analytics, AI, automation, and intelligent systems into scalable business outcomes.",
+    "Strategemist is an IP-led technology firm backed by 11 patents. Beyond consulting—engineering the future through quantum-inspired AI, intelligent systems, and enterprise transformation.",
   keywords: [
     "Strategemist",
-    "predictive analytics",
-    "artificial intelligence",
-    "automation",
+    "deep tech",
+    "AI consulting",
+    "quantum computing",
     "intelligent systems",
     "digital transformation",
-    "deep tech",
-    "IP-led technology",
+    "predictive analytics",
+    "generative AI",
+    "MLOps",
+    "zero-trust security",
   ],
-  authors: [{ name: "Strategemist" }],
+  authors: [{ name: "Strategemist Corporation" }],
   openGraph: {
-    title: "Strategemist — Deep-Tech Innovation, Engineered for Outcomes",
+    title: "Strategemist — Beyond Consulting. Engineering the Future.",
     description:
-      "IP-led technology firm turning predictive analytics, AI, automation, and intelligent systems into scalable business outcomes.",
+      "IP-led technology firm backed by 11 patents. Quantum-inspired AI, intelligent systems, and enterprise transformation.",
     siteName: "Strategemist",
     type: "website",
   },
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Strategemist",
     description:
-      "IP-led technology firm turning predictive analytics, AI, automation, and intelligent systems into scalable business outcomes.",
+      "IP-led technology firm backed by 11 patents. Beyond consulting—engineering the future.",
   },
 };
 
