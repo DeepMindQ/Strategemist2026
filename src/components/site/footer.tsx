@@ -107,7 +107,7 @@ export function Footer() {
           </div>
 
           <p className="mt-10 text-center text-sm font-medium text-foreground/70">
-            One Strategemist — <span className="gradient-text-primary font-semibold">Orchestrated Intelligence → Measurable Outcomes</span>
+            IP → Intelligence → Platforms → Transformation → <span className="gradient-text-primary font-semibold">Outcomes</span>
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-muted-foreground sm:flex-row">

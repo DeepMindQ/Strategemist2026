@@ -15,66 +15,44 @@ const TAB_ICONS: Record<string, typeof Brain> = {
 }
 
 function TabbedSection({
-  number, eyebrow, title, description, tabs, href, linkCat, muted = false,
+  number, eyebrow, stage, title, description, tabs, href, linkCat, muted = false,
 }: {
-  number: string; eyebrow: string; title: string; description: string
+  number: string; eyebrow: string; stage: string; title: string; description: string
   tabs: typeof SOLVE_TABS; href: string; linkCat: 'solve' | 'transform'; muted?: boolean
 }) {
   const [active, setActive] = React.useState(tabs[0].id)
   const tab = tabs.find((t) => t.id === active)!
-
   return (
-    <section className={cn('relative py-20 lg:py-24', muted && 'bg-[#0D0E18]')}>
+    <section className={cn('relative py-24 lg:py-32', muted && 'bg-[#0B0C14]')}>
       <SectionDivider />
       <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
         <div className="flex flex-wrap items-end justify-between gap-4">
-          <SectionHeader number={number} eyebrow={eyebrow} title={title} description={description} />
+          <SectionHeader number={number} eyebrow={eyebrow} stage={stage} title={title} description={description} />
           <ViewAllLink href={href} label={`Explore all ${eyebrow}`} />
         </div>
-
         <div className="mt-10 flex flex-wrap gap-2" role="tablist">
           {tabs.map((t) => {
             const Icon = TAB_ICONS[t.name] || Brain
             const isActive = active === t.id
             return (
-              <button
-                key={t.id}
-                role="tab"
-                aria-selected={isActive}
-                onClick={() => setActive(t.id)}
-                className={cn(
-                  'inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-all',
-                  isActive ? 'bg-primary text-primary-foreground shadow-lg' : 'border border-white/10 text-foreground/70 hover:border-primary/40 hover:text-foreground'
-                )}
-              >
+              <button key={t.id} role="tab" aria-selected={isActive} onClick={() => setActive(t.id)}
+                className={cn('inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-all',
+                  isActive ? 'bg-primary text-primary-foreground shadow-lg' : 'border border-white/10 text-foreground/70 hover:border-primary/40 hover:text-foreground')}>
                 <Icon className="h-4 w-4" /> {t.name}
               </button>
             )
           })}
         </div>
-
         <AnimatePresence mode="wait">
-          <motion.div
-            key={active}
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-10"
-          >
+          <motion.div key={active} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }} className="mt-10">
             <div className="mx-auto max-w-3xl text-center">
               <h3 className="text-balance text-2xl font-bold tracking-[-0.035em] sm:text-3xl">{tab.headline}</h3>
               <p className="mt-3 text-pretty text-muted-foreground">{tab.description}</p>
             </div>
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {tab.services.map((s, i) => (
-                <motion.div
-                  key={s.name}
-                  initial={{ opacity: 0, y: 18 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.08, duration: 0.4 }}
-                >
-                  <Link href={routeForLabel(linkCat, s.name)} className="group flex h-full flex-col rounded-2xl border border-white/8 bg-card/40 p-6 card-hover hover:border-primary/30">
+                <motion.div key={s.name} initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08, duration: 0.4 }}>
+                  <Link href={routeForLabel(linkCat, s.name)} className="group flex h-full flex-col rounded-xl border border-white/8 bg-card/50 p-6 card-hover hover:border-primary/30">
                     <span className="grid h-12 w-12 place-items-center rounded-xl bg-primary/12 text-primary ring-1 ring-primary/20 transition-transform duration-300 group-hover:scale-110"><s.icon className="h-6 w-6" /></span>
                     <h4 className="mt-4 flex items-center gap-1.5 font-semibold">{s.name}<ArrowRight className="h-3.5 w-3.5 opacity-0 transition-all group-hover:translate-x-0.5 group-hover:opacity-100" /></h4>
                     <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
@@ -90,21 +68,8 @@ function TabbedSection({
 }
 
 export function Solve() {
-  return (
-    <TabbedSection
-      number="04" eyebrow="Solve" title="Smart. Secure. Scalable. Future-Ready."
-      description="Intelligent decision-making, robust security, high-performance systems, and scalable infrastructure — powered by real-time intelligence."
-      tabs={SOLVE_TABS} href="/solve" linkCat="solve"
-    />
-  )
+  return <TabbedSection number="§09" eyebrow="Solve" stage="Transformation" title="Smart. Secure. Scalable. Future-Ready." description="Intelligent decision-making, robust security, high-performance systems, and scalable infrastructure — powered by real-time intelligence." tabs={SOLVE_TABS} href="/solve" linkCat="solve" />
 }
-
 export function Transform() {
-  return (
-    <TabbedSection
-      number="05" eyebrow="Transform" title="Redefine the Future. Build What's Next."
-      description="Intelligent reinvention — from autonomous systems to predictive intelligence and scalable digital ecosystems."
-      tabs={TRANSFORM_TABS} href="/transform" linkCat="transform" muted
-    />
-  )
+  return <TabbedSection number="§10" eyebrow="Transform" stage="Transformation" title="Redefine the Future. Build What's Next." description="Intelligent reinvention — from autonomous systems to predictive intelligence and scalable digital ecosystems." tabs={TRANSFORM_TABS} href="/transform" linkCat="transform" muted />
 }

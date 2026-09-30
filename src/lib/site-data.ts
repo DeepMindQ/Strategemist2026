@@ -49,15 +49,17 @@ import {
 ============================================================ */
 export const BRAND = {
   name: 'Strategemist',
-  tagline: 'BEYOND CONSULTING. ENGINEERING THE FUTURE.',
+  tagline: 'Beyond Consulting. Engineering the Future.',
+  manifesto: 'IP. Platforms. Outcomes. No Compromises.',
+  metaphor: 'IP → Intelligence → Platforms → Transformation → Outcomes',
   patents: '11',
   email: 'info@strategemist.com',
   ctaPrimary: 'Let’s Build Together',
   ctaPrimaryHref: 'https://deepmindq.com/',
-  heroEyebrow: 'BACKED BY 11 PATENTS.',
-  heroHeadline: 'BEYOND CONSULTING. ENGINEERING THE FUTURE.',
+  heroEyebrow: 'IP. Platforms. Outcomes. No Compromises.',
+  heroHeadline: 'Beyond Consulting. Engineering the Future.',
   heroSub:
-    'At Strategemist, innovation is an experience. Discover our AI-powered intelligence tool—designed to help you explore, adapt, and create real solutions. While others speculate, we deliver. See innovation in action.',
+    'An AI transformation intelligence platform — engineering the future through quantum-inspired AI, intelligent systems, and enterprise transformation. Delivering measurable outcomes, not slideware.',
   heroCta: 'Try our AI model',
 }
 
@@ -148,6 +150,7 @@ export interface NavMegaItem {
 export interface NavGroup {
   id: string
   label: string
+  stage?: string
   items: NavMegaItem[]
 }
 
@@ -155,6 +158,7 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     id: 'innovate',
     label: 'Innovate',
+    stage: 'IP',
     items: [
       { label: 'The Patent Vault', href: '/innovate/the-patent-value', desc: '11 patents, one platform' },
       { label: 'Quantum Computing', href: '/innovate/quantum-computing', desc: 'Quantum-inspired computation' },
@@ -171,8 +175,24 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
+    id: 'empower',
+    label: 'Empower',
+    stage: 'Platforms',
+    items: [
+      { label: 'QµPrix™', href: '/empower/qprux', desc: 'Computational power' },
+      { label: 'Σ-Graphion™', href: '/empower/graphion', desc: 'Graph intelligence' },
+      { label: 'ReinQlynix™', href: '/empower/reinqlynix', desc: 'Continuous learning' },
+      { label: 'Neuro-Quantus™', href: '/empower/neuro-quantus', desc: 'Compact efficient models' },
+      { label: 'Φ-Federis™', href: '/empower/federis', desc: 'Privacy-preserving federated AI' },
+      { label: 'EthicSense™', href: '/empower/ethicsense', desc: 'Explainable, ethical AI' },
+      { label: 'G(π)-Forma™', href: '/empower/g-forma', desc: 'Generative intelligence' },
+      { label: 'HoloSense™', href: '/empower/holosense', desc: 'Spatial perception' },
+    ],
+  },
+  {
     id: 'solve',
     label: 'Solve',
+    stage: 'Transformation',
     items: [
       { label: 'Intelligent Decision Hubs', href: '/solve/intelligent-decision-hubs' },
       { label: 'Enterprise Process Control', href: '/solve/enterprise-process-control' },
@@ -191,6 +211,7 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     id: 'transform',
     label: 'Transform',
+    stage: 'Transformation',
     items: [
       { label: 'Digital Business Models', href: '/transform/digital-business-models' },
       { label: 'Autonomous Enterprise Grid', href: '/transform/autonomous-enterprise-grid' },
@@ -209,6 +230,7 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     id: 'lead',
     label: 'Lead',
+    stage: 'Outcomes',
     items: [
       { label: 'The Strategemist Edge', href: '/lead/the-strategemist-edge' },
       { label: 'Deep Tech Market Disruption', href: '/lead/deep-tech-market-disruption' },
@@ -221,22 +243,9 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
-    id: 'empower',
-    label: 'Empower',
-    items: [
-      { label: 'QµPrix™', href: '/empower/qprux', desc: 'Computational power' },
-      { label: 'Σ-Graphion™', href: '/empower/graphion', desc: 'Graph intelligence' },
-      { label: 'ReinQlynix™', href: '/empower/reinqlynix', desc: 'Continuous learning' },
-      { label: 'Neuro-Quantus™', href: '/empower/neuro-quantus', desc: 'Compact efficient models' },
-      { label: 'Φ-Federis™', href: '/empower/federis', desc: 'Privacy-preserving federated AI' },
-      { label: 'EthicSense™', href: '/empower/ethicsense', desc: 'Explainable, ethical AI' },
-      { label: 'G(π)-Forma™', href: '/empower/g-forma', desc: 'Generative intelligence' },
-      { label: 'HoloSense™', href: '/empower/holosense', desc: 'Spatial perception' },
-    ],
-  },
-  {
     id: 'services',
     label: 'Services',
+    stage: 'Intelligence',
     items: [
       { label: 'AI Consulting', href: '/services/ai-consulting' },
       { label: 'AI Proof of Concept (PoC)', href: '/services/ai-proof-of-concept' },
