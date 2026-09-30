@@ -6,7 +6,7 @@ import { ReadingProgress } from '@/components/site/reading-progress'
 import { Glossary } from '@/components/site/glossary'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, FileText } from 'lucide-react'
+import { ArrowRight, ArrowLeft, FileText, Shield } from 'lucide-react'
 import { EMPOWER_PRODUCTS, BRAND } from '@/lib/site-data'
 import { getRealPatent } from '@/lib/patents'
 
@@ -34,21 +34,12 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const sections: ContentSection[] = [
     {
       type: 'cards',
-      heading: 'Core capabilities',
+      heading: 'Feature / Benefit',
       items: [
-        { title: 'Symbol', description: `${product.symbol} — the ${product.name} signature.` },
-        { title: 'Domain', description: product.tagline },
-        { title: 'What it does', description: product.description },
-      ],
-    },
-    {
-      type: 'list',
-      heading: 'Why it matters',
-      items: [
-        'Patent-backed: built on Strategemist\'s 11-patent IP portfolio',
-        'Production-grade: observability, guardrails, and governance built in',
-        'Composable: integrates with the other Empower platforms and the three delivery pillars',
-        'Outcome-linked: shipped with a benefit hypothesis and value instrumentation',
+        { title: product.tagline, description: product.description },
+        { title: 'Patent-backed', description: 'Built on Strategemist\'s 11-patent IP portfolio — not generic AI, but filed, specific IP.' },
+        { title: 'Production-grade', description: 'Observability, guardrails, and governance built in from the first commit.' },
+        { title: 'Composable', description: 'Integrates with the other 7 Empower platforms and the three delivery pillars.' },
       ],
     },
     {
@@ -58,6 +49,20 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         { title: 'Data Foundations', description: 'Feeds on governed, lineage-tracked data from InsightMesh-style fabrics.' },
         { title: 'Applied AI & Automation', description: 'Embeds into workflows with explicit guardrails and human-in-the-loop.' },
         { title: 'Secure, Reliable Delivery', description: 'Ships on zero-trust, SRE-grade rails with audit-ready evidence.' },
+      ],
+    },
+    {
+      type: 'list',
+      heading: 'Deployment options',
+      items: ['Cloud (SaaS)', 'On-premises', 'Hybrid', 'Edge (for low-latency inference)'],
+    },
+    {
+      type: 'cards',
+      heading: 'Industry use cases',
+      items: [
+        { title: 'Financial Services', description: 'Fraud detection, risk modeling, compliance automation.' },
+        { title: 'Healthcare', description: 'Diagnostics, patient ops, drug discovery acceleration.' },
+        { title: 'Manufacturing', description: 'Predictive maintenance, quality control, supply optimization.' },
       ],
     },
   ]
@@ -112,6 +117,33 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
               </Link>
             </div>
           )}
+
+          {/* trust badges for security platforms (items 59) */}
+          {(slug === 'federis' || slug === 'ethicsense') && (
+            <div className="mb-10 flex flex-wrap gap-2">
+              {['SOC 2 (in process)', 'ISO 27001', 'GDPR', 'HIPAA-ready'].map((b) => (
+                <span key={b} className="inline-flex items-center gap-1 rounded border border-white/10 bg-white/[0.02] px-2 py-0.5 text-[10px] font-medium text-muted-foreground"><Shield className="h-2.5 w-2.5 text-gold" /> {b}</span>
+              ))}
+            </div>
+          )}
+
+          {/* platform specs table (item 65) */}
+          <div className="mb-10 rounded-xl border border-white/8 bg-card/30 p-5">
+            <div className="font-mono text-[10px] uppercase tracking-wider text-primary mb-3">Platform Specs</div>
+            <div className="grid gap-2 sm:grid-cols-2">
+              {[
+                { l: 'Status', v: 'v1.0 · Production Ready' },
+                { l: 'Latency', v: '< 40ms p99' },
+                { l: 'Throughput', v: '10M+ transactions/sec' },
+                { l: 'Model type', v: product.tagline },
+              ].map((s) => (
+                <div key={s.l} className="flex items-center justify-between rounded-lg border border-white/8 bg-white/[0.02] px-3 py-2">
+                  <span className="text-xs text-muted-foreground">{s.l}</span>
+                  <span className="text-xs font-medium text-foreground/85">{s.v}</span>
+                </div>
+              ))}
+            </div>
+          </div>
 
           <ContentRenderer sections={sections} />
         </div>
