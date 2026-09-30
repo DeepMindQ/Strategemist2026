@@ -54,28 +54,47 @@ export function Footer() {
             <span className="t-mono text-primary">Global Footprint</span>
           </div>
           <div className="grid gap-6 md:grid-cols-12">
-            {/* left: the map */}
+            {/* left: a real simplified world map with office nodes */}
             <div className="md:col-span-5">
-              <svg viewBox="0 0 200 100" className="w-full opacity-40">
-                {/* simplified world map dots */}
-                {Array.from({ length: 200 }).map((_, i) => {
-                  const x = (i % 20) * 10 + 5; const y = Math.floor(i / 20) * 10 + 5
-                  return <circle key={i} cx={x} cy={y} r="0.5" fill="white" opacity="0.3" />
-                })}
-                {/* office nodes: US, UK, India, KSA */}
-                {[[30, 40], [50, 35], [75, 50], [70, 45]].map(([cx, cy], i) => (
+              <svg viewBox="0 0 200 100" className="w-full">
+                {/* Simplified continental outlines (dotted landmasses) — recognizable world map */}
+                {/* North America */}
+                <path d="M20 28 Q30 22 40 24 L48 30 L52 38 L48 46 L40 50 L32 48 L24 42 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" strokeWidth="0.3" />
+                {/* South America */}
+                <path d="M52 52 L56 50 L60 56 L58 64 L54 70 L50 66 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" strokeWidth="0.3" />
+                {/* Europe / UK */}
+                <path d="M88 26 L100 24 L104 30 L100 36 L92 36 L86 32 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" strokeWidth="0.3" />
+                {/* Africa */}
+                <path d="M94 40 L104 40 L108 48 L106 58 L102 64 L98 62 L94 54 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" strokeWidth="0.3" />
+                {/* Middle East / KSA */}
+                <path d="M106 38 L114 36 L118 42 L116 46 L110 46 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" strokeWidth="0.3" />
+                {/* India */}
+                <path d="M118 44 L124 42 L128 48 L126 54 L122 52 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" strokeWidth="0.3" />
+                {/* Asia / SE */}
+                <path d="M126 30 L150 28 L160 34 L158 42 L140 44 L128 40 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" strokeWidth="0.3" />
+                {/* Australia */}
+                <path d="M150 60 L164 58 L168 64 L164 70 L154 68 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" strokeWidth="0.3" />
+
+                {/* Office nodes positioned on the right continents: US (Delaware), UK (London), India (Hyderabad), KSA (Riyadh) */}
+                {([
+                  { cx: 38, cy: 34, label: 'US' },
+                  { cx: 95, cy: 28, label: 'UK' },
+                  { cx: 122, cy: 48, label: 'IN' },
+                  { cx: 112, cy: 42, label: 'KSA' },
+                ]).map((o, i) => (
                   <g key={i}>
-                    <circle cx={cx} cy={cy} r="2" fill="var(--primary)" />
-                    <circle cx={cx} cy={cy} r="2" fill="none" stroke="var(--primary)" strokeWidth="0.5">
-                      <animate attributeName="r" values="2;6;2" dur="2s" begin={`${i * 0.5}s`} repeatCount="indefinite" />
-                      <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" begin={`${i * 0.5}s`} repeatCount="indefinite" />
+                    <circle cx={o.cx} cy={o.cy} r="1.8" fill="var(--primary)" />
+                    <circle cx={o.cx} cy={o.cy} r="1.8" fill="none" stroke="var(--primary)" strokeWidth="0.5">
+                      <animate attributeName="r" values="1.8;5;1.8" dur="2.4s" begin={`${i * 0.6}s`} repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="0.9;0;0.9" dur="2.4s" begin={`${i * 0.6}s`} repeatCount="indefinite" />
                     </circle>
+                    <text x={o.cx} y={o.cy - 3} textAnchor="middle" fontSize="3" fill="var(--primary)" opacity="0.8">{o.label}</text>
                   </g>
                 ))}
-                {/* connecting lines */}
-                <line x1="30" y1="40" x2="50" y2="35" stroke="var(--primary)" strokeWidth="0.3" opacity="0.5" />
-                <line x1="50" y1="35" x2="75" y2="50" stroke="var(--primary)" strokeWidth="0.3" opacity="0.5" />
-                <line x1="75" y1="50" x2="70" y2="45" stroke="var(--primary)" strokeWidth="0.3" opacity="0.5" />
+                {/* connecting delivery lines: US-UK, UK-India, India-KSA */}
+                <line x1="38" y1="34" x2="95" y2="28" stroke="var(--primary)" strokeWidth="0.25" strokeOpacity="0.4" strokeDasharray="1 1" />
+                <line x1="95" y1="28" x2="122" y2="48" stroke="var(--primary)" strokeWidth="0.25" strokeOpacity="0.4" strokeDasharray="1 1" />
+                <line x1="112" y1="42" x2="122" y2="48" stroke="var(--primary)" strokeWidth="0.25" strokeOpacity="0.4" strokeDasharray="1 1" />
               </svg>
             </div>
             {/* right: the office cards */}
