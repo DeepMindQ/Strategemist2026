@@ -2,9 +2,10 @@ import Link from 'next/link'
 import { ArrowRight, ArrowLeft } from 'lucide-react'
 import { PageHero } from './page-hero'
 import { ContentRenderer } from './content-renderer'
+import { ReadingProgress } from './reading-progress'
 import { Button } from '@/components/ui/button'
 import { PageContent, Category, CATEGORY_META, getPages } from '@/lib/content'
-import { BRAND } from '@/lib/site-data'
+import { BRAND, EMPOWER_PRODUCTS } from '@/lib/site-data'
 
 export function InnerPage({ page, category }: { page: PageContent; category: Category }) {
   const meta = CATEGORY_META[category]
@@ -15,13 +16,19 @@ export function InnerPage({ page, category }: { page: PageContent; category: Cat
   const heroSubtitle = hero.subtitle
   const heroIntro = hero.intro
 
+  // figure label for the blueprint aesthetic
+  const figureLabel = `FIG. ${page.slug?.slice(0, 4).toUpperCase()}`
+
   return (
     <>
+      <ReadingProgress />
       <PageHero
-        eyebrow={meta.label}
+        eyebrow={meta.label.toUpperCase()}
+        stage={meta.label}
         title={heroTitle}
         subtitle={heroSubtitle}
         intro={heroIntro}
+        figureLabel={figureLabel}
         crumbs={[
           { label: 'Home', href: '/' },
           { label: meta.label, href: `/${category}` },
@@ -53,7 +60,7 @@ export function InnerPage({ page, category }: { page: PageContent; category: Cat
                 <Link
                   key={s.slug}
                   href={`/${category}/${s.slug}`}
-                  className="group flex items-center justify-between rounded-xl border border-border/60 bg-card/50 p-4 transition-colors hover:border-primary/50 hover:bg-primary/5"
+                  className="group flex items-center justify-between rounded-xl border border-white/8 bg-card/50 p-4 transition-colors hover:border-primary/30 hover:bg-primary/5"
                 >
                   <span className="text-sm font-medium leading-tight">{s.navLabel || s.hero?.title}</span>
                   <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-primary" />
@@ -67,9 +74,7 @@ export function InnerPage({ page, category }: { page: PageContent; category: Cat
       {/* CTA */}
       <section className="border-t border-border/50 py-16">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <h2 className="text-balance text-2xl font-bold tracking-tight sm:text-3xl">
-            {BRAND.tagline}
-          </h2>
+          <h2 className="text-balance text-2xl font-bold tracking-tight sm:text-3xl">{BRAND.tagline}</h2>
           <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
             Bring us your hardest deep-tech problem. We&apos;ll bring the IP, the method, and measurable outcomes.
           </p>
