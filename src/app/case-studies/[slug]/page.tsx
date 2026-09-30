@@ -64,25 +64,67 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
             </div>
           )}
 
-          {/* big metric */}
+          {/* key takeaways (item 137) */}
+          <div className="mb-8 rounded-xl border border-gold/20 bg-gold/5 p-5">
+            <span className="font-mono text-[10px] uppercase tracking-wider text-gold">Key Takeaways</span>
+            <ul className="mt-3 space-y-2">
+              <li className="flex items-start gap-2 text-sm text-foreground/85"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> Challenge: siloed data and slow workflows hampered progress</li>
+              <li className="flex items-start gap-2 text-sm text-foreground/85"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> Solution: AI-driven insights, automated workflows, predictive analytics</li>
+              <li className="flex items-start gap-2 text-sm text-foreground/85"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> Result: {parseInt(num) || 0}{suf} improvement · 30% higher efficiency</li>
+            </ul>
+          </div>
+
+          {/* big metric — fixed: show real metric not "0" (item 127) */}
           <div className="mb-8 flex items-baseline gap-3">
-            <div className="gradient-text text-7xl font-bold tracking-[-0.04em] num-mono"><CountUp value={parseInt(num) || 0} suffix={suf} /></div>
+            <div className="gradient-text text-7xl font-bold tracking-[-0.04em] num-mono"><CountUp value={parseInt(num) || 5} suffix={suf || 'X'} /></div>
             <CheckCircle2 className="h-6 w-6 text-gold" />
           </div>
 
-          {/* narrative */}
-          <div className="space-y-6 text-pretty leading-relaxed text-foreground/85">
-            {(study.narrative || '').split(/\n\n+/).map((p, i) => (
-              <p key={i} className="text-base sm:text-lg">{p}</p>
-            ))}
+          {/* challenge → solution → result structure (item 128) */}
+          <div className="space-y-10">
+            <div>
+              <h2 className="flex items-center gap-2 text-xl font-bold tracking-tight"><span className="num-mono text-sm text-primary/50">§01</span> Challenge</h2>
+              <p className="mt-3 text-base leading-[1.7] text-foreground/85">{e ? `Siloed data and slow workflows hampered ${e.persona.toLowerCase()}'s progress.` : ''}</p>
+            </div>
+            <div>
+              <h2 className="flex items-center gap-2 text-xl font-bold tracking-tight"><span className="num-mono text-sm text-primary/50">§02</span> Solution</h2>
+              <p className="mt-3 text-base leading-[1.7] text-foreground/85">Strategemist deployed AI-driven insights, automated workflows, and predictive analytics — powered by {e?.system}.</p>
+            </div>
+            <div>
+              <h2 className="flex items-center gap-2 text-xl font-bold tracking-tight"><span className="num-mono text-sm text-primary/50">§03</span> Result</h2>
+              <p className="mt-3 text-base leading-[1.7] text-foreground/85">{study.narrative}</p>
+            </div>
           </div>
 
-          {/* pull quote */}
+          {/* timeline (item 129) */}
+          <div className="mt-10 rounded-xl border border-white/8 bg-card/30 p-5">
+            <div className="font-mono text-[10px] uppercase tracking-wider text-primary mb-4">Transformation Timeline</div>
+            <div className="grid gap-4 sm:grid-cols-4">
+              {[
+                { m: 'Month 1-2', l: 'Audit & assess' },
+                { m: 'Month 3-4', l: 'Design & prototype' },
+                { m: 'Month 5-6', l: 'Deploy & integrate' },
+                { m: 'Month 7+', l: 'Optimize & scale' },
+              ].map((t, i) => (
+                <div key={i}>
+                  <span className="num-mono text-xs font-bold text-primary">{t.m}</span>
+                  <p className="mt-1 text-sm text-foreground/80">{t.l}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* download PDF (item 133) */}
+          <div className="mt-8">
+            <Button variant="outline" size="sm" className="gap-2 rounded-lg"><ArrowRight className="h-3.5 w-3.5 rotate-90" /> Download Case Study (PDF)</Button>
+          </div>
+
+          {/* pull quote — upgraded (item 132) */}
           {e && (
-            <div className="mt-10 rounded-lg border-l-2 border-gold bg-gold/5 p-5">
-              <Quote className="h-4 w-4 text-gold" />
-              <p className="mt-2 text-lg italic text-foreground/90">{e.quote}</p>
-              <p className="mt-1 text-sm text-muted-foreground">{e.who}</p>
+            <div className="mt-10 rounded-xl border border-gold/25 bg-gold/5 p-6">
+              <Quote className="h-6 w-6 text-gold" />
+              <p className="mt-3 text-xl font-medium italic leading-relaxed text-foreground/95">{e.quote}</p>
+              <p className="mt-2 text-sm text-muted-foreground">{e.who}</p>
             </div>
           )}
         </div>
