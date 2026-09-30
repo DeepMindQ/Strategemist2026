@@ -13,15 +13,19 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Please enter a valid email.' }, { status: 400 })
     }
 
-    // Upsert: ignore duplicate email errors
+    // Persist if DB available; otherwise log so subscribe still succeeds.
     try {
       await db.newsletterSubscriber.create({ data: { email } })
-    } catch {
-      // already subscribed — treat as success
+    } catch (dbErr) {
+      // duplicate email is fine; anything else we log
+      const msg = dbErr instanceof Error ? dbErr.message : String(dbErr)
+      if (!/unique|duplicate/i.test(msg)) {
+        console.warn('[newsletter] DB write failed, logging:', { email, error: msg })
+      }
     }
 
     return NextResponse.json({ ok: true })
-  } catch (err: unknown) {
+  } catch {
     return NextResponse.json({ error: 'Unable to subscribe right now.' }, { status: 500 })
   }
 }
