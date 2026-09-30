@@ -107,7 +107,7 @@ export function AIAssistant() {
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             transition={{ duration: 0.25 }}
             onClick={() => setOpen(true)}
-            className="group fixed bottom-5 right-5 z-50 flex items-center gap-2.5 rounded-full border border-white/10 bg-primary px-5 py-3 shadow-2xl shadow-primary/30 transition-all hover:shadow-primary/50 sm:bottom-6 sm:right-6"
+            className="group fixed bottom-24 right-4 z-50 flex items-center gap-2.5 rounded-full border border-white/10 bg-primary px-4 py-2.5 shadow-2xl shadow-primary/30 transition-all hover:shadow-primary/50 sm:bottom-6 sm:right-6 sm:px-5 sm:py-3"
             aria-label="Open Strategemist Advisor"
           >
             <span className="relative grid h-8 w-8 place-items-center rounded-full bg-white/15">
