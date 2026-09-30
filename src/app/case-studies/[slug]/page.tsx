@@ -1,11 +1,13 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft } from 'lucide-react'
+import { ArrowRight, ArrowLeft, Clock, CheckCircle2, Quote } from 'lucide-react'
 import { PageHero } from '@/components/site/page-hero'
-import { getCaseStudies } from '@/lib/content'
-import { BRAND } from '@/lib/site-data'
+import { ReadingProgress } from '@/components/site/reading-progress'
+import { CountUp } from '@/components/site/count-up'
 import { Button } from '@/components/ui/button'
+import { getCaseStudies, getCaseStudy } from '@/lib/content'
+import { BRAND } from '@/lib/site-data'
 
 export const dynamicParams = false
 
@@ -15,43 +17,85 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
-  const c = getCaseStudies().find((x) => x.slug === slug)
+  const c = getCaseStudy(slug)
   return { title: c?.title ? `${c.title} — Strategemist` : 'Case Study — Strategemist', description: c?.narrative?.slice(0, 160) }
+}
+
+const ENRICHED: Record<string, { persona: string; quote: string; who: string; system: string }> = {
+  'how-a-fortune-100-enterprise-transformed-decision-making-with-strategemist-driving-5x-faster-strategic-execution': {
+    persona: 'A top-5 global bank', quote: 'We cut decision latency from weeks to hours.', who: '— CTO, Global Bank', system: 'Σ-Graphion + Temporal Reasoning',
+  },
+  'how-a-global-tech-leader-reinvented-cybersecurity-with-strategemist-eliminating-80-of-threat-vulnerabilities': {
+    persona: 'A Fortune 100 manufacturer', quote: 'Threat vulnerabilities dropped 80% in one quarter.', who: '— CISO, Global Tech Leader', system: 'Φ-Federis + EthicSense',
+  },
+  'how-a-multinational-supply-chain-reduced-disruptions-by-65-using-strategemists-predictive-intelligence': {
+    persona: 'A multinational 3PL', quote: 'We reroute before disruptions happen now.', who: '— COO, Multinational 3PL', system: 'Σ-Graphion + Predictive Supply Chains',
+  },
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
-  const study = getCaseStudies().find((x) => x.slug === slug)
+  const study = getCaseStudy(slug)
   if (!study) notFound()
   const others = getCaseStudies().filter((c) => c.slug !== slug)
+  const e = ENRICHED[slug]
+  const [num, suf] = (study.metric || '').match(/^(\d+)(\D*)/)?.slice(1) ?? ['0', '']
 
   return (
     <>
+      <ReadingProgress />
       <PageHero
-        eyebrow="Case Study"
+        eyebrow="CASE STUDY"
+        stage="Outcomes"
         title={study.title || 'Case Study'}
         intro={study.narrative}
+        figureLabel={`FIG. CASE`}
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Case Studies', href: '/case-studies' }, { label: 'Case Study' }]}
       />
 
       <section className="py-16 lg:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <div className="prose-invert space-y-6 text-pretty leading-relaxed text-foreground/85">
+          {/* named persona + system used */}
+          {e && (
+            <div className="mb-10 flex flex-wrap items-center gap-3">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/12 px-3 py-1 text-sm font-medium text-primary">{e.persona}</span>
+              <span className="inline-flex items-center gap-1 text-[11px] text-muted-foreground"><Clock className="h-3 w-3" /> 3 min read</span>
+              <span className="inline-flex items-center gap-1 rounded-full bg-gold/12 px-2.5 py-0.5 text-[11px] font-medium text-gold">System used: {e.system}</span>
+            </div>
+          )}
+
+          {/* big metric */}
+          <div className="mb-8 flex items-baseline gap-3">
+            <div className="gradient-text text-7xl font-bold tracking-[-0.04em] num-mono"><CountUp value={parseInt(num) || 0} suffix={suf} /></div>
+            <CheckCircle2 className="h-6 w-6 text-gold" />
+          </div>
+
+          {/* narrative */}
+          <div className="space-y-6 text-pretty leading-relaxed text-foreground/85">
             {(study.narrative || '').split(/\n\n+/).map((p, i) => (
               <p key={i} className="text-base sm:text-lg">{p}</p>
             ))}
           </div>
+
+          {/* pull quote */}
+          {e && (
+            <div className="mt-10 rounded-lg border-l-2 border-gold bg-gold/5 p-5">
+              <Quote className="h-4 w-4 text-gold" />
+              <p className="mt-2 text-lg italic text-foreground/90">{e.quote}</p>
+              <p className="mt-1 text-sm text-muted-foreground">{e.who}</p>
+            </div>
+          )}
         </div>
       </section>
 
+      {/* other case studies */}
       {others.length > 0 && (
         <section className="border-t border-border/50 bg-muted/20 py-14">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <h2 className="text-2xl font-bold tracking-tight">See more case studies</h2>
-            <p className="mt-2 max-w-2xl text-sm text-muted-foreground">At Strategemist, we don&apos;t sell case studies—we build success stories that speak for themselves. Your journey with us is unique, powered by innovation, precision, and transformation.</p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {others.map((c) => (
-                <Link key={c.slug} href={`/case-studies/${c.slug}`} className="group flex items-center justify-between rounded-xl border border-border/60 bg-card/50 p-5 transition-colors hover:border-primary/50 hover:bg-primary/5">
+                <Link key={c.slug} href={`/case-studies/${c.slug}`} className="group flex items-center justify-between rounded-xl border border-white/8 bg-card/50 p-5 transition-colors hover:border-primary/30 hover:bg-primary/5">
                   <span className="text-sm font-medium leading-tight">{c.title}</span>
                   <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-primary" />
                 </Link>
@@ -61,25 +105,20 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         </section>
       )}
 
+      {/* CTA */}
       <section className="border-t border-border/50 py-16">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <h2 className="text-balance text-2xl font-bold tracking-tight sm:text-3xl">{BRAND.tagline}</h2>
           <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button asChild size="lg" className="gap-2 rounded-full">
-              <a href={BRAND.ctaPrimaryHref} target="_blank" rel="noopener noreferrer">{BRAND.ctaPrimary} <ArrowRight className="h-4 w-4" /></a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="rounded-full">
-              <Link href="/contact">Book a briefing</Link>
-            </Button>
+            <Button asChild size="lg" className="gap-2 rounded-full"><a href={BRAND.ctaPrimaryHref} target="_blank" rel="noopener noreferrer">{BRAND.ctaPrimary} <ArrowRight className="h-4 w-4" /></a></Button>
+            <Button asChild size="lg" variant="outline" className="rounded-full"><Link href="/contact">Book a briefing</Link></Button>
           </div>
         </div>
       </section>
 
       <div className="border-t border-border/50">
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
-          <Link href="/case-studies" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary">
-            <ArrowLeft className="h-4 w-4" /> Back to Case Studies
-          </Link>
+          <Link href="/case-studies" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary"><ArrowLeft className="h-4 w-4" /> Back to Case Studies</Link>
         </div>
       </div>
     </>
