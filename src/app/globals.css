@@ -157,6 +157,14 @@
     letter-spacing: -0.04em;
     line-height: 1.0;
   }
+  /* Strict type scale (M216): hero 72/48, h2 48, h3 24, subhead 20, body 16, small 13, mono 11 */
+  .h-hero { font-size: clamp(2.75rem, 6vw, 4.5rem); font-weight: 700; letter-spacing: -0.025em; line-height: 0.98; }
+  .h-section { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.035em; }
+  .h-card { font-size: 1.25rem; font-weight: 600; }
+  .t-subhead { font-size: 1.25rem; font-weight: 400; line-height: 1.6; }
+  .t-body { font-size: 1rem; line-height: 1.6; }
+  .t-small { font-size: 0.8125rem; line-height: 1.5; }
+  .t-mono { font-size: 0.6875rem; font-family: var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; }
   ::selection { background: var(--primary); color: var(--primary-foreground); }
   ::-webkit-scrollbar { width: 10px; height: 10px; }
   ::-webkit-scrollbar-track { background: var(--background); }
