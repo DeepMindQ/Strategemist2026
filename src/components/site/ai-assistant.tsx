@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Bot, X, Send, Sparkles, RotateCcw } from 'lucide-react'
+import { X, Send, Sparkles, RotateCcw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
@@ -108,17 +108,14 @@ export function AIAssistant() {
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             transition={{ duration: 0.25 }}
             onClick={() => setOpen(true)}
-            className="group fixed bottom-5 right-5 z-50 flex items-center gap-2.5 rounded-full border border-border/70 bg-card/90 px-4 py-3 shadow-2xl backdrop-blur transition-all hover:border-primary/50 hover:shadow-primary/20 sm:bottom-6 sm:right-6"
+            className="group fixed bottom-5 right-5 z-50 flex items-center gap-2.5 rounded-full border border-white/10 bg-primary px-4 py-3 shadow-2xl shadow-primary/30 transition-all hover:shadow-primary/50 sm:bottom-6 sm:right-6"
             aria-label="Open Strategemist Advisor"
           >
-            <span className="relative grid h-9 w-9 place-items-center rounded-full bg-primary text-primary-foreground">
-              <Bot className="h-5 w-5" />
-              <span className="absolute -right-0.5 -top-0.5 flex h-3 w-3">
-                <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-75 animate-ping" />
-                <span className="relative inline-flex h-3 w-3 rounded-full bg-accent ring-2 ring-card" />
-              </span>
+            <span className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-full ring-2 ring-white/20">
+              <Image src="/logo.jpeg" alt="Strategemist" width={40} height={40} className="h-full w-full object-cover" />
+              <span className="pointer-events-none absolute inset-0 rounded-full animate-pulse-ring ring-2 ring-primary" />
             </span>
-            <span className="hidden text-sm font-medium sm:block">
+            <span className="text-sm font-semibold text-white">
               Ask Strategemist
             </span>
           </motion.button>
@@ -133,16 +130,18 @@ export function AIAssistant() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 24, scale: 0.96 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed bottom-4 right-4 z-50 flex h-[min(620px,80vh)] w-[calc(100vw-2rem)] max-w-[400px] flex-col overflow-hidden rounded-2xl border border-border/70 bg-card shadow-2xl sm:bottom-6 sm:right-6"
+            className="fixed bottom-4 right-4 z-50 flex h-[min(620px,80vh)] w-[calc(100vw-2rem)] max-w-[400px] flex-col overflow-hidden rounded-2xl border border-white/10 bg-card shadow-2xl sm:bottom-6 sm:right-6"
           >
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-border/60 bg-gradient-to-r from-primary/8 to-accent/8 px-4 py-3">
+            <div className="flex items-center justify-between border-b border-white/10 px-4 py-3" style={{ background: 'linear-gradient(to right, color-mix(in oklch, var(--primary) 15%, var(--card)), var(--card))' }}>
               <div className="flex items-center gap-2.5">
-                <Image src="/logo.jpeg" alt="Strategemist" width={28} height={28} className="rounded-[4px]" />
+                <span className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-lg ring-1 ring-white/20">
+                  <Image src="/logo.jpeg" alt="Strategemist" width={36} height={36} className="h-full w-full object-cover" />
+                </span>
                 <div>
                   <div className="text-sm font-semibold leading-none">Strategemist Advisor</div>
-                  <div className="mt-1 flex items-center gap-1.5 text-[11px] text-muted-foreground">
-                    <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
+                  <div className="mt-1.5 flex items-center gap-1.5 text-[11px] text-muted-foreground">
+                    <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
                     Online · deep-tech guidance
                   </div>
                 </div>
